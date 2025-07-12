@@ -170,12 +170,16 @@ bool containsHebrew(const char* utf8Text) {
     return false;
 }
 
-// Calculate text width for positioning
-int getTextWidth(const char* utf8Text) {
-    int16_t x1, y1;
-    uint16_t w, h;
-    matrix->getTextBounds(utf8Text, 0, 0, &x1, &y1, &w, &h);
-    return w;
+// Calculate text width for positioning based on parsed codepoints
+int getTextWidth(uint16_t* codepoints, int charCount) {
+    int totalWidth = 0;
+    for (int i = 0; i < charCount; i++) {
+        int16_t x1, y1;
+        uint16_t w, h;
+        matrix->getTextBounds(String((char)codepoints[i]), 0, 0, &x1, &y1, &w, &h);
+        totalWidth += w;
+    }
+    return totalWidth;
 }
 
 // Print text with proper RTL support and positioning
@@ -185,7 +189,7 @@ void printTextRTL(const char* utf8Text, int y) {
     
     if (containsHebrew(utf8Text)) {
         // For Hebrew text, calculate width and right-align to total display (192px)
-        int textWidth = getTextWidth(utf8Text);
+        int textWidth = getTextWidth(codepoints, charCount);
         int totalWidth = mw * 2;  // Total display width (96 * 2 = 192)
         int xPos = totalWidth - textWidth;  // Right align to total display
         if (xPos < 0) xPos = 0;     // Prevent negative position
