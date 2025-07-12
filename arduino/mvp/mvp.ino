@@ -2,6 +2,7 @@
 #include <Adafruit_NeoMatrix.h>
 #include <Adafruit_NeoPixel.h>
 #include "fonts.h"
+#include "opensanshebrew_bold_8pt_full.h"
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <WebSocketsClient.h>
@@ -121,6 +122,28 @@ void loop() {
     // delay(5000);
 }
 
+// Better approach: print Hebrew characters directly using Unicode values
+void printHebrew(const char* utf8Text) {
+    int i = 0;
+    
+    while (utf8Text[i] != '\0') {
+        if ((unsigned char)utf8Text[i] == 0xD7) {  // Hebrew UTF-8 starts with 0xD7
+            if (utf8Text[i+1] != '\0') {
+                unsigned char secondByte = (unsigned char)utf8Text[i+1];
+                if (secondByte >= 0x90 && secondByte <= 0xAA) {
+                    // Hebrew letters א-ת (0x5D0-0x5EA)
+                    uint16_t hebrewChar = 0x5D0 + (secondByte - 0x90);
+                    matrix->write(hebrewChar);
+                    i += 2;  // Skip both UTF-8 bytes
+                    continue;
+                }
+            }
+        }
+        matrix->write(utf8Text[i]);
+        i++;
+    }
+}
+
 void setup() {
     Serial.begin(115200);
     matrix->begin();
@@ -138,13 +161,17 @@ void setup() {
     matrix->setTextWrap(false);  // we don't wrap text so it scrolls nicely
     matrix->setTextSize(1);
     matrix->setRotation(0);
-    matrix->setFont( &Helvetica8pt7b );
+    matrix->setFont( &opensanshebrew_bold_webfont8pt8b );
     matrix->setTextColor(matrix->Color(255, 255, 255));
 
     matrix->setCursor(0, 12);
     matrix->fillScreen(LED_BLACK);
     matrix->show();
-    matrix->print("Like");
+    
+    // Debug the original text
+    const char* hebrewText = "בדיקה";
+    printHebrew(hebrewText);
+    
     matrix->setCursor(0, 27);
     matrix->print("What?");
     matrix->show();
