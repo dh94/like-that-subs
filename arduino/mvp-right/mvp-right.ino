@@ -2,7 +2,7 @@
 #include <Adafruit_NeoMatrix.h>
 #include <Adafruit_NeoPixel.h>
 #include "fonts.h"
-#include "opensanshebrew8pt_hebrew.h"
+#include "opensanshebrew_bold_8pt_full.h"
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <WebSocketsClient.h>
@@ -138,7 +138,7 @@ int parseText(const char* utf8Text, uint16_t* codepoints, int maxChars) {
                 unsigned char secondByte = (unsigned char)utf8Text[i+1];
                 if (secondByte >= 0x90 && secondByte <= 0xAA) {
                     // Hebrew letters א-ת (0x5D0-0x5EA)
-                    codepoints[charCount] = 0x5D0 + (secondByte - 0x90);
+                    codepoints[charCount] = 0x7F + (secondByte - 0x90);
                     charCount++;
                     i += 2;  // Skip both UTF-8 bytes
                     continue;
@@ -234,7 +234,7 @@ void setup() {
     matrix->print("That!");
     matrix->show();
 
-    matrix->setFont( &opensanshebrew_regular_webfont8pt8b );
+    matrix->setFont( &opensanshebrew_bold_webfont8pt8b );
 
     //-----------------------------------------------
     // Connect to WiFi
