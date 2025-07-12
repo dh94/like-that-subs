@@ -11,6 +11,34 @@ const calcTextWidth = (text: string): number => {
   return textWidth
 }
 
+const textToScreenLines = (text: string): number => {
+  const linesFitting: string[] = []
+
+  const words = text.split(' ')
+
+  let currentLineLen = 0
+  let currentLine = ''
+  for (const word of words) {
+    const wordLen = calcTextWidth(word)
+
+    if (currentLineLen + wordLen <= maxLineWidth) {
+      currentLineLen += wordLen + charMap[' ']
+      currentLine += word + ' '
+    } else if (wordLen > maxLineWidth) {
+      console.error('!! word too long for line', word)
+    } else {
+      linesFitting.push(currentLine.trim())
+      currentLine = word + ' '
+      currentLineLen = wordLen
+    }
+  }
+  if (currentLineLen > 0) {
+    linesFitting.push(currentLine.trim())
+  }
+
+  return linesFitting.length;
+}
+
 export const transformTextList = (textList: string[]): [string, string][] => {
   const transformedList: [string, string][] = []
 
@@ -18,7 +46,21 @@ export const transformTextList = (textList: string[]): [string, string][] => {
   let douIndex = 0
 
   for (let i = 0; i < textList.length; i++) {
-    const lines = textList[i].split(/(?<![.?;])[.?;](?![.?;])/).map((x) => x.trim())
+
+    if (douIndex > 0) {
+      transformedList.push([dou[0] ?? '', dou[1] ?? ''])
+      dou = []
+      douIndex = 0
+    }
+    const ogLine = textList[i];
+    const ogLineScreenLines = textToScreenLines(ogLine);
+
+    let lines: string[] = [];
+    if (ogLineScreenLines <= 2) {
+      lines = [ogLine]
+    } else {
+      lines = textList[i].split(/(?<![.?;])[.?;](?![.?;])/).map((x) => x.trim())
+    }
 
     for (const line of lines) {
       const lineWidth = calcTextWidth(line)

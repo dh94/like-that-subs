@@ -56,8 +56,9 @@ app.whenReady().then(() => {
   ipcMain.on('show_line', (event, args) => {
     console.log('Received show_line', args.line.join(';'))
     wsClients.forEach((ws) => {
-      console.log(`Sending to ${ws.url} ws`, args.line.join(';'))
-      ws.send(args.line.join(';'))
+      const payload = args.line.map(line => line === '-' ? '' : line).join(';');
+      console.log(`Sending to ${ws.url} ws`, payload)
+      ws.send(payload)
     })
 
     event.reply('show_line_ack')

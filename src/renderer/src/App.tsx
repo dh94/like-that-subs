@@ -33,8 +33,8 @@ function App() {
       [text[newActiveTextIndex + 1], newActiveTextIndex + 1],
       [text[newActiveTextIndex + 2], newActiveTextIndex + 2]
     ])
-    ;(document.getElementById('number-input') as HTMLInputElement).value =
-      newActiveTextIndex.toString()
+      ; (document.getElementById('number-input') as HTMLInputElement).value =
+        newActiveTextIndex.toString()
     setActiveText(newActiveTextIndex)
     localStorage.setItem('TEXT_INDEX', newActiveTextIndex.toString())
     try {
@@ -152,7 +152,7 @@ function App() {
                 key={id}
               >
                 <p className={cn(index === 1 ? 'text-4xl' : 'text-2xl opacity-20', 'm-2 ')}>
-                  {text?.[0]}
+                  {text?.[0]?.trim() === '' && text?.[1]?.trim() === '' ? "<EMPTY>" : text?.[0]}
                 </p>
                 <p className={cn(index === 1 ? 'text-4xl' : 'text-2xl opacity-20', 'm-2 ')}>
                   {text?.[1]}
