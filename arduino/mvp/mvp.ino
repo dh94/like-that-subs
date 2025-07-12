@@ -170,14 +170,23 @@ bool containsHebrew(const char* utf8Text) {
     return false;
 }
 
+// Get character width from font glyph data
+int getCharWidth(uint16_t codepoint) {
+    // Hebrew characters are mapped to 0x7F-0x99 in font file
+    // Other characters use their ASCII values
+    if (codepoint >= 0x20 && codepoint <= 0x99) {
+        // Access the glyph data directly from the font
+        // The xAdvance field is the 4th parameter in each glyph entry
+        return pgm_read_byte(&opensanshebrew_bold_webfont8pt8bGlyphs[codepoint - 0x20].xAdvance);
+    }
+    return 5; // Default width for unknown characters
+}
+
 // Calculate text width for positioning based on parsed codepoints
 int getTextWidth(uint16_t* codepoints, int charCount) {
     int totalWidth = 0;
     for (int i = 0; i < charCount; i++) {
-        int16_t x1, y1;
-        uint16_t w, h;
-        matrix->getTextBounds(String((char)codepoints[i]), 0, 0, &x1, &y1, &w, &h);
-        totalWidth += w;
+        totalWidth += getCharWidth(codepoints[i]);
     }
     return totalWidth;
 }
