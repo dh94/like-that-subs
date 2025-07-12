@@ -2,7 +2,7 @@
 #include <Adafruit_NeoMatrix.h>
 #include <Adafruit_NeoPixel.h>
 #include "fonts.h"
-#include "opensanshebrew_regular_8pt_hebrew.h"
+#include "opensanshebrew8pt_hebrew.h"
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <WebSocketsClient.h>
@@ -127,14 +127,8 @@ void loop() {
     // delay(5000);
 }
 
-// Structure to hold parsed characters
-struct ParsedChar {
-    uint16_t codepoint;
-    bool isHebrew;
-};
-
-// Parse UTF-8 text and extract characters
-int parseText(const char* utf8Text, ParsedChar* chars, int maxChars) {
+// Parse UTF-8 text and extract character codepoints
+int parseText(const char* utf8Text, uint16_t* codepoints, int maxChars) {
     int i = 0;
     int charCount = 0;
     
@@ -144,16 +138,14 @@ int parseText(const char* utf8Text, ParsedChar* chars, int maxChars) {
                 unsigned char secondByte = (unsigned char)utf8Text[i+1];
                 if (secondByte >= 0x90 && secondByte <= 0xAA) {
                     // Hebrew letters א-ת (0x5D0-0x5EA)
-                    chars[charCount].codepoint = 0x5D0 + (secondByte - 0x90);
-                    chars[charCount].isHebrew = true;
+                    codepoints[charCount] = 0x5D0 + (secondByte - 0x90);
                     charCount++;
                     i += 2;  // Skip both UTF-8 bytes
                     continue;
                 }
             }
         }
-        chars[charCount].codepoint = (uint16_t)utf8Text[i];
-        chars[charCount].isHebrew = false;
+        codepoints[charCount] = (uint16_t)utf8Text[i];
         charCount++;
         i++;
     }
@@ -188,8 +180,8 @@ int getTextWidth(const char* utf8Text) {
 
 // Print text with proper RTL support and positioning
 void printTextRTL(const char* utf8Text, int y) {
-    ParsedChar chars[100];  // Adjust size as needed
-    int charCount = parseText(utf8Text, chars, 100);
+    uint16_t codepoints[100];  // Adjust size as needed
+    int charCount = parseText(utf8Text, codepoints, 100);
     
     if (containsHebrew(utf8Text)) {
         // For Hebrew text, calculate width and right-align to total display (192px)
@@ -203,13 +195,13 @@ void printTextRTL(const char* utf8Text, int y) {
         
         // Print right-to-left
         for (int i = charCount - 1; i >= 0; i--) {
-            matrix->write(chars[i].codepoint);
+            matrix->write(codepoints[i]);
         }
     } else {
         // For non-Hebrew text, print left-to-right with right screen offset
         matrix->setCursor(-96, y);
         for (int i = 0; i < charCount; i++) {
-            matrix->write(chars[i].codepoint);
+            matrix->write(codepoints[i]);
         }
     }
 }
