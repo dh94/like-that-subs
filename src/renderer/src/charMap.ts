@@ -93,5 +93,34 @@ export const charMap = {
   '{': 5,
   '|': 4,
   '}': 5,
-  '~': 9
+  '~': 9,
+  
+  // Hebrew letters
+  'א': 9,  // Alef
+  'ב': 9,  // Bet
+  'ג': 8,  // Gimel
+  'ד': 9,  // Dalet
+  'ה': 9,  // He
+  'ו': 4,  // Vav
+  'ז': 8,  // Zayin
+  'ח': 9,  // Het
+  'ט': 9,  // Tet
+  'י': 4,  // Yod
+  'ך': 9,  // Final Kaf
+  'כ': 9,  // Kaf
+  'ל': 8,  // Lamed
+  'ם': 9,  // Final Mem
+  'מ': 9,  // Mem
+  'ן': 4,  // Final Nun
+  'נ': 9,  // Nun
+  'ס': 9,  // Samech
+  'ע': 9,  // Ayin
+  'ף': 9,  // Final Pe
+  'פ': 9,  // Pe
+  'ץ': 9,  // Final Tsadi
+  'צ': 9,  // Tsadi
+  'ק': 9,  // Qof
+  'ר': 8,  // Resh
+  'ש': 11, // Shin
+  'ת': 9   // Tav
 }
