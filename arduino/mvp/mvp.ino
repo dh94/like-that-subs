@@ -2,7 +2,7 @@
 #include <Adafruit_NeoMatrix.h>
 #include <Adafruit_NeoPixel.h>
 #include "fonts.h"
-#include "opensanshebrew_bold_8pt_full.h"
+#include "opensanshebrew_regular_8pt_hebrew.h"
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <WebSocketsClient.h>
@@ -94,12 +94,17 @@ void webSocketEvent(WStype_t type, uint8_t * payload, size_t welength) {
     }
     matrix->fillScreen(LED_BLACK);
     matrix->show();
-    // -96
-    matrix->setCursor(0, 12);
-    matrix->print(line1);
-    // -96
-    matrix->setCursor(0, 27);
-    matrix->print(line2);
+    
+    // Print line1
+    if (line1 != NULL) {
+        printTextRTL(line1, 12);
+    }
+    
+    // Print line2
+    if (line2 != NULL) {
+        printTextRTL(line2, 27);
+    }
+    
     matrix->show();
     webSocket.sendTXT("ACK");
     // Loop through LED array
@@ -122,25 +127,89 @@ void loop() {
     // delay(5000);
 }
 
-// Better approach: print Hebrew characters directly using Unicode values
-void printHebrew(const char* utf8Text) {
+// Structure to hold parsed characters
+struct ParsedChar {
+    uint16_t codepoint;
+    bool isHebrew;
+};
+
+// Parse UTF-8 text and extract characters
+int parseText(const char* utf8Text, ParsedChar* chars, int maxChars) {
     int i = 0;
+    int charCount = 0;
     
-    while (utf8Text[i] != '\0') {
+    while (utf8Text[i] != '\0' && charCount < maxChars) {
         if ((unsigned char)utf8Text[i] == 0xD7) {  // Hebrew UTF-8 starts with 0xD7
             if (utf8Text[i+1] != '\0') {
                 unsigned char secondByte = (unsigned char)utf8Text[i+1];
                 if (secondByte >= 0x90 && secondByte <= 0xAA) {
                     // Hebrew letters א-ת (0x5D0-0x5EA)
-                    uint16_t hebrewChar = 0x5D0 + (secondByte - 0x90);
-                    matrix->write(hebrewChar);
+                    chars[charCount].codepoint = 0x5D0 + (secondByte - 0x90);
+                    chars[charCount].isHebrew = true;
+                    charCount++;
                     i += 2;  // Skip both UTF-8 bytes
                     continue;
                 }
             }
         }
-        matrix->write(utf8Text[i]);
+        chars[charCount].codepoint = (uint16_t)utf8Text[i];
+        chars[charCount].isHebrew = false;
+        charCount++;
         i++;
+    }
+    
+    return charCount;
+}
+
+// Check if text contains Hebrew characters
+bool containsHebrew(const char* utf8Text) {
+    int i = 0;
+    while (utf8Text[i] != '\0') {
+        if ((unsigned char)utf8Text[i] == 0xD7) {
+            if (utf8Text[i+1] != '\0') {
+                unsigned char secondByte = (unsigned char)utf8Text[i+1];
+                if (secondByte >= 0x90 && secondByte <= 0xAA) {
+                    return true;
+                }
+            }
+        }
+        i++;
+    }
+    return false;
+}
+
+// Calculate text width for positioning
+int getTextWidth(const char* utf8Text) {
+    int16_t x1, y1;
+    uint16_t w, h;
+    matrix->getTextBounds(utf8Text, 0, 0, &x1, &y1, &w, &h);
+    return w;
+}
+
+// Print text with proper RTL support and positioning
+void printTextRTL(const char* utf8Text, int y) {
+    ParsedChar chars[100];  // Adjust size as needed
+    int charCount = parseText(utf8Text, chars, 100);
+    
+    if (containsHebrew(utf8Text)) {
+        // For Hebrew text, calculate width and right-align to total display (192px)
+        int textWidth = getTextWidth(utf8Text);
+        int totalWidth = mw * 2;  // Total display width (96 * 2 = 192)
+        int xPos = totalWidth - textWidth;  // Right align to total display
+        if (xPos < 0) xPos = 0;     // Prevent negative position
+        
+        matrix->setCursor(xPos, y);
+        
+        // Print right-to-left
+        for (int i = charCount - 1; i >= 0; i--) {
+            matrix->write(chars[i].codepoint);
+        }
+    } else {
+        // For non-Hebrew text, print left-to-right at position 0
+        matrix->setCursor(0, y);
+        for (int i = 0; i < charCount; i++) {
+            matrix->write(chars[i].codepoint);
+        }
     }
 }
 
@@ -161,20 +230,19 @@ void setup() {
     matrix->setTextWrap(false);  // we don't wrap text so it scrolls nicely
     matrix->setTextSize(1);
     matrix->setRotation(0);
-    matrix->setFont( &opensanshebrew_bold_webfont8pt8b );
+    matrix->setFont( &Helvetica8pt7b );
     matrix->setTextColor(matrix->Color(255, 255, 255));
 
     matrix->setCursor(0, 12);
     matrix->fillScreen(LED_BLACK);
     matrix->show();
     
-    // Debug the original text
-    const char* hebrewText = "בדיקה";
-    printHebrew(hebrewText);
-    
+    matrix->print("Like");
     matrix->setCursor(0, 27);
     matrix->print("What?");
     matrix->show();
+
+    matrix->setFont( &opensanshebrew_regular_webfont8pt8b );
 
     //-----------------------------------------------
     // Connect to WiFi
@@ -192,7 +260,7 @@ void setup() {
     Serial.println(WiFi.localIP());
     //-----------------------------------------------
     // server address, port and URL
-    webSocket.begin("192.168.1.100", 8081, "/");
+    webSocket.begin("192.168.1.102", 8081, "/");
     // event handler
     webSocket.onEvent(webSocketEvent);
     // try again if connection has failed
