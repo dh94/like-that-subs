@@ -237,7 +237,7 @@ void setup() {
     matrix->setTextSize(1);
     matrix->setRotation(0);
     matrix->setFont( &Helvetica8pt7b );
-    matrix->setTextColor(matrix->Color(255, 255, 255));
+    matrix->setTextColor(matrix->Color(255, 176, 156));
 
     matrix->setCursor(0, 12);
     matrix->fillScreen(LED_BLACK);
