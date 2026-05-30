@@ -2,9 +2,20 @@ import { charMap } from './charMap'
 
 const maxLineWidth = 192
 
+export interface ScriptEntry {
+  text: string
+  lights?: string[]
+  fx?: string
+  dur?: number
+}
+
+export interface TransformedEntry {
+  lines: [string, string]
+  lighting?: { lights: string[]; fx: string; dur: number }
+}
+
 const calcTextWidth = (text: string): number => {
   let textWidth = 0
-
   for (const char of text) {
     textWidth += charMap[char]
   }
@@ -13,14 +24,12 @@ const calcTextWidth = (text: string): number => {
 
 const textToScreenLines = (text: string): number => {
   const linesFitting: string[] = []
-
   const words = text.split(' ')
-
   let currentLineLen = 0
   let currentLine = ''
+
   for (const word of words) {
     const wordLen = calcTextWidth(word)
-
     if (currentLineLen + wordLen <= maxLineWidth) {
       currentLineLen += wordLen + charMap[' ']
       currentLine += word + ' '
@@ -36,30 +45,55 @@ const textToScreenLines = (text: string): number => {
     linesFitting.push(currentLine.trim())
   }
 
-  return linesFitting.length;
+  return linesFitting.length
 }
 
-export const transformTextList = (textList: string[]): [string, string][] => {
-  const transformedList: [string, string][] = []
+export const transformTextList = (textList: string[] | ScriptEntry[]): TransformedEntry[] => {
+  const entries: ScriptEntry[] =
+    typeof textList[0] === 'string'
+      ? (textList as string[]).map((text) => ({ text }))
+      : (textList as ScriptEntry[])
+
+  const transformedList: TransformedEntry[] = []
 
   let dou: string[] = []
   let douIndex = 0
+  let pendingLighting: TransformedEntry['lighting'] | undefined = undefined
 
-  for (let i = 0; i < textList.length; i++) {
-
+  const flush = () => {
     if (douIndex > 0) {
-      transformedList.push([dou[0] ?? '', dou[1] ?? ''])
+      transformedList.push({
+        lines: [dou[0] ?? '', dou[1] ?? ''],
+        lighting: pendingLighting
+      })
       dou = []
       douIndex = 0
+      pendingLighting = undefined
     }
-    const ogLine = textList[i];
-    const ogLineScreenLines = textToScreenLines(ogLine);
+  }
 
-    let lines: string[] = [];
+  for (let i = 0; i < entries.length; i++) {
+    if (douIndex > 0) {
+      flush()
+    }
+
+    const entry = entries[i]
+    const ogLine = entry.text
+    const ogLineScreenLines = textToScreenLines(ogLine)
+
+    if (entry.lights) {
+      pendingLighting = {
+        lights: entry.lights,
+        fx: entry.fx ?? 'abrupt',
+        dur: entry.dur ?? 0
+      }
+    }
+
+    let lines: string[] = []
     if (ogLineScreenLines <= 2) {
       lines = [ogLine]
     } else {
-      lines = textList[i].split(/(?<![.?;])[.?;](?![.?;])/).map((x) => x.trim())
+      lines = ogLine.split(/(?<![.?;])[.?;](?![.?;])/).map((x) => x.trim())
     }
 
     for (const line of lines) {
@@ -70,20 +104,22 @@ export const transformTextList = (textList: string[]): [string, string][] => {
           dou[douIndex] = line
           douIndex++
         } else {
-          transformedList.push([dou[0], dou[1]])
+          transformedList.push({
+            lines: [dou[0], dou[1]],
+            lighting: pendingLighting
+          })
+          pendingLighting = undefined
           dou = [line]
           douIndex = 1
         }
       } else {
         const linesFitting: string[] = []
-
         const words = line.split(' ')
-
         let currentLineLen = 0
         let currentLine = ''
+
         for (const word of words) {
           const wordLen = calcTextWidth(word)
-
           if (currentLineLen + wordLen <= maxLineWidth) {
             currentLineLen += wordLen + charMap[' ']
             currentLine += word + ' '
@@ -99,13 +135,17 @@ export const transformTextList = (textList: string[]): [string, string][] => {
           linesFitting.push(currentLine.trim())
         }
 
-        for (const line of linesFitting) {
+        for (const fittedLine of linesFitting) {
           if (douIndex < 2) {
-            dou[douIndex] = line
+            dou[douIndex] = fittedLine
             douIndex++
           } else {
-            transformedList.push([dou[0], dou[1]])
-            dou = [line]
+            transformedList.push({
+              lines: [dou[0], dou[1]],
+              lighting: pendingLighting
+            })
+            pendingLighting = undefined
+            dou = [fittedLine]
             douIndex = 1
           }
         }
@@ -114,7 +154,10 @@ export const transformTextList = (textList: string[]): [string, string][] => {
   }
 
   if (douIndex > 0) {
-    transformedList.push([dou[0], dou[1]])
+    transformedList.push({
+      lines: [dou[0] ?? '', dou[1] ?? ''],
+      lighting: pendingLighting
+    })
   }
 
   return transformedList
