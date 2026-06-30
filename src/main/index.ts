@@ -166,10 +166,29 @@ function forwardToWsClients(cues: { id: number; r: number; g: number; b: number 
   sendLightingStateToMonitor()
 
   bridgePacketCount++
+
   // Log every packet for first 10, then every 100th, plus every 5 seconds
   if (bridgePacketCount <= 10 || bridgePacketCount % 100 === 0 || now - lastBridgeLogTime > 5000) {
-    const sample = cues.slice(0, 3).map((c) => `D${c.id}:rgb(${c.r},${c.g},${c.b})`).join(' ')
-    console.log(`[Bridge] #${bridgePacketCount} from ${source} → ${clientCount} WS clients | ${sample}`)
+    const litDevices = cues.filter((c) => c.r > 0 || c.g > 0 || c.b > 0)
+    const lines: string[] = []
+
+    lines.push(`[Bridge] Packet #${bridgePacketCount} from ${source}`)
+    lines.push(`  Forwarded to ${clientCount} connected WS client(s)`)
+
+    if (litDevices.length === 0) {
+      lines.push(`  All 15 devices → OFF`)
+    } else {
+      for (const c of litDevices) {
+        const online = connectedDevices.has(c.id)
+        lines.push(`  Device ${c.id} → rgb(${c.r},${c.g},${c.b}) ${online ? '✓ online' : '✗ OFFLINE'}`)
+      }
+      const offDevices = cues.filter((c) => c.r === 0 && c.g === 0 && c.b === 0)
+      if (offDevices.length > 0 && offDevices.length < 15) {
+        lines.push(`  Devices ${offDevices.map((c) => c.id).join(',')} → OFF`)
+      }
+    }
+
+    console.log(lines.join('\n'))
     lastBridgeLogTime = now
   }
 }

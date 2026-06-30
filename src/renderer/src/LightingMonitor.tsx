@@ -179,7 +179,7 @@ function LightingMonitor() {
     }))
   )
   const [cycleMode, setCycleMode] = useState(false)
-  const [lightingMode, setLightingMode] = useState<'websocket' | 'sacn'>('websocket')
+  const [lightingMode, setLightingMode] = useState<'websocket' | 'sacn' | 'sacn-bridge' | 'artnet-bridge'>('websocket')
   const cycleRef = useRef<NodeJS.Timeout | null>(null)
   const cycleIndexRef = useRef(0)
 
@@ -243,27 +243,24 @@ function LightingMonitor() {
       <div className="flex items-center justify-between mb-4">
         <h1 className="text-2xl font-bold" style={{ color: '#00E5FF', textShadow: '0 0 10px rgba(0,229,255,0.4)' }}>Lighting Monitor</h1>
         <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ backgroundColor: 'rgba(10,22,40,0.8)', border: '1px solid rgba(0,176,255,0.3)' }}>
-            <span className={`text-xs font-mono ${lightingMode === 'websocket' ? 'text-cyan-300' : 'text-gray-500'}`}>WS</span>
-            <button
-              onClick={() => {
-                const newMode = lightingMode === 'websocket' ? 'sacn' : 'websocket'
-                setLightingMode(newMode)
-                window.electron.ipcRenderer.send('set_lighting_mode', newMode)
-              }}
-              className="relative w-10 h-5 rounded-full transition-colors"
-              style={{ backgroundColor: lightingMode === 'sacn' ? '#7c3aed' : '#1e3a5f' }}
-            >
-              <div
-                className="absolute top-0.5 w-4 h-4 rounded-full bg-white transition-transform"
-                style={{ transform: lightingMode === 'sacn' ? 'translateX(22px)' : 'translateX(2px)' }}
-              />
-            </button>
-            <span className={`text-xs font-mono ${lightingMode === 'sacn' ? 'text-purple-300' : 'text-gray-500'}`}>sACN</span>
-          </div>
+          <select
+            value={lightingMode}
+            onChange={(e) => {
+              const mode = e.target.value as typeof lightingMode
+              setLightingMode(mode)
+              window.electron.ipcRenderer.send('set_lighting_mode', mode)
+            }}
+            className="rounded-lg px-3 py-2 text-xs font-mono cursor-pointer outline-none"
+            style={{ backgroundColor: 'rgba(10,22,40,0.8)', border: '1px solid rgba(0,176,255,0.3)', color: '#e0f7fa' }}
+          >
+            <option value="websocket">WS (Electron controls)</option>
+            <option value="sacn">sACN Direct (grandMA2 → ESP)</option>
+            <option value="sacn-bridge">sACN Bridge (grandMA2 → Electron → ESP)</option>
+            <option value="artnet-bridge">ArtNet Bridge (grandMA2 → Electron → ESP)</option>
+          </select>
           <button
             onClick={() => setCycleMode(!cycleMode)}
-            disabled={lightingMode === 'sacn'}
+            disabled={lightingMode !== 'websocket'}
             className="px-4 py-2 rounded-lg font-medium transition-all text-white disabled:opacity-40 disabled:cursor-not-allowed"
             style={{
               backgroundColor: cycleMode ? '#ff6b35' : '#0077FF',
@@ -275,9 +272,11 @@ function LightingMonitor() {
         </div>
       </div>
 
-      {lightingMode === 'sacn' && (
+      {lightingMode !== 'websocket' && (
         <div className="mb-4 px-3 py-2 rounded-lg text-sm" style={{ backgroundColor: 'rgba(124,58,237,0.15)', border: '1px solid rgba(124,58,237,0.4)', color: '#c4b5fd' }}>
-          Lighting controlled by grandMA2 — sACN Universe 1
+          {lightingMode === 'sacn' && 'Lighting controlled by grandMA2 — sACN Direct to ESPs'}
+          {lightingMode === 'sacn-bridge' && 'Bridge active — grandMA2 → sACN → Electron → WebSocket → ESPs'}
+          {lightingMode === 'artnet-bridge' && 'Bridge active — grandMA2 → ArtNet → Electron → WebSocket → ESPs'}
         </div>
       )}
 

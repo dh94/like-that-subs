@@ -17,10 +17,15 @@
 import dgram from 'dgram'
 
 // ============================================
-// CONFIGURE DEVICE IPs HERE
+// CONFIGURE
 // ============================================
+
+// Bridge IP (Electron app / laptop) — used with --bridge
+const BRIDGE_IP = '2.10.10.100'
+
+// Direct mode: ESP32 IPs — used without --bridge
 const DEVICE_IPS = {
-  1: '2.10.10.111',
+  1: '2.10.10.100',
   // 2: '2.10.10.112',
   // 3: '2.10.10.113',
   // 4: '2.10.10.114',
@@ -89,16 +94,22 @@ function buildSacnPacket(deviceColors) {
   return buf
 }
 
-// Send unicast to each device IP
+// --bridge flag: send to Electron bridge instead of directly to ESP32s
+const BRIDGE_MODE = process.argv.includes('--bridge')
+
 function sendToAll(deviceColors) {
   const packet = buildSacnPacket(deviceColors)
   const now = Date.now()
 
-  for (const [deviceId, ip] of Object.entries(DEVICE_IPS)) {
-    const id = Number(deviceId)
-    if (deviceColors[id]) {
-      pendingPings.set(id, now)
-      sock.send(packet, SACN_PORT, ip)
+  if (BRIDGE_MODE) {
+    sock.send(packet, SACN_PORT, BRIDGE_IP)
+  } else {
+    for (const [deviceId, ip] of Object.entries(DEVICE_IPS)) {
+      const id = Number(deviceId)
+      if (deviceColors[id]) {
+        pendingPings.set(id, now)
+        sock.send(packet, SACN_PORT, ip)
+      }
     }
   }
 }
@@ -118,12 +129,15 @@ function lerp(a, b, t) {
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms))
 
+const DEVICE_COUNT = 15
+const ALL_DEVICE_IDS = Array.from({ length: DEVICE_COUNT }, (_, i) => i + 1)
+
 const currentColors = {}
-for (const id of Object.keys(DEVICE_IPS)) currentColors[id] = [0, 0, 0]
+for (const id of ALL_DEVICE_IDS) currentColors[id] = [0, 0, 0]
 
 async function fadeTo(targetColors, durationMs = FADE_DURATION_MS) {
   const startColors = {}
-  for (const id of Object.keys(DEVICE_IPS)) startColors[id] = [...(currentColors[id] || [0, 0, 0])]
+  for (const id of ALL_DEVICE_IDS) startColors[id] = [...(currentColors[id] || [0, 0, 0])]
 
   const steps = Math.ceil((durationMs / 1000) * FADE_FPS)
   const stepMs = durationMs / steps
@@ -131,15 +145,14 @@ async function fadeTo(targetColors, durationMs = FADE_DURATION_MS) {
   for (let step = 1; step <= steps; step++) {
     const t = step / steps
     const frameColors = {}
-    for (const id of Object.keys(DEVICE_IPS)) {
-      const numId = Number(id)
-      const target = targetColors[numId] ?? startColors[id]
+    for (const id of ALL_DEVICE_IDS) {
+      const target = targetColors[id] ?? startColors[id]
       currentColors[id] = [
         lerp(startColors[id][0], target[0], t),
         lerp(startColors[id][1], target[1], t),
         lerp(startColors[id][2], target[2], t),
       ]
-      frameColors[numId] = currentColors[id]
+      frameColors[id] = currentColors[id]
     }
     sendToAll(frameColors)
     await sleep(stepMs)
@@ -157,18 +170,19 @@ const CYCLE_COLORS = [
 ]
 
 async function cycleMode() {
-  const deviceIds = Object.keys(DEVICE_IPS).map(Number)
-  console.log(`[CYCLE] Fading colors across ${deviceIds.length} devices: ${deviceIds.join(', ')}`)
-  console.log(`[CYCLE] IPs: ${deviceIds.map(id => `${id}→${DEVICE_IPS[id]}`).join(', ')}\n`)
+  console.log(`[CYCLE] Fading colors across all ${DEVICE_COUNT} devices`)
+  console.log(`[CYCLE] Sending to: ${Object.entries(DEVICE_IPS).map(([id, ip]) => `D${id}→${ip}`).join(', ')}`)
+  if (BRIDGE_MODE) console.log(`[CYCLE] Bridge mode: sending to ${BRIDGE_IP}:${SACN_PORT}`)
+  console.log('')
 
   let colorIndex = 0
   while (true) {
     const targets = {}
-    for (const id of deviceIds) {
+    for (const id of ALL_DEVICE_IDS) {
       const idx = (colorIndex + id) % CYCLE_COLORS.length
       targets[id] = CYCLE_COLORS[idx]
     }
-    const colors = deviceIds.map(id => `D${id}:rgb(${targets[id].join(',')})`).join(' ')
+    const colors = ALL_DEVICE_IDS.map(id => `D${id}:rgb(${targets[id].join(',')})`).join(' ')
     console.log(`[SEND] ${colors}`)
     await fadeTo(targets)
     await sleep(500)
@@ -177,18 +191,18 @@ async function cycleMode() {
 }
 
 async function pingMode() {
-  const deviceIds = Object.keys(DEVICE_IPS).map(Number)
-  console.log(`[PING] Latency test — alternating red/off every 2s to ${deviceIds.length} devices`)
-  console.log(`[PING] IPs: ${deviceIds.map(id => `${id}→${DEVICE_IPS[id]}`).join(', ')}\n`)
+  console.log(`[PING] Latency test — alternating red/off every 2s to all ${DEVICE_COUNT} devices`)
+  if (BRIDGE_MODE) console.log(`[PING] Bridge mode: sending to ${BRIDGE_IP}:${SACN_PORT}`)
+  console.log('')
 
   let on = false
   while (true) {
     on = !on
     const color = on ? [255, 0, 0] : [0, 0, 0]
     const targets = {}
-    for (const id of deviceIds) targets[id] = color
+    for (const id of ALL_DEVICE_IDS) targets[id] = color
 
-    console.log(`[SEND] All devices → rgb(${color.join(',')}) at ${new Date().toISOString()}`)
+    console.log(`[SEND] All ${DEVICE_COUNT} devices → rgb(${color.join(',')}) at ${new Date().toISOString()}`)
     sendToAll(targets)
     await sleep(2000)
   }
@@ -196,11 +210,11 @@ async function pingMode() {
 
 async function main() {
   const args = process.argv.slice(2)
-  const deviceIds = Object.keys(DEVICE_IPS).map(Number)
 
   console.log('=== sACN Unicast RGB Test ===')
-  console.log(`Universe: ${UNIVERSE}, Devices: ${deviceIds.length}`)
-  console.log(`Configured: ${deviceIds.map(id => `Device ${id} → ${DEVICE_IPS[id]}`).join(', ')}`)
+  console.log(`Universe: ${UNIVERSE}, Total devices: ${DEVICE_COUNT}`)
+  console.log(`Direct IPs: ${Object.entries(DEVICE_IPS).map(([id, ip]) => `D${id}→${ip}`).join(', ') || '(none)'}`)
+  if (BRIDGE_MODE) console.log(`Bridge mode: ON — all packets go to ${BRIDGE_IP}:${SACN_PORT}`)
   console.log('')
 
   if (args.includes('--ping')) {
@@ -210,8 +224,8 @@ async function main() {
 
   if (args.includes('--blackout')) {
     const targets = {}
-    for (const id of deviceIds) targets[id] = [0, 0, 0]
-    console.log('[SEND] Blackout → all devices')
+    for (const id of ALL_DEVICE_IDS) targets[id] = [0, 0, 0]
+    console.log(`[SEND] Blackout → all ${DEVICE_COUNT} devices`)
     await fadeTo(targets, 1000)
     console.log('[DONE] Blackout complete')
     await sleep(200)
@@ -227,12 +241,13 @@ async function main() {
     const targets = {}
 
     if (allFlag) {
-      for (const id of deviceIds) targets[id] = rgb
-      console.log(`[SEND] All devices → rgb(${rgb.join(',')})`)
+      for (const id of ALL_DEVICE_IDS) targets[id] = rgb
+      console.log(`[SEND] All ${DEVICE_COUNT} devices → rgb(${rgb.join(',')})`)
     } else if (deviceIdx !== -1) {
       const id = parseInt(args[deviceIdx + 1])
       targets[id] = rgb
-      console.log(`[SEND] Device ${id} (${DEVICE_IPS[id]}) → rgb(${rgb.join(',')})`)
+      const ip = DEVICE_IPS[id]
+      console.log(`[SEND] Device ${id}${ip ? ` (${ip})` : ''} → rgb(${rgb.join(',')})`)
     } else {
       console.error('Specify --device <id> or --all with --color')
       process.exit(1)
