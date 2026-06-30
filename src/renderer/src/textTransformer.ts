@@ -7,11 +7,13 @@ export interface ScriptEntry {
   lights?: string[]
   fx?: string
   dur?: number
+  stagger?: 'L-first' | 'R-first'
+  staggerDelay?: number
 }
 
 export interface TransformedEntry {
   lines: [string, string]
-  lighting?: { lights: string[]; fx: string; dur: number }
+  lighting?: { lights: string[]; fx: string; dur: number; stagger?: 'L-first' | 'R-first'; staggerDelay?: number }
 }
 
 const calcTextWidth = (text: string): number => {
@@ -85,7 +87,9 @@ export const transformTextList = (textList: string[] | ScriptEntry[]): Transform
       pendingLighting = {
         lights: entry.lights,
         fx: entry.fx ?? 'abrupt',
-        dur: entry.dur ?? 0
+        dur: entry.dur ?? 0,
+        stagger: entry.stagger,
+        staggerDelay: entry.staggerDelay
       }
     }
 

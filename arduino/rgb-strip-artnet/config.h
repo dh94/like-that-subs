@@ -20,9 +20,9 @@
 #define PWM_FREQ 5000
 #define PWM_RESOLUTION 8  // 8-bit = 0-255
 
-// sACN (E1.31) config — unicast mode
-// grandMA2 sends to each ESP32's IP directly
-#define SACN_UNIVERSE 4
-#define DMX_START_CHANNEL ((DEVICE_ID - 1) * 3 + 1)
+// ArtNet config
+#define ARTNET_PORT 6454
+#define ARTNET_UNIVERSE 0
+#define DMX_START_CHANNEL ((DEVICE_ID - 1) * 3)
 
 #endif

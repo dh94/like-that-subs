@@ -8,10 +8,10 @@ import { cn } from './lib/utils'
 import textRaw from './HeathersScript.json'
 import rotatingListTextRaw from './RotatingList.json'
 import { Checkbox } from './components/ui/checkbox'
-import { transformTextList, TransformedEntry } from './textTransformer'
+import { transformTextList, TransformedEntry, ScriptEntry } from './textTransformer'
 import { colorMap } from './colorMap'
 
-const text = transformTextList(textRaw)
+const text = transformTextList(textRaw as ScriptEntry[])
 const rotatingListText = transformTextList(rotatingListTextRaw)
 
 function LightingPreview({ lights }: { lights: string[] }) {
@@ -59,7 +59,7 @@ function App() {
   const [rotatingList, setRotatingList] = useState<boolean | 'indeterminate'>(false)
   const [connectedSubtitleDevices, setConnectedSubtitleDevices] = useState<number[]>([])
   const [currentLighting, setCurrentLighting] = useState<string[]>(
-    Array(14).fill('bla')
+    Array(15).fill('bla')
   )
   const [visibleTexts, setVisibleTexts] = useState<[TransformedEntry, number][]>([
     [text[0], 1],
@@ -72,9 +72,13 @@ function App() {
   const resolveLighting = (entry: TransformedEntry) => {
     if (entry.lighting) {
       setCurrentLighting(entry.lighting.lights)
+      const { stagger, staggerDelay = 300 } = entry.lighting
       const cues = entry.lighting.lights.map((color, i) => {
         const rgb = colorMap[color] ?? [0, 0, 0]
-        return { id: i + 1, r: rgb[0], g: rgb[1], b: rgb[2], fx: entry.lighting!.fx, dur: entry.lighting!.dur }
+        let delay = 0
+        if (stagger === 'L-first' && i >= 7) delay = staggerDelay
+        if (stagger === 'R-first' && i < 7) delay = staggerDelay
+        return { id: i + 1, r: rgb[0], g: rgb[1], b: rgb[2], fx: entry.lighting!.fx, dur: entry.lighting!.dur, delay }
       })
       return { cues }
     }

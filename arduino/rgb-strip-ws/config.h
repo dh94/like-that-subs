@@ -10,6 +10,10 @@
 #define WIFI_SSID "like-that-subs"
 #define WIFI_PASS "shooliboom"
 
+// WebSocket server (Electron app / laptop)
+#define WS_HOST "2.10.10.100"
+#define WS_PORT 8081
+
 // RGB PWM pins (connect to MOSFET gates)
 // ESP32-C3 Super Mini available GPIOs: 0-10, 20, 21
 #define PIN_R 2
@@ -19,10 +23,5 @@
 // PWM config
 #define PWM_FREQ 5000
 #define PWM_RESOLUTION 8  // 8-bit = 0-255
-
-// sACN (E1.31) config — unicast mode
-// grandMA2 sends to each ESP32's IP directly
-#define SACN_UNIVERSE 4
-#define DMX_START_CHANNEL ((DEVICE_ID - 1) * 3 + 1)
 
 #endif

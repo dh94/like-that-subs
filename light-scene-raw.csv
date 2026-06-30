@@ -1,0 +1,66 @@
+scene number,type,name,sub scenes,subs range,1,2,3,4,5,6,7,8,9,10,11,12,13,14,comments
+1,Song,The Guy Who Didn't Like Musicals,1.1,[Thunder],w,bla,w,bla,w,bla,w,w,bla,w,bla,bla,w,w,First L - 0.3 Seconds later R
+,,,1.2,,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,
+,,,1.3,The Greatest stories ever told,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,fade in - hold
+,,,1.5,what an ass!,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,abrupt - hold
+,,,1.6,what a bitch!,torq,torq,torq,torq,torq,torq,torq,torq,torq,torq,torq,torq,torq,torq,abrupt - hold
+,,,1.7,What a cock!,g,g,g,g,g,g,g,g,g,g,g,g,g,g,abrupt - hold
+,,,1.8,The guy who didn't like musicals!,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,fade in - hold
+,,,1.9,"It's the end of the world Paul,",pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,fade in - hold
+,,,1.11,"OBEY, PAUL",blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,abrupt - hold
+,,,1.12,The apotheosis is upon us,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,fade in - hold
+,,,1.13,Paul you PIECE OF SHIT!,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,abrupt - hold
+2,Scene,Office expo,2.1,"Hey! Get me a chai iced tea, eh?!?",bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fade to black - hold
+3,Scene,Beanies expo,3.1,[ding ding!],wbr,wbr,wbr,wbr,wbr,wbr,wbr,bg,bg,bg,bg,bg,bg,bg,hold
+,,,3.2,Sorry!,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fade to black - hold
+4,Scene,La dee da setup + meteor starts,4.1,Hi! Do you have a few minutes to talk about saving the planet?,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,fade in - hold
+,,,4.2,As if I’m gonna do that single handedly…,w,bla,w,bla,w,bla,w,w,bla,w,bla,bla,w,w,First L - 0.3 Seconds later R
+,,,4.3,What is... That?,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,lblu,FAST fade in - hold
+,,,4.5,,w,bla,w,bla,w,bla,w,w,bla,w,bla,bla,w,w,First R - 0.3 Seconds later L
+,,,4.6,Heavens to betsy!,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,blu,FAST fade in - hold
+,,,4.6.2,there’s the door!,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fast fade to black 
+,,,4.7,,w,bla,w,bla,w,bla,w,w,bla,w,bla,bla,w,w,First L - 0.3 Seconds later R
+,,,4.8,Oh great. This is the cherry on top of a perfect day. ,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,FAST fade in - hold
+,,,4.8.2,they can talk to my FUCKIN’ GUN!,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fade to black 
+,,,4.9,,w,bla,w,bla,w,bla,w,w,bla,w,bla,bla,w,w,First R - 0.3 Seconds later L
+,,,4.11,Holy Molly! It’s raining cats and dogs!,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,FAST fade in - hold
+,,,4.12,,w,bla,w,bla,w,bla,w,w,bla,w,bla,bla,w,w,First L - 0.3 Seconds later R
+,,,4.13,"Alright, Dad! We’ll meet you at the theater.",dg,dg,dg,dg,dg,dg,dg,dg,dg,dg,dg,dg,dg,dg,FAST fade in - hold
+,,,4.14,Those guys are assholes anyway…,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fade to black 
+,,,4.15,,w,bla,w,bla,w,bla,w,w,bla,w,bla,bla,w,w,First R - 0.3 Seconds later L
+,,,4.16,"My god, Alexa, it’s happening!",dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,dblu,FAST fade in - hold
+,,,4.17,It’s showtime!,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fade to black 
+,,,4.18,,w,bla,w,bla,w,bla,w,w,bla,w,bla,bla,w,w,First L - 0.3 Seconds later R
+,,,4.19,[Thunder boom boom boom],w,bla,w,bla,w,bla,w,w,bla,w,bla,bla,w,w,4 random flashes
+,,,,,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fade to black
+5,Scene,Paul and the News,5.1,This is the Hatchetfield Morning News with Dawn and Donna.,sy,sy,w,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,fade in  - hold
+,,,,[TV turns off],sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,abrupt - hold
+,,,,,,,,,,,,,,,,,,,
+6,Song,La Dee Da Da Day,,Yeah-eeh-yeah-eeeyah!,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,abrupt - hold
+,,,,Do you want to save the planet?!?,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,abrupt - hold
+,,,,[Beautifull acapella <3],pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,pu,fade in - hold
+,,,,LIGHTS DOWN!,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,fade in - hold
+,,,,,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fade to black
+7,Scene,Break room office,,Now I get that Alice is eighteen.,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,fade in - hold
+,,,,Something about a La Dee… Da Da Day?,r,r,r,r,r,r,r,r,r,r,r,r,r,r,slow fade in - hold
+,,,,"Hey, Paul.",sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,abrupt - hold
+,,,,,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fade to black
+8.1,Scene,What Do You Want - scene,,"Hi, Mr. Davidson.",sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,fade in - hold
+8.2,Song,What Do You Want Paul?,,"What do you want, Paul?",bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,fast fade in - hold
+,,,,"Carrol, my wife,",pi,pi,pi,pi,pi,pi,pi,pi,pi,pi,pi,pi,pi,pi,fade in - hold
+,,,,"Melissa, will you get my wife on the phone for me?",bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,fast fade in - hold
+,,,,Um… I forgot what it was.,pi,pi,pi,pi,pi,pi,pi,pi,pi,pi,pi,pi,pi,pi,fast fade in - hold
+,,,,"Paul, now you know what it is to want!",bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,abrupt - hold
+,,,,,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fade to black - hold
+9.1,Scene,Cup of Roasted Coffee - scene,,Just black coffee.,wbr,wbr,wbr,wbr,wbr,wbr,wbr,bg,bg,bg,bg,bg,bg,bg,fast fade in - hold
+9.2,Song,Cup of Roasted Coffee,,,,,,,,,,,,,,,,,
+9.3,Scene,Emma is annoyed,,"You can’t quit, Emma.",wbr,wbr,wbr,wbr,wbr,wbr,wbr,bg,bg,bg,bs,bg,bs,bg,slow fade in - hold
+,,,,The song’s so simple! We’ll teach it to you…,wbr,wbr,wbr,wbr,wbr,wbr,wbr,bs,bg,bg,bs,bg,bs,bs,slow fade in only for changed color - hold 
+,,,,"Why, everyone here will be singing it soon!",wbr,wbr,wbr,wbr,wbr,wbr,wbr,bs,bs,bs,bs,bs,bs,bs,slow fade in only for changed color - hold 
+,,,,They’ve all had their coffee!,bg,bg,bg,bs,bg,bs,bg,bs,bs,bs,bs,bs,bs,bs,slow fade in only for changed color - hold 
+,,,,Their apotheosis will be upon them,bs,bg,bg,bs,bg,bs,bs,bs,bs,bs,bs,bs,bs,bs,slow fade in only for changed color - hold 
+,,,,FUCKING GROSS!,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,slow fade in only for changed color - hold 
+9.4,Song,Cup of Poisened Coffee,,,,,,,,,,,,,,,,,
+,,,,,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,bla,fast fade to black - hold
+,scene,walking through alleyway ,,Through here Emma!,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,bs,fade in - hold
+10.1,Scene,Trashcans,,Oh my god.,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,sy,fade in - hold

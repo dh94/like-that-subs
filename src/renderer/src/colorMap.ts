@@ -13,7 +13,8 @@ export const colorMap: Record<string, [number, number, number]> = {
   r: [255, 0, 0],
   bs: [70, 70, 200],
   lblu: [100, 149, 237],
-  torq: [0, 206, 209]
+  torq: [0, 206, 209],
+  dg: [0, 100, 0]
 }
 
 export type ColorAbbreviation = keyof typeof colorMap

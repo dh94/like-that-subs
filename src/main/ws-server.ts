@@ -15,6 +15,7 @@ const subtitleDeviceToWs = new Map<number, WebSocket>()
 wss.on('connection', function connection(ws, request) {
   console.info(`WebSocket Connection Established ${request.socket.remoteAddress}`)
   wsClients.add(ws)
+  ws.send('Who?')
   ws.on('error', console.error)
 
   ws.on('close', function close() {
@@ -65,5 +66,27 @@ wss.on('connection', function connection(ws, request) {
     }
   })
 })
+
+// Ping all clients every 5s to detect dead connections
+const PING_INTERVAL = 5000
+const aliveClients = new WeakMap<WebSocket, boolean>()
+
+wss.on('connection', function (ws) {
+  aliveClients.set(ws, true)
+  ws.on('pong', () => {
+    aliveClients.set(ws, true)
+  })
+})
+
+setInterval(() => {
+  wsClients.forEach((ws) => {
+    if (aliveClients.get(ws) === false) {
+      ws.terminate()
+      return
+    }
+    aliveClients.set(ws, false)
+    ws.ping()
+  })
+}, PING_INTERVAL)
 
 console.info('Started WebSocket Server on port', port)

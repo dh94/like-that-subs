@@ -2,14 +2,23 @@
 #include <WiFiUdp.h>
 #include "config.h"
 
-// --- sACN (E1.31) via raw UDP unicast ---
-#define SACN_PORT 5568
-#define PONG_PORT 5569
-#define SACN_HEADER_SIZE 126
-#define SACN_PACKET_MIN_SIZE (SACN_HEADER_SIZE + DMX_START_CHANNEL + 2)
+// --- ArtNet via raw UDP unicast ---
+// ArtNet packet structure:
+//   Bytes 0-7:   "Art-Net\0"
+//   Bytes 8-9:   Opcode (0x5000 = ArtDmx, little-endian)
+//   Bytes 10-11: Protocol version (0x000e)
+//   Byte 12:     Sequence
+//   Byte 13:     Physical
+//   Bytes 14-15: Universe (little-endian)
+//   Bytes 16-17: Length (big-endian)
+//   Bytes 18+:   DMX data (channel 0 at byte 18)
 
-WiFiUDP sacnUdp;
-uint8_t sacnBuf[638];
+#define ARTNET_HEADER_SIZE 18
+#define ARTNET_PACKET_MIN_SIZE (ARTNET_HEADER_SIZE + DMX_START_CHANNEL + 3)
+#define PONG_PORT 5569
+
+WiFiUDP artnetUdp;
+uint8_t artnetBuf[638];
 unsigned long packetCount = 0;
 unsigned long lastPacketTime = 0;
 
@@ -83,28 +92,38 @@ void updateTransition() {
   }
 }
 
-// --- sACN Packet Handling ---
+// --- ArtNet Packet Handling ---
 
-void handleSacnPacket(int len) {
-  if (len < SACN_PACKET_MIN_SIZE) {
-    Serial.printf("[WARN] Packet too small: %d bytes (need %d)\n", len, SACN_PACKET_MIN_SIZE);
+void handleArtnetPacket(int len) {
+  if (len < ARTNET_PACKET_MIN_SIZE) {
+    Serial.printf("[WARN] Packet too small: %d bytes (need %d)\n", len, ARTNET_PACKET_MIN_SIZE);
     return;
   }
 
-  if (sacnBuf[0] != 0x00 || sacnBuf[1] != 0x10) {
-    Serial.printf("[WARN] Invalid preamble: %02X %02X\n", sacnBuf[0], sacnBuf[1]);
+  // Validate Art-Net header
+  if (memcmp(artnetBuf, "Art-Net\0", 8) != 0) {
+    Serial.println("[WARN] Invalid Art-Net header");
     return;
   }
 
-  uint16_t universe = (sacnBuf[113] << 8) | sacnBuf[114];
-  if (universe != SACN_UNIVERSE) {
-    Serial.printf("[WARN] Wrong universe: %d (expected %d)\n", universe, SACN_UNIVERSE);
+  // Check opcode (ArtDmx = 0x5000, little-endian)
+  uint16_t opcode = artnetBuf[8] | (artnetBuf[9] << 8);
+  if (opcode != 0x5000) {
+    Serial.printf("[WARN] Non-ArtDmx opcode: 0x%04X\n", opcode);
     return;
   }
 
-  uint8_t r = sacnBuf[SACN_HEADER_SIZE + DMX_START_CHANNEL];
-  uint8_t g = sacnBuf[SACN_HEADER_SIZE + DMX_START_CHANNEL + 1];
-  uint8_t b = sacnBuf[SACN_HEADER_SIZE + DMX_START_CHANNEL + 2];
+  // Check universe (bytes 14-15, little-endian)
+  uint16_t universe = artnetBuf[14] | (artnetBuf[15] << 8);
+  if (universe != ARTNET_UNIVERSE) {
+    Serial.printf("[WARN] Wrong universe: %d (expected %d)\n", universe, ARTNET_UNIVERSE);
+    return;
+  }
+
+  // DMX data starts at byte 18, channels are 0-indexed
+  uint8_t r = artnetBuf[ARTNET_HEADER_SIZE + DMX_START_CHANNEL];
+  uint8_t g = artnetBuf[ARTNET_HEADER_SIZE + DMX_START_CHANNEL + 1];
+  uint8_t b = artnetBuf[ARTNET_HEADER_SIZE + DMX_START_CHANNEL + 2];
 
   if (r != state.currentR || g != state.currentG || b != state.currentB) {
     state.effect = NONE;
@@ -114,14 +133,14 @@ void handleSacnPacket(int len) {
     unsigned long gap = lastPacketTime > 0 ? now - lastPacketTime : 0;
     lastPacketTime = now;
 
-    Serial.printf("[sACN] rgb(%d,%d,%d) pkt#%lu gap=%lums from %s\n",
-                  r, g, b, packetCount,  gap,
-                  sacnUdp.remoteIP().toString().c_str());
+    Serial.printf("[ArtNet] rgb(%d,%d,%d) pkt#%lu gap=%lums from %s\n",
+                  r, g, b, packetCount, gap,
+                  artnetUdp.remoteIP().toString().c_str());
 
-    // PONG for latency measurement (won't interfere with grandMA2 — it ignores port 5569)
-    sacnUdp.beginPacket(sacnUdp.remoteIP(), PONG_PORT);
-    sacnUdp.printf("PONG %d %d %d %d", DEVICE_ID, r, g, b);
-    sacnUdp.endPacket();
+    // PONG for latency measurement
+    artnetUdp.beginPacket(artnetUdp.remoteIP(), PONG_PORT);
+    artnetUdp.printf("PONG %d %d %d %d", DEVICE_ID, r, g, b);
+    artnetUdp.endPacket();
   }
 
   packetCount++;
@@ -135,8 +154,8 @@ void setup() {
   Serial.println();
   Serial.println("========================================");
   Serial.printf("  RGB Strip Controller - Device %d\n", DEVICE_ID);
-  Serial.printf("  Universe: %d, Channels: %d-%d\n", SACN_UNIVERSE, DMX_START_CHANNEL, DMX_START_CHANNEL + 2);
-  Serial.println("  Mode: sACN Unicast (E1.31)");
+  Serial.printf("  Universe: %d, DMX channels: %d-%d\n", ARTNET_UNIVERSE, DMX_START_CHANNEL, DMX_START_CHANNEL + 2);
+  Serial.println("  Mode: ArtNet Unicast");
   Serial.println("========================================");
 
   // PWM setup
@@ -160,21 +179,21 @@ void setup() {
   Serial.printf("[WIFI] MAC: %s\n", WiFi.macAddress().c_str());
   Serial.printf("[WIFI] RSSI: %d dBm\n", WiFi.RSSI());
 
-  // sACN unicast listener
-  sacnUdp.begin(SACN_PORT);
-  Serial.printf("[sACN] Listening on UDP port %d (unicast)\n", SACN_PORT);
-  Serial.printf("[sACN] Expecting Universe %d, DMX channels %d-%d (R,G,B)\n",
-                SACN_UNIVERSE, DMX_START_CHANNEL, DMX_START_CHANNEL + 2);
-  Serial.printf("[sACN] PONG responses on port %d\n", PONG_PORT);
+  // ArtNet unicast listener
+  artnetUdp.begin(ARTNET_PORT);
+  Serial.printf("[ArtNet] Listening on UDP port %d (unicast)\n", ARTNET_PORT);
+  Serial.printf("[ArtNet] Universe %d, DMX channels %d-%d (R,G,B)\n",
+                ARTNET_UNIVERSE, DMX_START_CHANNEL, DMX_START_CHANNEL + 2);
+  Serial.printf("[ArtNet] PONG responses on port %d\n", PONG_PORT);
   Serial.println("========================================");
-  Serial.println("[READY] Waiting for sACN packets...");
+  Serial.println("[READY] Waiting for ArtNet packets...");
 }
 
 void loop() {
-  int packetSize = sacnUdp.parsePacket();
+  int packetSize = artnetUdp.parsePacket();
   if (packetSize > 0) {
-    int len = sacnUdp.read(sacnBuf, sizeof(sacnBuf));
-    handleSacnPacket(len);
+    int len = artnetUdp.read(artnetBuf, sizeof(artnetBuf));
+    handleArtnetPacket(len);
   }
   updateTransition();
 
