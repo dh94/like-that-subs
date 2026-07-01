@@ -190,6 +190,17 @@ void setup() {
 }
 
 void loop() {
+  // WiFi reconnect watchdog
+  static unsigned long lastWifiCheck = 0;
+  if (millis() - lastWifiCheck > 5000) {
+    lastWifiCheck = millis();
+    if (WiFi.status() != WL_CONNECTED) {
+      Serial.println("[WIFI] Connection lost — reconnecting...");
+      WiFi.disconnect();
+      WiFi.begin(WIFI_SSID, WIFI_PASS);
+    }
+  }
+
   int packetSize = artnetUdp.parsePacket();
   if (packetSize > 0) {
     int len = artnetUdp.read(artnetBuf, sizeof(artnetBuf));

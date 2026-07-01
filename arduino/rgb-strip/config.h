@@ -23,6 +23,6 @@
 // sACN (E1.31) config — unicast mode
 // grandMA2 sends to each ESP32's IP directly
 #define SACN_UNIVERSE 4
-#define DMX_START_CHANNEL ((DEVICE_ID - 1) * 3 + 1)
+#define DMX_START_CHANNEL ((DEVICE_ID - 1) * 3)
 
 #endif

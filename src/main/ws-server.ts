@@ -54,7 +54,7 @@ wss.on('connection', function connection(ws, request) {
       const state = lightingState.get(id)
       if (state) {
         ws.send(JSON.stringify({ type: 'sync', id, r: state.r, g: state.g, b: state.b }))
-        console.info(`Sent sync to Light ${id}: rgb(${state.r},${state.g},${state.b})`)
+        // console.info(`Sent sync to Light ${id}: rgb(${state.r},${state.g},${state.b})`)
       }
     }
 
@@ -67,26 +67,5 @@ wss.on('connection', function connection(ws, request) {
   })
 })
 
-// Ping all clients every 5s to detect dead connections
-const PING_INTERVAL = 5000
-const aliveClients = new WeakMap<WebSocket, boolean>()
-
-wss.on('connection', function (ws) {
-  aliveClients.set(ws, true)
-  ws.on('pong', () => {
-    aliveClients.set(ws, true)
-  })
-})
-
-setInterval(() => {
-  wsClients.forEach((ws) => {
-    if (aliveClients.get(ws) === false) {
-      ws.terminate()
-      return
-    }
-    aliveClients.set(ws, false)
-    ws.ping()
-  })
-}, PING_INTERVAL)
 
 console.info('Started WebSocket Server on port', port)

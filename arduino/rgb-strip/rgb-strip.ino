@@ -98,7 +98,7 @@ void handleSacnPacket(int len) {
 
   uint16_t universe = (sacnBuf[113] << 8) | sacnBuf[114];
   if (universe != SACN_UNIVERSE) {
-    Serial.printf("[WARN] Wrong universe: %d (expected %d)\n", universe, SACN_UNIVERSE);
+    // Serial.printf("[WARN] Wrong universe: %d (expected %d)\n", universe, SACN_UNIVERSE);
     return;
   }
 
@@ -171,6 +171,17 @@ void setup() {
 }
 
 void loop() {
+  // WiFi reconnect watchdog
+  static unsigned long lastWifiCheck = 0;
+  if (millis() - lastWifiCheck > 5000) {
+    lastWifiCheck = millis();
+    if (WiFi.status() != WL_CONNECTED) {
+      Serial.println("[WIFI] Connection lost — reconnecting...");
+      WiFi.disconnect();
+      WiFi.begin(WIFI_SSID, WIFI_PASS);
+    }
+  }
+
   int packetSize = sacnUdp.parsePacket();
   if (packetSize > 0) {
     int len = sacnUdp.read(sacnBuf, sizeof(sacnBuf));

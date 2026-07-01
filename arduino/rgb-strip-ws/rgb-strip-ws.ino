@@ -127,8 +127,9 @@ void handleMessage(uint8_t* payload) {
         uint8_t b = cue["b"];
         const char* fx = cue["fx"] | "abrupt";
         unsigned long dur = cue["dur"] | 0;
-        startTransition(r, g, b, fx, dur);
-        Serial.printf("[WS] Cue: rgb(%d,%d,%d) fx=%s dur=%lu\n", r, g, b, fx, dur);
+        applyColor(r, g, b);
+        // startTransition(r, g, b, fx, dur);
+        // Serial.printf("[WS] Cue: rgb(%d,%d,%d) fx=%s dur=%lu\n", r, g, b, fx, dur);
         break;
       }
     }
@@ -140,7 +141,7 @@ void handleMessage(uint8_t* payload) {
       uint8_t b = doc["b"];
       applyColor(r, g, b);
       state.effect = NONE;
-      Serial.printf("[WS] Sync: rgb(%d,%d,%d)\n", r, g, b);
+      // Serial.printf("[WS] Sync: rgb(%d,%d,%d)\n", r, g, b);
     }
   }
 }
@@ -228,8 +229,22 @@ void setup() {
 }
 
 void loop() {
-  webSocket.loop();
+  // WiFi reconnect watchdog
+  static unsigned long lastWifiCheck = 0;
+  if (millis() - lastWifiCheck > 5000) {
+    lastWifiCheck = millis();
+    if (WiFi.status() != WL_CONNECTED) {
+      Serial.println("[WIFI] Connection lost — reconnecting...");
+      WiFi.disconnect();
+      WiFi.begin(WIFI_SSID, WIFI_PASS);
+    }
+  }
+
+  if (WiFi.status() == WL_CONNECTED) {
+    webSocket.loop();
+  }
   updateTransition();
+  yield();
 
   // Heartbeat every 30s
   static unsigned long lastHB = 0;

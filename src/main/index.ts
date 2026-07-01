@@ -102,9 +102,14 @@ const SACN_BRIDGE_PORT = 5568
 const ARTNET_BRIDGE_PORT = 6454
 const DEVICE_COUNT = 15
 
-function parseSacnPacket(buf: Buffer, rinfo: { address: string; port: number }): { id: number; r: number; g: number; b: number }[] | null {
+function parseSacnPacket(
+  buf: Buffer,
+  rinfo: { address: string; port: number }
+): { id: number; r: number; g: number; b: number }[] | null {
   if (buf.length < 126 + DEVICE_COUNT * 3 + 1) {
-    console.log(`[Bridge] WARN: sACN packet too small (${buf.length} bytes) from ${rinfo.address}:${rinfo.port}`)
+    console.log(
+      `[Bridge] WARN: sACN packet too small (${buf.length} bytes) from ${rinfo.address}:${rinfo.port}`
+    )
     return null
   }
   if (buf[0] !== 0x00 || buf[1] !== 0x10) {
@@ -113,21 +118,26 @@ function parseSacnPacket(buf: Buffer, rinfo: { address: string; port: number }):
   }
   const universe = (buf[113] << 8) | buf[114]
   if (universe !== 4) {
-    console.log(`[Bridge] WARN: Wrong universe ${universe} (expected 4) from ${rinfo.address}:${rinfo.port}`)
+    // console.log(`[Bridge] WARN: Wrong universe ${universe} (expected 4) from ${rinfo.address}:${rinfo.port}`)
     return null
   }
 
   const cues: { id: number; r: number; g: number; b: number }[] = []
   for (let device = 1; device <= DEVICE_COUNT; device++) {
-    const ch = (device - 1) * 3 + 1
+    const ch = (device - 1) * 3
     cues.push({ id: device, r: buf[126 + ch], g: buf[126 + ch + 1], b: buf[126 + ch + 2] })
   }
   return cues
 }
 
-function parseArtnetPacket(buf: Buffer, rinfo: { address: string; port: number }): { id: number; r: number; g: number; b: number }[] | null {
+function parseArtnetPacket(
+  buf: Buffer,
+  rinfo: { address: string; port: number }
+): { id: number; r: number; g: number; b: number }[] | null {
   if (buf.length < 18 + DEVICE_COUNT * 3) {
-    console.log(`[Bridge] WARN: ArtNet packet too small (${buf.length} bytes) from ${rinfo.address}:${rinfo.port}`)
+    console.log(
+      `[Bridge] WARN: ArtNet packet too small (${buf.length} bytes) from ${rinfo.address}:${rinfo.port}`
+    )
     return null
   }
   const header = buf.subarray(0, 8).toString('ascii')
@@ -137,7 +147,9 @@ function parseArtnetPacket(buf: Buffer, rinfo: { address: string; port: number }
   }
   const opcode = buf[8] | (buf[9] << 8)
   if (opcode !== 0x5000) {
-    console.log(`[Bridge] WARN: Non-ArtDmx opcode 0x${opcode.toString(16)} from ${rinfo.address}:${rinfo.port}`)
+    console.log(
+      `[Bridge] WARN: Non-ArtDmx opcode 0x${opcode.toString(16)} from ${rinfo.address}:${rinfo.port}`
+    )
     return null
   }
 
@@ -152,13 +164,23 @@ function parseArtnetPacket(buf: Buffer, rinfo: { address: string; port: number }
 let bridgePacketCount = 0
 let lastBridgeLogTime = 0
 
-function forwardToWsClients(cues: { id: number; r: number; g: number; b: number }[], source: string) {
+function forwardToWsClients(
+  cues: { id: number; r: number; g: number; b: number }[],
+  source: string
+) {
   const now = Date.now()
   const batchCues = cues.map((c) => ({ ...c, fx: 'abrupt', dur: 0 }))
   const payload = JSON.stringify({ type: 'batch', cues: batchCues })
 
   for (const cue of cues) {
-    lightingState.set(cue.id, { r: cue.r, g: cue.g, b: cue.b, fx: 'abrupt', dur: 0, startedAt: now })
+    lightingState.set(cue.id, {
+      r: cue.r,
+      g: cue.g,
+      b: cue.b,
+      fx: 'abrupt',
+      dur: 0,
+      startedAt: now
+    })
   }
 
   const clientCount = wsClients.size
@@ -180,7 +202,9 @@ function forwardToWsClients(cues: { id: number; r: number; g: number; b: number 
     } else {
       for (const c of litDevices) {
         const online = connectedDevices.has(c.id)
-        lines.push(`  Device ${c.id} → rgb(${c.r},${c.g},${c.b}) ${online ? '✓ online' : '✗ OFFLINE'}`)
+        lines.push(
+          `  Device ${c.id} → rgb(${c.r},${c.g},${c.b}) ${online ? '✓ online' : '✗ OFFLINE'}`
+        )
       }
       const offDevices = cues.filter((c) => c.r === 0 && c.g === 0 && c.b === 0)
       if (offDevices.length > 0 && offDevices.length < 15) {
@@ -188,7 +212,7 @@ function forwardToWsClients(cues: { id: number; r: number; g: number; b: number 
       }
     }
 
-    console.log(lines.join('\n'))
+    // console.log(lines.join('\n'))
     lastBridgeLogTime = now
   }
 }
@@ -198,9 +222,19 @@ function startBridge(mode: 'sacn-bridge' | 'artnet-bridge') {
   const port = mode === 'sacn-bridge' ? SACN_BRIDGE_PORT : ARTNET_BRIDGE_PORT
   bridgeSocket = createSocket('udp4')
 
+  let lastForwardedState = ''
+
   bridgeSocket.on('message', (buf, rinfo) => {
-    const cues = mode === 'sacn-bridge' ? parseSacnPacket(buf, rinfo) : parseArtnetPacket(buf, rinfo)
-    if (cues) forwardToWsClients(cues, `${rinfo.address}:${rinfo.port}`)
+    const cues =
+      mode === 'sacn-bridge' ? parseSacnPacket(buf, rinfo) : parseArtnetPacket(buf, rinfo)
+    if (!cues) return
+
+    // Only forward when DMX values actually change (grandMA2 sends same state at 40Hz)
+    const stateKey = cues.map((c) => `${c.r},${c.g},${c.b}`).join('|')
+    if (stateKey === lastForwardedState) return
+    lastForwardedState = stateKey
+
+    forwardToWsClients(cues, `${rinfo.address}:${rinfo.port}`)
   })
 
   bridgeSocket.bind(port, () => {
@@ -235,7 +269,14 @@ app.whenReady().then(() => {
       if (immediate.length > 0) {
         const payload = JSON.stringify({ type: 'batch', cues: immediate })
         for (const cue of immediate) {
-          lightingState.set(cue.id, { r: cue.r, g: cue.g, b: cue.b, fx: cue.fx, dur: cue.dur ?? 0, startedAt: now })
+          lightingState.set(cue.id, {
+            r: cue.r,
+            g: cue.g,
+            b: cue.b,
+            fx: cue.fx,
+            dur: cue.dur ?? 0,
+            startedAt: now
+          })
         }
         wsClients.forEach((ws) => {
           ws.send(subtitlePayload)
@@ -251,14 +292,42 @@ app.whenReady().then(() => {
         // t=delayMs: turn OFF immediate group, turn ON delayed group
         setTimeout(() => {
           const delayedNow = Date.now()
-          const offCues = immediate.map((c: any) => ({ id: c.id, r: 0, g: 0, b: 0, fx: 'abrupt', dur: 0 }))
-          const onCues = delayed.map((c: any) => ({ id: c.id, r: c.r, g: c.g, b: c.b, fx: c.fx, dur: c.dur }))
+          const offCues = immediate.map((c: any) => ({
+            id: c.id,
+            r: 0,
+            g: 0,
+            b: 0,
+            fx: 'abrupt',
+            dur: 0
+          }))
+          const onCues = delayed.map((c: any) => ({
+            id: c.id,
+            r: c.r,
+            g: c.g,
+            b: c.b,
+            fx: c.fx,
+            dur: c.dur
+          }))
           const payload = JSON.stringify({ type: 'batch', cues: [...offCues, ...onCues] })
           for (const cue of offCues) {
-            lightingState.set(cue.id, { r: 0, g: 0, b: 0, fx: 'abrupt', dur: 0, startedAt: delayedNow })
+            lightingState.set(cue.id, {
+              r: 0,
+              g: 0,
+              b: 0,
+              fx: 'abrupt',
+              dur: 0,
+              startedAt: delayedNow
+            })
           }
           for (const cue of delayed) {
-            lightingState.set(cue.id, { r: cue.r, g: cue.g, b: cue.b, fx: cue.fx, dur: cue.dur ?? 0, startedAt: delayedNow })
+            lightingState.set(cue.id, {
+              r: cue.r,
+              g: cue.g,
+              b: cue.b,
+              fx: cue.fx,
+              dur: cue.dur ?? 0,
+              startedAt: delayedNow
+            })
           }
           wsClients.forEach((ws) => ws.send(payload))
           sendLightingStateToMonitor()
@@ -267,7 +336,14 @@ app.whenReady().then(() => {
         // t=delayMs*2: turn OFF delayed group
         setTimeout(() => {
           const offNow = Date.now()
-          const offCues = delayed.map((c: any) => ({ id: c.id, r: 0, g: 0, b: 0, fx: 'abrupt', dur: 0 }))
+          const offCues = delayed.map((c: any) => ({
+            id: c.id,
+            r: 0,
+            g: 0,
+            b: 0,
+            fx: 'abrupt',
+            dur: 0
+          }))
           const payload = JSON.stringify({ type: 'batch', cues: offCues })
           for (const cue of offCues) {
             lightingState.set(cue.id, { r: 0, g: 0, b: 0, fx: 'abrupt', dur: 0, startedAt: offNow })
@@ -299,20 +375,23 @@ app.whenReady().then(() => {
     sendLightingStateToMonitor()
   })
 
-  ipcMain.on('set_lighting_mode', (_event, mode: 'websocket' | 'sacn' | 'sacn-bridge' | 'artnet-bridge') => {
-    lightingMode = mode
-    console.log(`Lighting mode set to: ${mode}`)
+  ipcMain.on(
+    'set_lighting_mode',
+    (_event, mode: 'websocket' | 'sacn' | 'sacn-bridge' | 'artnet-bridge') => {
+      lightingMode = mode
+      console.log(`Lighting mode set to: ${mode}`)
 
-    if (mode === 'sacn-bridge' || mode === 'artnet-bridge') {
-      startBridge(mode)
-    } else {
-      stopBridge()
-    }
+      if (mode === 'sacn-bridge' || mode === 'artnet-bridge') {
+        startBridge(mode)
+      } else {
+        stopBridge()
+      }
 
-    if (lightingWindow && !lightingWindow.isDestroyed()) {
-      lightingWindow.webContents.send('lighting_mode_update', lightingMode)
+      if (lightingWindow && !lightingWindow.isDestroyed()) {
+        lightingWindow.webContents.send('lighting_mode_update', lightingMode)
+      }
     }
-  })
+  )
 
   ipcMain.on('get_lighting_mode', (event) => {
     event.reply('lighting_mode_update', lightingMode)
@@ -324,7 +403,14 @@ app.whenReady().then(() => {
     const lightingPayload = JSON.stringify({ type: 'batch', cues: args.cues })
     const now = Date.now()
     for (const cue of args.cues) {
-      lightingState.set(cue.id, { r: cue.r, g: cue.g, b: cue.b, fx: cue.fx, dur: cue.dur ?? 0, startedAt: now })
+      lightingState.set(cue.id, {
+        r: cue.r,
+        g: cue.g,
+        b: cue.b,
+        fx: cue.fx,
+        dur: cue.dur ?? 0,
+        startedAt: now
+      })
     }
 
     wsClients.forEach((ws) => {
