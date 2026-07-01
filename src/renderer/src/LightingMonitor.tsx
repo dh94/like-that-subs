@@ -179,7 +179,7 @@ function LightingMonitor() {
     }))
   )
   const [cycleMode, setCycleMode] = useState(false)
-  const [lightingMode, setLightingMode] = useState<'websocket' | 'sacn' | 'sacn-bridge' | 'artnet-bridge'>('websocket')
+  const [lightingMode, setLightingMode] = useState<'websocket' | 'sacn' | 'sacn-bridge' | 'artnet-bridge'>('sacn-bridge')
   const cycleRef = useRef<NodeJS.Timeout | null>(null)
   const cycleIndexRef = useRef(0)
 

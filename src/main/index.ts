@@ -6,7 +6,7 @@ import icon from '../../resources/icon.png?asset'
 import { wsClients, lightingState, connectedDevices, connectedSubtitleDevices } from './ws-server'
 
 let lightingWindow: BrowserWindow | null = null
-let lightingMode: 'websocket' | 'sacn' | 'sacn-bridge' | 'artnet-bridge' = 'websocket'
+let lightingMode: 'websocket' | 'sacn' | 'sacn-bridge' | 'artnet-bridge' = 'sacn-bridge'
 let bridgeSocket: Socket | null = null
 
 function createWindow(): void {
@@ -422,6 +422,7 @@ app.whenReady().then(() => {
 
   createWindow()
   createLightingWindow()
+  startBridge('sacn-bridge')
 
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) {
