@@ -260,7 +260,7 @@ function LightingMonitor() {
           </select>
           <button
             onClick={() => setCycleMode(!cycleMode)}
-            disabled={lightingMode !== 'websocket'}
+            disabled={lightingMode === 'sacn'}
             className="px-4 py-2 rounded-lg font-medium transition-all text-white disabled:opacity-40 disabled:cursor-not-allowed"
             style={{
               backgroundColor: cycleMode ? '#ff6b35' : '#0077FF',

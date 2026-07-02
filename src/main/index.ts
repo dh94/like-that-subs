@@ -261,10 +261,22 @@ app.whenReady().then(() => {
     const subtitlePayload = args.line.map((line: string) => (line === '-' ? '' : line)).join(';')
     console.log('Received show_line', subtitlePayload)
 
-    if (args.lighting?.cues && lightingMode === 'websocket') {
+    if (args.lighting?.cues) {
+      // In non-websocket modes, only forward cues for the tie (device 16) — it's always WS-controlled
+      const TIE_DEVICE_ID = 16
+      const allCues = lightingMode === 'websocket'
+        ? args.lighting.cues
+        : args.lighting.cues.filter((c: any) => c.id === TIE_DEVICE_ID)
+
+      if (allCues.length === 0) {
+        wsClients.forEach((ws) => ws.send(subtitlePayload))
+        event.reply('show_line_ack')
+        return
+      }
+
       const now = Date.now()
-      const immediate = args.lighting.cues.filter((c: any) => !c.delay || c.delay === 0)
-      const delayed = args.lighting.cues.filter((c: any) => c.delay && c.delay > 0)
+      const immediate = allCues.filter((c: any) => !c.delay || c.delay === 0)
+      const delayed = allCues.filter((c: any) => c.delay && c.delay > 0)
 
       if (immediate.length > 0) {
         const payload = JSON.stringify({ type: 'batch', cues: immediate })
@@ -398,7 +410,7 @@ app.whenReady().then(() => {
   })
 
   ipcMain.on('lighting_cycle', (_event, args) => {
-    if (lightingMode !== 'websocket') return
+    if (lightingMode === 'sacn') return
 
     const lightingPayload = JSON.stringify({ type: 'batch', cues: args.cues })
     const now = Date.now()
