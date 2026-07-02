@@ -265,7 +265,7 @@ void setup() {
     Serial.println(WiFi.localIP());
     //-----------------------------------------------
     // server address, port and URL
-    webSocket.begin("192.168.1.102", 8081, "/");
+    webSocket.begin("2.10.10.100", 8081, "/");
     // event handler
     webSocket.onEvent(webSocketEvent);
     // try again if connection has failed
