@@ -17,12 +17,18 @@ function normalize(text) {
     .trim()
 }
 
+// Put this marker on its own line in the .docx to force a blank teleprompter card there.
+// (The .docx is double-spaced, so genuinely empty paragraphs can't be told apart from the
+// automatic spacing and are dropped — an explicit marker survives the filter below.)
+const BLANK_MARKER = /^\[blank\]$/i
+
 async function extractDialogue() {
   const result = await mammoth.extractRawText({ path: DOCX_PATH })
   return result.value
     .split('\n')
     .map((l) => normalize(l))
     .filter((l) => l.length > 0)
+    .map((l) => (BLANK_MARKER.test(l) ? '' : l))
 }
 
 async function main() {
