@@ -78,7 +78,10 @@ export const transformTextList = (textList: string[] | ScriptEntry[]): Transform
     if (ogLineScreenLines <= 2) {
       lines = [ogLine]
     } else {
-      lines = ogLine.split(/(?<![.?;])[.?;](?![.?;])/).map((x) => x.trim())
+      lines = ogLine
+        .split(/(?<=(?<![.?;])[.?;](?![.?;]))\s+/)
+        .map((x) => x.trim())
+        .filter((x) => x.length > 0)
     }
 
     for (const line of lines) {
