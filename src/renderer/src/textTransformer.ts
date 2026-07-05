@@ -4,16 +4,10 @@ const maxLineWidth = 192
 
 export interface ScriptEntry {
   text: string
-  lights?: string[]
-  fx?: string
-  dur?: number
-  stagger?: 'L-first' | 'R-first'
-  staggerDelay?: number
 }
 
 export interface TransformedEntry {
   lines: [string, string]
-  lighting?: { lights: string[]; fx: string; dur: number; stagger?: 'L-first' | 'R-first'; staggerDelay?: number }
 }
 
 const calcTextWidth = (text: string): number => {
@@ -60,17 +54,14 @@ export const transformTextList = (textList: string[] | ScriptEntry[]): Transform
 
   let dou: string[] = []
   let douIndex = 0
-  let pendingLighting: TransformedEntry['lighting'] | undefined = undefined
 
   const flush = () => {
     if (douIndex > 0) {
       transformedList.push({
-        lines: [dou[0] ?? '', dou[1] ?? ''],
-        lighting: pendingLighting
+        lines: [dou[0] ?? '', dou[1] ?? '']
       })
       dou = []
       douIndex = 0
-      pendingLighting = undefined
     }
   }
 
@@ -82,16 +73,6 @@ export const transformTextList = (textList: string[] | ScriptEntry[]): Transform
     const entry = entries[i]
     const ogLine = entry.text
     const ogLineScreenLines = textToScreenLines(ogLine)
-
-    if (entry.lights) {
-      pendingLighting = {
-        lights: entry.lights,
-        fx: entry.fx ?? 'abrupt',
-        dur: entry.dur ?? 0,
-        stagger: entry.stagger,
-        staggerDelay: entry.staggerDelay
-      }
-    }
 
     let lines: string[] = []
     if (ogLineScreenLines <= 2) {
@@ -109,10 +90,8 @@ export const transformTextList = (textList: string[] | ScriptEntry[]): Transform
           douIndex++
         } else {
           transformedList.push({
-            lines: [dou[0], dou[1]],
-            lighting: pendingLighting
+            lines: [dou[0], dou[1]]
           })
-          pendingLighting = undefined
           dou = [line]
           douIndex = 1
         }
@@ -145,10 +124,8 @@ export const transformTextList = (textList: string[] | ScriptEntry[]): Transform
             douIndex++
           } else {
             transformedList.push({
-              lines: [dou[0], dou[1]],
-              lighting: pendingLighting
+              lines: [dou[0], dou[1]]
             })
-            pendingLighting = undefined
             dou = [fittedLine]
             douIndex = 1
           }
@@ -159,8 +136,7 @@ export const transformTextList = (textList: string[] | ScriptEntry[]): Transform
 
   if (douIndex > 0) {
     transformedList.push({
-      lines: [dou[0] ?? '', dou[1] ?? ''],
-      lighting: pendingLighting
+      lines: [dou[0] ?? '', dou[1] ?? '']
     })
   }
 

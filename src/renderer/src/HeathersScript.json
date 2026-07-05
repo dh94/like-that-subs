@@ -1,6024 +1,1680 @@
 [
-  {
-    "text": ""
-  },
-  {
-    "text": "[Thunder]",
-    "lights": [
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "bla",
-      "w",
-      "w"
-    ],
-    "fx": "abrupt",
-    "dur": 0,
-    "stagger": "L-first",
-    "staggerDelay": 300
-  },
-  {
-    "text": "",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "abrupt",
-    "dur": 0
-  },
-  {
-    "text": "The greatest stories ever told,",
-    "lights": [
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "Have a hero who must be bold."
-  },
-  {
-    "text": "They learn a sense of right and wrong"
-  },
-  {
-    "text": "And better learn this sense through song!"
-  },
-  {
-    "text": "Musicals tell the impossible."
-  },
-  {
-    "text": "They emote the philosophical, yeah."
-  },
-  {
-    "text": "So tonight we're going to chronicle a story so astronomical..."
-  },
-  {
-    "text": "The last remaining story to tell!"
-  },
-  {
-    "text": "The guy who didn't like musicals!"
-  },
-  {
-    "text": "Didn't like, didn't like,"
-  },
-  {
-    "text": "didn't like-a-like-'em,"
-  },
-  {
-    "text": "Didn't like, didn't like,"
-  },
-  {
-    "text": "didn't like-a-like-'em!"
-  },
-  {
-    "text": "I mean, what the fuck?"
-  },
-  {
-    "text": "Didn't like, didn't like, did not like like-a-like-'em!"
-  },
-  {
-    "text": "He's the guy who didn't like musicals!"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em,"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em!"
-  },
-  {
-    "text": "Yeah, what the fuck?"
-  },
-  {
-    "text": "Didn't like, didn't like, did not like like-a-like-'em!"
-  },
-  {
-    "text": "In the tiny town of Hatchetfield"
-  },
-  {
-    "text": "Lived an awful grinch named Paul."
-  },
-  {
-    "text": "He spends his days surfing the web"
-  },
-  {
-    "text": "And not singing and dancing with us all."
-  },
-  {
-    "text": "Should we kill him? Should we kill him?"
-  },
-  {
-    "text": "He pines after a cute lil' barista."
-  },
-  {
-    "text": "Isn't that worth a show-stopping fiesta?"
-  },
-  {
-    "text": "But for some damn reason"
-  },
-  {
-    "text": "He won't join our singing season!"
-  },
-  {
-    "text": "What an ass!",
-    "lights": [
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu"
-    ],
-    "fx": "abrupt",
-    "dur": 0
-  },
-  {
-    "text": "What a bitch!"
-  },
-  {
-    "text": "What a cock!",
-    "lights": [
-      "g",
-      "g",
-      "g",
-      "g",
-      "g",
-      "g",
-      "g",
-      "g",
-      "g",
-      "g",
-      "g",
-      "g",
-      "g",
-      "g"
-    ],
-    "fx": "abrupt",
-    "dur": 0
-  },
-  {
-    "text": "The guy who didn't like musicals!",
-    "lights": [
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em,"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em!"
-  },
-  {
-    "text": "I mean, what the fuck?"
-  },
-  {
-    "text": "Didn't like, didn't like, did not like like-a-like-'em!"
-  },
-  {
-    "text": "He's the guy who didn't like musicals!"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em,"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em!"
-  },
-  {
-    "text": "Didn't like, didn't like, did not like like-a-like-'em!"
-  },
-  {
-    "text": "It's the end of the world, Paul,",
-    "lights": [
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "If you don't sing..."
-  },
-  {
-    "text": "This is the bridge, Paul,"
-  },
-  {
-    "text": "Where we globalize everything."
-  },
-  {
-    "text": "The words will come to you."
-  },
-  {
-    "text": "We swear we will teach you"
-  },
-  {
-    "text": "What it means to love..."
-  },
-  {
-    "text": "What it means to"
-  },
-  {
-    "text": "OBEY, PAUL!",
-    "lights": [
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu"
-    ],
-    "fx": "abrupt",
-    "dur": 0
-  },
-  {
-    "text": "The apotheosis is upon us!",
-    "lights": [
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "Yay!!!!!"
-  },
-  {
-    "text": "Did you hear the word?"
-  },
-  {
-    "text": "What's the word?"
-  },
-  {
-    "text": "He's a'comin'!"
-  },
-  {
-    "text": "Who's a'comin'?"
-  },
-  {
-    "text": "Paul's a'comin'!"
-  },
-  {
-    "text": "Paul's a'comin'?"
-  },
-  {
-    "text": "The star of the show!"
-  },
-  {
-    "text": "Now for his headlining entrance."
-  },
-  {
-    "text": "Time to swoon at his leading man essence."
-  },
-  {
-    "text": "His name is in the title. He's destined to go viral."
-  },
-  {
-    "text": "Here he is! His name is Paul! Enter now!!!"
-  },
-  {
-    "text": "Where the fuck is he?"
-  },
-  {
-    "text": "I have no fucking clue..."
-  },
-  {
-    "text": "The guy just doesn't like musicals!"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em"
-  },
-  {
-    "text": "Didn't like, didn't like, did not like like-a-like-'em"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em"
-  },
-  {
-    "text": "Didn't like, didn't like, did not like like-a-like-'em"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em"
-  },
-  {
-    "text": "Didn't like, didn't like, didn't like-a-like-'em"
-  },
-  {
-    "text": "Didn't like, didn't like, did not like like-a-like-'em"
-  },
-  {
-    "text": "Paul, You piece of shit!",
-    "lights": [
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy"
-    ],
-    "fx": "abrupt",
-    "dur": 0
-  },
-  {
-    "text": "(----)"
-  },
-  {
-    "text": "Hey, Paul. - Yeah?"
-  },
-  {
-    "text": "I was trying to print something."
-  },
-  {
-    "text": "I think I mighta sent it to your printer. Could you please...?"
-  },
-  {
-    "text": "Uuuuhhh... Yup, there it is. And Bill, Just remember –"
-  },
-  {
-    "text": "you wanna print from the HP LaserJet. Not the HP InkJet."
-  },
-  {
-    "text": "Right. Sorry, Paul."
-  },
-  {
-    "text": "It's fine."
-  },
-  {
-    "text": "Hey, Paul. Could you get those reports on my desk by the end of the day?"
-  },
-  {
-    "text": "Yes, Mr. Davidson."
-  },
-  {
-    "text": "Great."
-  },
-  {
-    "text": "Hi, Paul!"
-  },
-  {
-    "text": "Hey, Melissa."
-  },
-  {
-    "text": "You signing up for the company softball league?"
-  },
-  {
-    "text": "No."
-  },
-  {
-    "text": "Oh... Might be fun."
-  },
-  {
-    "text": "Yeah... I don't want to though."
-  },
-  {
-    "text": "Ok... Mr. Davidson wants those reports on his desk by the end of the day."
-  },
-  {
-    "text": "Will do."
-  },
-  {
-    "text": "CCRP Technical. This is Charlotte. How can I help you?"
-  },
-  {
-    "text": "Oh hi, Sam! How are things down at the precinct?"
-  },
-  {
-    "text": "Oh. I'm sorry to hear that. Well, my day's been..."
-  },
-  {
-    "text": "uh... uh huh. Well, how late? But, honey, it's the twelfth of the month."
-  },
-  {
-    "text": "What do you mean 'so what?' Silly goose."
-  },
-  {
-    "text": "It's, ya' know... cuddle-night."
-  },
-  {
-    "text": "Sam, you know the counselor said we should do it at least once a month."
-  },
-  {
-    "text": "But, honey, we skipped last month."
-  },
-  {
-    "text": "Well, don't you think I'm tired too?"
-  },
-  {
-    "text": "Maybe tomorrow night then?"
-  },
-  {
-    "text": "No, you're right... We should stick to the schedule."
-  },
-  {
-    "text": "Next month it is. Maybe we can make a night of it,"
-  },
-  {
-    "text": "go mini-golf or something? Well I'll pay for it."
-  },
-  {
-    "text": "Alright, have a good night. Be safe."
-  },
-  {
-    "text": "And Sam, I love..."
-  },
-  {
-    "text": "Sam?"
-  },
-  {
-    "text": "That was Sam. He's doing just fine. Counseling's working out well."
-  },
-  {
-    "text": "Good."
-  },
-  {
-    "text": "Charlotte... Carlotte?"
-  },
-  {
-    "text": "Charlotte, you can't smoke in here."
-  },
-  {
-    "text": "Oh... I didn't even realize!"
-  },
-  {
-    "text": "Well, I'm gonna go down to Beanies to get some Coffee."
-  },
-  {
-    "text": "Anyone wanna come? Bill?"
-  },
-  {
-    "text": "I can't. I gotta keep refreshing this website."
-  },
-  {
-    "text": "I got Alice for one more night before she goes back to her mother's in Clivesdale."
-  },
-  {
-    "text": "You see, just to make me look small,"
-  },
-  {
-    "text": "last week she took her all the way to New York to see 'Hamilton'..."
-  },
-  {
-    "text": "And she loved it! So, to show my ex-wife that two can play at that game,"
-  },
-  {
-    "text": "I'm on Hot Tix right now, getting tickets for tonight."
-  },
-  {
-    "text": "The touring production of 'Mama Mia!' comes to the old Starlight Theater!"
-  },
-  {
-    "text": "Yeah. She'll like that just as much as 'Hamilton.'"
-  },
-  {
-    "text": "Hey, would you mind tagging along? Alice likes you, she thinks you're cool."
-  },
-  {
-    "text": "Maybe you could talk me up. Tell her her old dad's pretty cool too."
-  },
-  {
-    "text": "Uhh..."
-  },
-  {
-    "text": "I'd appreciate it."
-  },
-  {
-    "text": "Bill, no. Sorry."
-  },
-  {
-    "text": "You got other plans?"
-  },
-  {
-    "text": "No."
-  },
-  {
-    "text": "So you would rather do nothing than come with us to see Mama Mia?"
-  },
-  {
-    "text": "Bill, I would rather do anything than go see Mama Mia."
-  },
-  {
-    "text": "The idea of sitting there, trapped in a musical..."
-  },
-  {
-    "text": "That is my own personal hell."
-  },
-  {
-    "text": "I'm trying to reconnect with my teenage kid and you're gonna leave me hanging?"
-  },
-  {
-    "text": "Yeah... Sorry. But hey! I'll grab you something from Beanie's!"
-  },
-  {
-    "text": "My treat. What do you want?"
-  },
-  {
-    "text": "I just... want my daughter back..."
-  },
-  {
-    "text": "How about an iced caramel frappe? Nothin' better!"
-  },
-  {
-    "text": "You goin' to Beanie's?"
-  },
-  {
-    "text": "Yeah."
-  },
-  {
-    "text": "You didn't invite me."
-  },
-  {
-    "text": "Sorry, Ted."
-  },
-  {
-    "text": "Ted, do you wanna come?"
-  },
-  {
-    "text": "No, no. I don't wanna show you up."
-  },
-  {
-    "text": "What do you mean?"
-  },
-  {
-    "text": "I know why you walk the extra block"
-  },
-  {
-    "text": "instead of just going to the Starbucks across the street."
-  },
-  {
-    "text": "I don't wanna give my money to some corporate chain..."
-  },
-  {
-    "text": "Uh huh. Uh huh. You sure it doesn't have"
-  },
-  {
-    "text": "something to do with that cute, little barista over there?"
-  },
-  {
-    "text": "That's not the-"
-  },
-  {
-    "text": "The 'latte hottay,' as she is known throughout the land."
-  },
-  {
-    "text": "MY WIFE!"
-  },
-  {
-    "text": "Alright. Bye, Ted."
-  },
-  {
-    "text": "Hey! Get me a chai iced tea, eh?!?",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "(----)"
-  },
-  {
-    "text": "Hi there. How can I help-"
-  },
-  {
-    "text": "Shhhh. Can I get a grande caramel frappe,"
-  },
-  {
-    "text": "ten pumps of frappe roast, three shots of espresso,"
-  },
-  {
-    "text": "no caramel drizzle, with whip on top, in a venti cup?"
-  },
-  {
-    "text": "Sure. That'll be $5.50."
-  },
-  {
-    "text": "Jesus. Fine."
-  },
-  {
-    "text": "Hey!"
-  },
-  {
-    "text": "Yes?"
-  },
-  {
-    "text": "I just tipped you."
-  },
-  {
-    "text": "Oh! Well, thank you."
-  },
-  {
-    "text": "Aren't you supposed to sing? The sign says, 'Tip for a song.'"
-  },
-  {
-    "text": "Yeah. That's a new thing. The owner just came back from Japan, saw the whole Singing Café thing, and decided to bring it over. But, you know... there's a line, and people come here to work. I don't want to disturb anyone..."
-  },
-  {
-    "text": "I don't care. I gave you a tip."
-  },
-  {
-    "text": "Ok, well did you do that to be nice or did you do it to be an asshole?"
-  },
-  {
-    "text": "Fine. I'll take it back then."
-  },
-  {
-    "text": "Oh no! What am I gonna do without that dollar I have to split with five other people?"
-  },
-  {
-    "text": "You know what, I'm never coming back here again. That sign's bullshit!"
-  },
-  {
-    "text": "Oh no! so mean!"
-  },
-  {
-    "text": "Emma. What's the deal over here?"
-  },
-  {
-    "text": "That Karen just freaked out on me for practically no reason."
-  },
-  {
-    "text": "SHE WOULDN'T SING FOR HER!"
-  },
-  {
-    "text": "AND I STILL HAVEN'T GOTTEN MY HOT CHOCOLATE."
-  },
-  {
-    "text": "Sorry. I'll get right on that."
-  },
-  {
-    "text": "I HAVE VERY LOW BLOOD SUGAR..."
-  },
-  {
-    "text": "Emma, I already warned you twice..."
-  },
-  {
-    "text": "I'm sorry, Nora. It's just embarrassing, ok?"
-  },
-  {
-    "text": "Maybe Zoey is fine with this singing thing because she majored in theater..."
-  },
-  {
-    "text": "I think it's really a fun idea, Nora."
-  },
-  {
-    "text": "Why aren't you working?"
-  },
-  {
-    "text": "I'm on vocal rest."
-  },
-  {
-    "text": "What?"
-  },
-  {
-    "text": "I'M ON VOCAL REST! Goddammit, Emma! Now I need tea with honey."
-  },
-  {
-    "text": "Can't Zoey just do the tip songs? I don't like it..."
-  },
-  {
-    "text": "You must not like having a job then."
-  },
-  {
-    "text": "In fact, don't bother coming in for your next shift..."
-  },
-  {
-    "text": "Wait, wait, wait... I'll do the songs. Ok?"
-  },
-  {
-    "text": "Yeah, you will. Now come on. You got a customer."
-  },
-  {
-    "text": "Hi. Can I help you?"
-  },
-  {
-    "text": "Uh... Yeah. I got an easy one for ya. Just a cup of black coffee."
-  },
-  {
-    "text": "Alright, that'll be $3.50."
-  },
-  {
-    "text": "Thanks."
-  },
-  {
-    "text": "Jesus. Really? I've been brewing up your coffee."
-  },
-  {
-    "text": "No, no, no. I don't need you to sing. I just tipped because,"
-  },
-  {
-    "text": "you know... people should tip."
-  },
-  {
-    "text": "Thank you. Cause if I have to sing for it, it's not really a tip, is it?"
-  },
-  {
-    "text": "It's another job piled on top of my already shitty paying job."
-  },
-  {
-    "text": "It's like, most of my tips are less than a buck. I'm making less than a fucking juke box. Except a juke box doesn't also have to make coffee for these assholes! Not that you're an asshole. Well, you could be an asshole. How much did you tip? Five bucks! You specifically meant this for me, right? Like, I shouldn't have to split this with the others."
-  },
-  {
-    "text": "No, that's for you. I don't give a shit about them."
-  },
-  {
-    "text": "That's really sweet."
-  },
-  {
-    "text": "I'm just so sick of Nora, and Zoey... who is technically my manager, even though she's ten years younger than me. She's hired all her little theater friends, and they will not shut the fuck up about some crappy production of 'Anastasia' they did last summer."
-  },
-  {
-    "text": "That was that the one at the rec center, right?"
-  },
-  {
-    "text": "I think I had to see that... I did not like it."
-  },
-  {
-    "text": "Yeah! It sucked, right?"
-  },
-  {
-    "text": "Yeah, they shouldn't call it 'Anastasia.' More like 'Anesthesia.'"
-  },
-  {
-    "text": "Yeah I didn't wanna STAYsia."
-  },
-  {
-    "text": "Yeah... I don't like musicals."
-  },
-  {
-    "text": "Watching people sing and dance makes me very uncomfortable."
-  },
-  {
-    "text": "Then why do you come to the singing coffee shop? There's a Starbucks down the street."
-  },
-  {
-    "text": "Yeah, well... you know... some things are worth it."
-  },
-  {
-    "text": "Like... damn good coffee!"
-  },
-  {
-    "text": "I see you in here all the time, don't I? What's your name?"
-  },
-  {
-    "text": "Paul."
-  },
-  {
-    "text": "Hi, Paul. I'm Emma-"
-  },
-  {
-    "text": "EXCUSE ME! I'VE BEEN WAITING FOR A VERY LONG WHILE!"
-  },
-  {
-    "text": "Sorry!",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "Oh, alright. Well, bye Emma!"
-  },
-  {
-    "text": "Emma.. Oh shoot I forgot Bill's Caramel Frap! Eh, fuck Bill..."
-  },
-  {
-    "text": "(----)"
-  },
-  {
-    "text": "Hi! Do you have a few minutes to talk about saving the planet?",
-    "lights": [
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "I'm in a hurry."
-  },
-  {
-    "text": "Hi! -"
-  },
-  {
-    "text": "Hey..."
-  },
-  {
-    "text": "Hi! Are you interested in saving the planet?"
-  },
-  {
-    "text": "I just got off work."
-  },
-  {
-    "text": "It'll only take a few minutes... It's for the planet."
-  },
-  {
-    "text": "I just wanna talk to you about how you can help"
-  },
-  {
-    "text": "contribute to Greenpeace's efforts around the globe..."
-  },
-  {
-    "text": "Oh! Greenpeace? You know what,"
-  },
-  {
-    "text": "I'm actually already signed up with you guys. Yeah, I already give."
-  },
-  {
-    "text": "Oh! How generous of you! So you know about our campaign to save the sea turtles?"
-  },
-  {
-    "text": "Yep. I've been gettin' the emails. Been reading all about it."
-  },
-  {
-    "text": "Oh yeah? About the campaign that doesn't exist?"
-  },
-  {
-    "text": "The one I just made up? You don't give to Greenpeace, do you?"
-  },
-  {
-    "text": "You know that money you're raising?"
-  },
-  {
-    "text": "You know how much of that actually goes to the turtles?"
-  },
-  {
-    "text": "None. I just made that up..."
-  },
-  {
-    "text": "That's right, none! It goes to line the pockets of some corporate big-wigs!"
-  },
-  {
-    "text": "I give my money directly to people who need it."
-  },
-  {
-    "text": "Spare change?"
-  },
-  {
-    "text": "Sorry, I don't have anything."
-  },
-  {
-    "text": "Yeah. You're a real humanitarian.Hi! Can I talk to you about..."
-  },
-  {
-    "text": "And you know what?? You come on a little too strong"
-  },
-  {
-    "text": "with that whole 'save the planet' bit."
-  },
-  {
-    "text": "As if I'm gonna do that single handedly...",
-    "lights": [
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "bla",
-      "w",
-      "w"
-    ],
-    "fx": "abrupt",
-    "dur": 0,
-    "stagger": "L-first",
-    "staggerDelay": 300
-  },
-  {
-    "text": "[THUNDER]"
-  },
-  {
-    "text": "What... is... that?",
-    "lights": [
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu",
-      "lblu"
-    ],
-    "fx": "fade",
-    "dur": 500
-  },
-  {
-    "text": "",
-    "lights": [
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "bla",
-      "w",
-      "w"
-    ],
-    "fx": "abrupt",
-    "dur": 0,
-    "stagger": "R-first",
-    "staggerDelay": 300
-  },
-  {
-    "text": "[THUNDER]"
-  },
-  {
-    "text": "Heavens to betsy!",
-    "lights": [
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu",
-      "blu"
-    ],
-    "fx": "fade",
-    "dur": 500
-  },
-  {
-    "text": "That's some kinda storm out there. I hope Sam's alright."
-  },
-  {
-    "text": "Fuck Sam. Come back to bed."
-  },
-  {
-    "text": "Alright, Ted. But this has to be the last time."
-  },
-  {
-    "text": "Sure, Charlotte! Just like last time was the last time."
-  },
-  {
-    "text": "If you don't like what we're doin' here,"
-  },
-  {
-    "text": "there's the door!",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 500
-  },
-  {
-    "text": "",
-    "lights": [
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "bla",
-      "w",
-      "w"
-    ],
-    "fx": "abrupt",
-    "dur": 0,
-    "stagger": "L-first",
-    "staggerDelay": 300
-  },
-  {
-    "text": "[THUNDER]"
-  },
-  {
-    "text": "Oh great. This is the cherry on top of a perfect day.",
-    "lights": [
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu"
-    ],
-    "fx": "fade",
-    "dur": 500
-  },
-  {
-    "text": "Zoey, do you need a ride?"
-  },
-  {
-    "text": "Um, in your shitty car? Sorry. I'd rather not crash and die."
-  },
-  {
-    "text": "Whatever."
-  },
-  {
-    "text": "Excuse me, miss. I have a warrant to inspect the junk in your trunk."
-  },
-  {
-    "text": "You're such an asshole, Sam... but that uniform's so fuckin' sexy."
-  },
-  {
-    "text": "I've got these two tickets to Mama Mia!"
-  },
-  {
-    "text": "No way! You got 'em?! I never miss a musical at the Starlight."
-  },
-  {
-    "text": "And if anyones thinks that makes me less of a man,"
-  },
-  {
-    "text": "they can talk to my FUCKIN' GUN!",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "",
-    "lights": [
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "bla",
-      "w",
-      "w"
-    ],
-    "fx": "abrupt",
-    "dur": 0,
-    "stagger": "R-first",
-    "staggerDelay": 300
-  },
-  {
-    "text": "",
-    "lights": [
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "bla",
-      "w",
-      "w"
-    ],
-    "fx": "abrupt",
-    "dur": 0,
-    "stagger": "L-first",
-    "staggerDelay": 300
-  },
-  {
-    "text": "[THUNDER]Holy heck!! It's raining cats and dogs."
-  },
-  {
-    "text": "Alice, are You sure you don't want me to pick you up? Ok... Yeah yeah, I got tickets for Deb. And after the show we're going to your favorite restaurant... Red Lobster! Yeah, yeah, I know Deb's a vegetarian. They got fish!A Vegan?!? But it's Crab Fest! Alice, you're killing me!"
-  },
-  {
-    "text": "[THUNDER]"
-  },
-  {
-    "text": "Alright Dad, We'll meet you at the theater."
-  },
-  {
-    "text": "Take a hit Alice!"
-  },
-  {
-    "text": "I don't think I oughta..."
-  },
-  {
-    "text": "She doesn't have to if she doesn't want to."
-  },
-  {
-    "text": "That's not how it works, Deb!"
-  },
-  {
-    "text": "You're either in the Smoke Club, or you're out!"
-  },
-  {
-    "text": "Then maybe we're out."
-  },
-  {
-    "text": "Come on, Alice!"
-  },
-  {
-    "text": "Those guys are assholes anyway...",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "",
-    "lights": [
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "bla",
-      "w",
-      "w"
-    ],
-    "fx": "abrupt",
-    "dur": 0,
-    "stagger": "R-first",
-    "staggerDelay": 300
-  },
-  {
-    "text": "[THUNDER]"
-  },
-  {
-    "text": "My god, Alexa, it's happening! Come on, you bastard!",
-    "lights": [
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu",
-      "dblu"
-    ],
-    "fx": "fade",
-    "dur": 500
-  },
-  {
-    "text": "It's showtime!",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "",
-    "lights": [
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "bla",
-      "w",
-      "w"
-    ],
-    "fx": "abrupt",
-    "dur": 0,
-    "stagger": "L-first",
-    "staggerDelay": 300
-  },
-  {
-    "text": "[Thunder boom boom boom]",
-    "lights": [
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "w",
-      "w",
-      "bla",
-      "w",
-      "bla",
-      "bla",
-      "w",
-      "w"
-    ],
-    "fx": "flash",
-    "dur": 150
-  },
-  {
-    "text": "",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "You don't think I'm ready for you?! I've been waiting in the wings!"
-  },
-  {
-    "text": "The stage is set! It's showtime!!!"
-  },
-  {
-    "text": "[\"Gimme! Gimme! Gimme!\" from Mamma Mia! plays, followed by a massive CRASH]"
-  },
-  {
-    "text": "[News Jingle plays]"
-  },
-  {
-    "text": "This is the Hatchetfield Morning News with Dawn and Donna.",
-    "lights": [
-      "sy",
-      "sy",
-      "w",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "[TV turns off]",
-    "lights": [
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy"
-    ],
-    "fx": "abrupt",
-    "dur": 0
-  },
-  {
-    "text": "Good morning. Good to be with you. I'm Donna Burshaw."
-  },
-  {
-    "text": "And I'm Dawn Greene."
-  },
-  {
-    "text": "They said he wouldn't make it. That he had fallen from too great a height."
-  },
-  {
-    "text": "But this little guy beat the odds and captured our hearts!"
-  },
-  {
-    "text": "Now weighing in at almost ten ounces, Peanuts the Hatchetfield Pocket Squirrel,"
-  },
-  {
-    "text": "has outgrown his adopted father's pocket."
-  },
-  {
-    "text": "Peanuts!"
-  },
-  {
-    "text": "Luckily, proud papa Ed"
-  },
-  {
-    "text": "has been squirreling away on his Go-Fund-Me page"
-  },
-  {
-    "text": "to build Peanuts his very own, get this Donna, \"squirrel-house.\""
-  },
-  {
-    "text": "That's amazing! And something else has fallen to the ground here in Hatchetfield -"
-  },
-  {
-    "text": "This time from outer space."
-  },
-  {
-    "text": "The meteor came-"
-  },
-  {
-    "text": "[----]"
-  },
-  {
-    "text": "Oh. You again."
-  },
-  {
-    "text": "Look, I'm not a bad guy. Ok?"
-  },
-  {
-    "text": "I've given to charities in the past, and-"
-  },
-  {
-    "text": "Yeah-eeh-yeah-eeeyah! Just a typical day, That's got me feeling",
-    "lights": [
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu"
-    ],
-    "fx": "abrupt",
-    "dur": 0
-  },
-  {
-    "text": "In a beautiful way! No rhyme or reason!"
-  },
-  {
-    "text": "We could sing a duet. Dance a style or two. Or I'll make you a bet:"
-  },
-  {
-    "text": "Just a smile will do! Sometimes I just wanna shout"
-  },
-  {
-    "text": "On top of roofs and mountain tops"
-  },
-  {
-    "text": "That all the world is paved in gold!"
-  },
-  {
-    "text": "Yesterday is retroactive. Got myself a new perspective."
-  },
-  {
-    "text": "I strut it up and down the road."
-  },
-  {
-    "text": "So I threw all my worries, and my old skin away!"
-  },
-  {
-    "text": "Doin' what i want to, on this la dee da da day!"
-  },
-  {
-    "text": "La Dee Da Da, La Dee Da Da"
-  },
-  {
-    "text": "La Dee Da Da Day, La Dee Da Da Day!"
-  },
-  {
-    "text": "La Dee Da Da, La Dee Da Da"
-  },
-  {
-    "text": "La Dee Da Da Day, La Dee Da Da Day!"
-  },
-  {
-    "text": "What the fuck was that?"
-  },
-  {
-    "text": "Spare change?"
-  },
-  {
-    "text": "I'm sorry, I don't have anything."
-  },
-  {
-    "text": "That's alright..."
-  },
-  {
-    "text": "I may not have a home! But that's way okay!"
-  },
-  {
-    "text": "I prefer to roam the streets all day."
-  },
-  {
-    "text": "The world is my house! The dogs are my food..."
-  },
-  {
-    "text": "Oh, look, a new blouse! And a new trash tattoo!"
-  },
-  {
-    "text": "I used to want to kill them all while high on Bath salt zombie drugs"
-  },
-  {
-    "text": "And snacking on a dead man's face."
-  },
-  {
-    "text": "That just feels like yesterday. A song takes all the pain away!"
-  },
-  {
-    "text": "My politics and house-views changed..."
-  },
-  {
-    "text": "Dancing on the concrete used to hurt a lot,"
-  },
-  {
-    "text": "But now I've got new feet!"
-  },
-  {
-    "text": "And this jam's just way too hot!"
-  },
-  {
-    "text": "La Dee Da Da, La Dee Da Da"
-  },
-  {
-    "text": "La Dee Da Da Day, La Dee Da Da Day!"
-  },
-  {
-    "text": "La Dee Da Da, La Dee Da Da"
-  },
-  {
-    "text": "La Dee Da Da Day, La Dee Da Da Day!"
-  },
-  {
-    "text": "Okay, okay! Here take it!"
-  },
-  {
-    "text": "excuse me... What's going on here?"
-  },
-  {
-    "text": "I'm very confused and concerned by all this."
-  },
-  {
-    "text": "Do you want to save the planet?!?",
-    "lights": [
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs"
-    ],
-    "fx": "abrupt",
-    "dur": 0
-  },
-  {
-    "text": "Of course you want to save the planet!"
-  },
-  {
-    "text": "Do you want to save the planet"
-  },
-  {
-    "text": "Well, there's just one way you can do it!"
-  },
-  {
-    "text": "By singing a song! Singing along!"
-  },
-  {
-    "text": "[Beautifull acapella <3]",
-    "lights": [
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu",
-      "pu"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "La Dee Da Da, La Dee Da Da"
-  },
-  {
-    "text": "La Dee Da Da Day, La Dee Da Da Day!"
-  },
-  {
-    "text": "La Dee Da Da, La Dee Da Da"
-  },
-  {
-    "text": "La Dee Da Da Day, La Dee Da THE DAY AWAY!"
-  },
-  {
-    "text": "La Dee Da Da-"
-  },
-  {
-    "text": "DAY!"
-  },
-  {
-    "text": "LIGHTS DOWN!",
-    "lights": [
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "Ok... ok."
-  },
-  {
-    "text": "OK... Ok."
-  },
-  {
-    "text": "ok..."
-  },
-  {
-    "text": "Now I get that Alice is eighteen. She's a senior.",
-    "lights": [
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "She has her own life now."
-  },
-  {
-    "text": "But I only get her for one week a month,"
-  },
-  {
-    "text": "and now she wants to spend her entire week with her girlfriend. Deb!"
-  },
-  {
-    "text": "So I try. I try to be accommodating"
-  },
-  {
-    "text": "and make the most of Alice's last night in town."
-  },
-  {
-    "text": "So I tell her, \"Bring Deb! We'll all go see the show! Together.\""
-  },
-  {
-    "text": "And would you believe it?"
-  },
-  {
-    "text": "We get there and the whole god-dang theater exploded!"
-  },
-  {
-    "text": "Mamma Mia! Huge hole right through the roof!"
-  },
-  {
-    "text": "Can you believe that, Charlotte? Charlotte? Hey, Charlotte. I think you got enough coffee in the sugar."
-  },
-  {
-    "text": "Huh? Oh! Sorry! I'll make another pot. Coffee in the sugar. Bill, you're a riot!"
-  },
-  {
-    "text": "You know me! Haha"
-  },
-  {
-    "text": "Hey, guys. Is today some kind of, I don't know,"
-  },
-  {
-    "text": "Druze holiday or something? Like International Music Day?"
-  },
-  {
-    "text": "Not that I know of."
-  },
-  {
-    "text": "Ok. Cuz I just saw some people singing... like they were in a musical."
-  },
-  {
-    "text": "There was this homeless man, and this very rude woman from Greenpeace"
-  },
-  {
-    "text": "doing this whole choreographed number..."
-  },
-  {
-    "text": "Like a flash mob?"
-  },
-  {
-    "text": "Yeah, I guess. I mean, what else could it have been... right?"
-  },
-  {
-    "text": "Did you get a video of it?"
-  },
-  {
-    "text": "No."
-  },
-  {
-    "text": "You're fucking useless, Paul."
-  },
-  {
-    "text": "I just have a bad feeling about all this. Maybe."
-  },
-  {
-    "text": "Charlotte? Have you seen anything strange?"
-  },
-  {
-    "text": "Well... No... it's silly. Probably nothing."
-  },
-  {
-    "text": "What?"
-  },
-  {
-    "text": "Well... It's Sam. My husband. He said he was getting home late last night..."
-  },
-  {
-    "text": "He didn't get home at all!"
-  },
-  {
-    "text": "I heard... I wasn't there."
-  },
-  {
-    "text": "He must've rolled in around six this morning."
-  },
-  {
-    "text": "He was in the shower when I woke up."
-  },
-  {
-    "text": "I could hear him... singing."
-  },
-  {
-    "text": "And I know this is a strange thing to notice, cuz Sam's not a bad singer."
-  },
-  {
-    "text": "He's just always a little... flat. But not this morning."
-  },
-  {
-    "text": "Today he sounded like an angel."
-  },
-  {
-    "text": "And I don't know why, but... it frightened me."
-  },
-  {
-    "text": "It just didn't sound like my Sam."
-  },
-  {
-    "text": "I'm probably imagining things. I must sound crazy..."
-  },
-  {
-    "text": "No no no! Charlotte, do you remember what Sam was singing?"
-  },
-  {
-    "text": "Oh, just a silly, little song."
-  },
-  {
-    "text": "Something about a La Dee..."
-  },
-  {
-    "text": "DA DA DAY?"
-  },
-  {
-    "text": "Hey, Paul. Mr. Davidson wants to see you in his office.",
-    "lights": [
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy"
-    ],
-    "fx": "abrupt",
-    "dur": 0
-  },
-  {
-    "text": "Oh shoot! I didn't hand in my reports yesterday! I am gonna get it..."
-  },
-  {
-    "text": "",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "Hi, Mr. Davidson. I think I know why you called me in here.",
-    "lights": [
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "My weekly report was not turned in yesterday."
-  },
-  {
-    "text": "Not because it's not done. It is done."
-  },
-  {
-    "text": "There's a problem with the printer network, you see."
-  },
-  {
-    "text": "You try to print something out here, it gets sent over there."
-  },
-  {
-    "text": "I bet my report is sitting on someone else's tray right now."
-  },
-  {
-    "text": "If you give me till the end of the day, I can find it."
-  },
-  {
-    "text": "Not do it. I wouldn't just not do my statistical analysis."
-  },
-  {
-    "text": "That would really gum things up here in the office,"
-  },
-  {
-    "text": "and that's the last thing I want..."
-  },
-  {
-    "text": "What do you want, Paul?",
-    "lights": [
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs"
-    ],
-    "fx": "fade",
-    "dur": 500
-  },
-  {
-    "text": "Tell me what you desire to see."
-  },
-  {
-    "text": "Your deepest intent, Paul."
-  },
-  {
-    "text": "What do you see for this company?"
-  },
-  {
-    "text": "I'm looking for someone"
-  },
-  {
-    "text": "with strong ambition,"
-  },
-  {
-    "text": "Someone to sell their specific vision,"
-  },
-  {
-    "text": "Someone to share with precise precision Their thoughts!"
-  },
-  {
-    "text": "Cuz I want you to want. To want!"
-  },
-  {
-    "text": "So! What do you want, Paul?"
-  },
-  {
-    "text": "What's your one concrete goal that motivates all your actions?"
-  },
-  {
-    "text": "I don't think I have one of those."
-  },
-  {
-    "text": "Then how's anyone supposed to sympathize with you, Paul?"
-  },
-  {
-    "text": "I don't know. I want what everyone wants."
-  },
-  {
-    "text": "Money. A partner. Kids, someday, maybe..."
-  },
-  {
-    "text": "I want you to want Paul!"
-  },
-  {
-    "text": "A man so vague just can't be trusted."
-  },
-  {
-    "text": "Something you pine for?"
-  },
-  {
-    "text": "Maybe someone who keeps you lusted?"
-  },
-  {
-    "text": "I'm just the boss, I'm not an \"idea\" guy."
-  },
-  {
-    "text": "I hire you \"Pauls\" to keep our stock high,"
-  },
-  {
-    "text": "But if you can't pin that point that's in the sky,"
-  },
-  {
-    "text": "Then I need you to want! To want!"
-  },
-  {
-    "text": "Do you know what I want for myself?"
-  },
-  {
-    "text": "I've waited for so long to tell somebody else."
-  },
-  {
-    "text": "Carrol, my wife, you're my muse, my source of light.",
-    "lights": [
-      "pi",
-      "pi",
-      "pi",
-      "pi",
-      "pi",
-      "pi",
-      "pi",
-      "pi",
-      "pi",
-      "pi",
-      "pi",
-      "pi",
-      "pi",
-      "pi"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "Carrol, my love, I want you to choke me out at night."
-  },
-  {
-    "text": "I want you to choke me. I want you to choke me."
-  },
-  {
-    "text": "I want you to choke me while I jerk off."
-  },
-  {
-    "text": "I want you to choke me while i jerk off!"
-  },
-  {
-    "text": "Melissa, get my wife on the phone for me."
-  },
-  {
-    "text": "Oh, Mr. Davidson, I think I should leave."
-  },
-  {
-    "text": "NO PAUL! I want you to hear this! If you leave, you're fired."
-  },
-  {
-    "text": "Carrol? No. Everything's fine. I promise..."
-  },
-  {
-    "text": "I just wanted to tell you something... Um..."
-  },
-  {
-    "text": "I forgot what it was"
-  },
-  {
-    "text": "(I didn't forget)"
-  },
-  {
-    "text": "Maybe someday I'll remember."
-  },
-  {
-    "text": "Goodbye! :("
-  },
-  {
-    "text": "Paul, now you know what it is to WANT!",
-    "lights": [
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs"
-    ],
-    "fx": "abrupt",
-    "dur": 0
-  },
-  {
-    "text": "",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "It consumes a man with a passion to drive the primary plot."
-  },
-  {
-    "text": "So take up yoga or improv classes."
-  },
-  {
-    "text": "Volunteer at shelters or Twitch to the masses."
-  },
-  {
-    "text": "There's gotta be something that'll keep my hands off you! Off You!"
-  },
-  {
-    "text": "CUZ I WANT YOU TO WANT!"
-  },
-  {
-    "text": "I think I'm gonna go get some coffee! Do you want anything?"
-  },
-  {
-    "text": "NO! I NEED YOU TO WANT!"
-  },
-  {
-    "text": "How about an iced caramel frap? Nothin' better!"
-  },
-  {
-    "text": "AND IF YOU DON'T WANT! We're through..."
-  },
-  {
-    "text": "Paul? Paul?"
-  },
-  {
-    "text": "PAAAUUULLL!!!"
-  },
-  {
-    "text": "Okay, okay, okay, okay, okay..."
-  },
-  {
-    "text": "This isn't happening. Get a grip, Paul. You're hallucinating. Better yet, you're still dreaming! You need to wake up. You need some coffee. That's it. Just a cup of Black coffee. No cream, no sugar in it - just a cup of simple black coffee... HELLO? HELLLOOO?!?"
-  },
-  {
-    "text": "PLEASE, GOD. I JUST WANT A BLACK COFFEE..."
-  },
-  {
-    "text": "Black coffee! I'm your coffee gal."
-  },
-  {
-    "text": "Noooo! Noo! Not you too! Emma, please stop singing!"
-  },
-  {
-    "text": "Sorry, sorry! I'll stop."
-  },
-  {
-    "text": "I didn't forget, you're the guy who didn't like musicals!Paul, right?"
-  },
-  {
-    "text": "Emma... You're actually talking to me... Like a normal person."
-  },
-  {
-    "text": "Yeah, and if my boss sees me I'm gonna get canned."
-  },
-  {
-    "text": "New company policy. Not only do we have to sing when people tip,"
-  },
-  {
-    "text": "but when they order, when they come in, all the fucking time, I guess!"
-  },
-  {
-    "text": "Emma, I think there's something terribly wrong with the world today."
-  },
-  {
-    "text": "Yeah. Fuckin' tell me about it."
-  },
-  {
-    "text": "I had to spend all morning learning some new dumbass tip song."
-  },
-  {
-    "text": "I'm exhausted."
-  },
-  {
-    "text": "Emma, I feel like there's something sinister infecting Hatchetfield."
-  },
-  {
-    "text": "And I know this is gonna sound crazy..."
-  },
-  {
-    "text": "and not very scary."
-  },
-  {
-    "text": "But it is scary, if you think about the implications."
-  },
-  {
-    "text": "Promise me you'll think about the implications!"
-  },
-  {
-    "text": "Ok, I promise."
-  },
-  {
-    "text": "Ok. Emma, I think the world is becoming..."
-  },
-  {
-    "text": "a MUSICAL."
-  },
-  {
-    "text": "Don't say anything! Let it sink in."
-  },
-  {
-    "text": "Ok. Now..."
-  },
-  {
-    "text": "ARE YOU FRIGHTENED?!"
-  },
-  {
-    "text": "I am starting to get a little frightened..."
-  },
-  {
-    "text": "You should be! You should be..."
-  },
-  {
-    "text": "Emma! Tip!"
-  },
-  {
-    "text": "Oh, thank god. Sorry, Paul. I gotta do that new dumbass tip song."
-  },
-  {
-    "text": "Get your cup of roasted coffee."
-  },
-  {
-    "text": "Your morning cup of joey."
-  },
-  {
-    "text": "We make a jamming cup of java"
-  },
-  {
-    "text": "Mocha latte with the froth for ya, Jack! Frappuccino!"
-  },
-  {
-    "text": "with the freshly roasted mung beans."
-  },
-  {
-    "text": "It's a caramel drizzled mud in a cup!"
-  },
-  {
-    "text": "With a drip, drip, drip drip, drip"
-  },
-  {
-    "text": "And we'll bring it right up!"
-  },
-  {
-    "text": "Hey, Mr. Business, how do ya' do? Can we get a triple for you?"
-  },
-  {
-    "text": "Decaf?! Whaaaaaat?"
-  },
-  {
-    "text": "Decaf?! Whaaaaaat?"
-  },
-  {
-    "text": "Tu-du du-du-du du-du-du du-du-du"
-  },
-  {
-    "text": "And we'll bring it right up! Oy! Oy! Oy!"
-  },
-  {
-    "text": "[Delightful tune]"
-  },
-  {
-    "text": "And we'll bring it..."
-  },
-  {
-    "text": "And we'll bring it..."
-  },
-  {
-    "text": "Right, right, right..."
-  },
-  {
-    "text": "And we'll bring it right up!"
-  },
-  {
-    "text": "Ugh, there's more? Will this ever end? Fuck it."
-  },
-  {
-    "text": "Hey when did you get here? This isn't your shift!"
-  },
-  {
-    "text": "And what is this?"
-  },
-  {
-    "text": "Alright, stop! Stop! Really!?"
-  },
-  {
-    "text": "A whole another A-section? When did you guys learn this?"
-  },
-  {
-    "text": "You know what? I'm done!"
-  },
-  {
-    "text": "When I got this job, I signed up to serve coffee and cold, shitty pastries."
-  },
-  {
-    "text": "If I wanted to be in a musical, I'd be in a damn musical!"
-  },
-  {
-    "text": "That's right, Zoey. I was in Hamilton in high school and I fuckin' killed it."
-  },
-  {
-    "text": "But now I'm just trying to make ends meet while I pay my way through community college,"
-  },
-  {
-    "text": "and I can do that just as easily down the street at Starbucks. I quit!"
-  },
-  {
-    "text": "You can't quit, Emma.",
-    "lights": [
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "bg",
-      "bg",
-      "bg",
-      "bs",
-      "bg",
-      "bs",
-      "bg"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "I sure as hell can."
-  },
-  {
-    "text": "The song's so simple! We'll teach it to you...",
-    "lights": [
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "bs",
-      "bg",
-      "bg",
-      "bs",
-      "bg",
-      "bs",
-      "bs"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "Why, everyone here will be singing it soon!",
-    "lights": [
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "wbr",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "What the hell are you talking about?"
-  },
-  {
-    "text": "They've all had their coffee!",
-    "lights": [
-      "bg",
-      "bg",
-      "bg",
-      "bs",
-      "bg",
-      "bs",
-      "bg",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "Their apotheosis will be upon them at any moment!",
-    "lights": [
-      "bs",
-      "bg",
-      "bg",
-      "bs",
-      "bg",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "What did you do to their coffee!?"
-  },
-  {
-    "text": "FUCKING GROSS!",
-    "lights": [
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "",
-    "lights": [
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla",
-      "bla"
-    ],
-    "fx": "fade",
-    "dur": 500
-  },
-  {
-    "text": "Get your cup of poisoned coffee"
-  },
-  {
-    "text": "Your toxic cup of Joey"
-  },
-  {
-    "text": "We'll make a twisted cup of java"
-  },
-  {
-    "text": "Mocha latte with the goo for you,"
-  },
-  {
-    "text": "Jack, Jack, Jack, Jack!"
-  },
-  {
-    "text": "With a song and dance we're happy"
-  },
-  {
-    "text": "It's a joy! Just sing along!"
-  },
-  {
-    "text": "With bravado!"
-  },
-  {
-    "text": "And tempo!"
-  },
-  {
-    "text": "Crescendo!"
-  },
-  {
-    "text": "Chicago!"
-  },
-  {
-    "text": "And we'll bring it right on!"
-  },
-  {
-    "text": "Ehh... I think I should go..."
-  },
-  {
-    "text": "Hey, Mr. Business!"
-  },
-  {
-    "text": "Leaving so soon?"
-  },
-  {
-    "text": "Can we offer a muffin and tune?"
-  },
-  {
-    "text": "They're singing! Why are they all singing!?"
-  },
-  {
-    "text": "We need to run Emma! Don't look back! Just run!"
-  },
-  {
-    "text": "Hey, mister business"
-  },
-  {
-    "text": "How do ya, how do ya, how do ya do?"
-  },
-  {
-    "text": "We got a double for you"
-  },
-  {
-    "text": "Hey, Mr. Business"
-  },
-  {
-    "text": "And we'll bring it right up!"
-  },
-  {
-    "text": "(----)"
-  },
-  {
-    "text": "Through here Emma!",
-    "lights": [
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs",
-      "bs"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "What?! It's too narrow there's no way..."
-  },
-  {
-    "text": "Believe me it's safe. I used to live not far from here. Nobody will follow us here!"
-  },
-  {
-    "text": "Why are there so many fucking rats in this shitty alleyway?"
-  },
-  {
-    "text": "No no... there was one time a kid threw a bunch of cheese around here..."
-  },
-  {
-    "text": "-What?"
-  },
-  {
-    "text": "Yeah, it's been like 5 years, my dad actually called the exterminator and then -"
-  },
-  {
-    "text": "Paul, there are a LOT of dead ends around here"
-  },
-  {
-    "text": "so I just want to make sure you know where you're going... Are you...?"
-  },
-  {
-    "text": "Yeah no... no. That's a dead end."
-  },
-  {
-    "text": "oh...ok...."
-  },
-  {
-    "text": "Let's go the other way."
-  },
-  {
-    "text": "So, you know, maybe it's a bad time..."
-  },
-  {
-    "text": "but do you like film? Cinema?"
-  },
-  {
-    "text": "You know what? Yes. That is... That is a bad time."
-  },
-  {
-    "text": "Wait! Paul, Here! Let's go to those trashcans!"
-  },
-  {
-    "text": "Yeah, yeah. Good."
-  },
-  {
-    "text": "Oh my god. What the fuck was that?",
-    "lights": [
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy",
-      "sy"
-    ],
-    "fx": "fade",
-    "dur": 1500
-  },
-  {
-    "text": "I told you it was scarier than it sounds!"
-  },
-  {
-    "text": "You were right! I didn't think about the implications."
-  },
-  {
-    "text": "Oh god, I didn't think about it!"
-  },
-  {
-    "text": "It's alright, Emma..."
-  },
-  {
-    "text": "No, it's not alright, Paul!"
-  },
-  {
-    "text": "Bill!?"
-  },
-  {
-    "text": "Paul!"
-  },
-  {
-    "text": "Bill, You scared the shit out of us!"
-  },
-  {
-    "text": "Well, how am I supposed to pop out of a trash can and not scare the shit out of you?"
-  },
-  {
-    "text": "I don't know! Give us a warning or something!"
-  },
-  {
-    "text": "Charlotte!"
-  },
-  {
-    "text": "Sorry! I tried to warn you!"
-  },
-  {
-    "text": "Who are these people?"
-  },
-  {
-    "text": "They're my friends from work."
-  },
-  {
-    "text": "What are they doing in the trash?"
-  },
-  {
-    "text": "We had to find a place to hide."
-  },
-  {
-    "text": "Mr. Davidson kept calling people into his office... and they came out singing!"
-  },
-  {
-    "text": "It was the same at the bank,"
-  },
-  {
-    "text": "and the butcher's, and the post office!"
-  },
-  {
-    "text": "It's all downtown. We were just at Beanie's."
-  },
-  {
-    "text": "You didn't invite me!"
-  },
-  {
-    "text": "Jesus, Ted!"
-  },
-  {
-    "text": "Shh! SHUT. THE FUCK. UP. Paul!"
-  },
-  {
-    "text": "If you wanna stay in our hiding spot, you gotta be quiet!"
-  },
-  {
-    "text": "Something's going on!"
-  },
-  {
-    "text": "We don't know what it is or who we can trust!"
-  },
-  {
-    "text": "So, Paul, get in a trash can. You, beat it!"
-  },
-  {
-    "text": "Uh, fuck you?"
-  },
-  {
-    "text": "No. Emma stays with us."
-  },
-  {
-    "text": "I don't know her."
-  },
-  {
-    "text": "Yeah you do! She's the barista from Beanie's..."
-  },
-  {
-    "text": "She's the... You know... The 'Latte Hottay'"
-  },
-  {
-    "text": "That's not the 'Latte Hottay!' That's the crabby one"
-  },
-  {
-    "text": "that won't sing when I tip!"
-  },
-  {
-    "text": "You grabbed the wrong one, ya' noodle! FUCK!"
-  },
-  {
-    "text": "Oh, thank god they're here! I called Sam."
-  },
-  {
-    "text": "He's gonna get us outta here! Sam! Thank God! They've gone crazy!"
-  },
-  {
-    "text": "Everyone's gone crazy!"
-  },
-  {
-    "text": "(---)"
-  },
-  {
-    "text": "Ma'am, I need you to take a step back! You're facing the law,"
-  },
-  {
-    "text": "Not the clerk at the Gap."
-  },
-  {
-    "text": "Yeah, we're cops. Yeah, we're cops, so shape on up."
-  },
-  {
-    "text": "You better empty out all of your pockets,"
-  },
-  {
-    "text": "But don't empty out all of your pockets!"
-  },
-  {
-    "text": "Yeah, we're cops. Yeah, we're cops,"
-  },
-  {
-    "text": "And we make sense."
-  },
-  {
-    "text": "Show me your hands, show me those jazz hands!"
-  },
-  {
-    "text": "Get 'em up, or you'll end up in cuffs."
-  },
-  {
-    "text": "Show me your hands, show me those jazz hands!"
-  },
-  {
-    "text": "Or I might be inclined to shoot you up."
-  },
-  {
-    "text": "You go 40 in a 35. Check your mirror."
-  },
-  {
-    "text": "You'll find hell has arrived."
-  },
-  {
-    "text": "Yeah, we're cops. Yeah, we're cops."
-  },
-  {
-    "text": "We're up in your shit."
-  },
-  {
-    "text": "Show me your hands, show me those jazz hands!"
-  },
-  {
-    "text": "Get 'em up, or you'll end up in cuffs."
-  },
-  {
-    "text": "Show me your hands, show me those jazz hands!"
-  },
-  {
-    "text": "Or I might be inclined to shoot you up."
-  },
-  {
-    "text": "Step away from the vehicle. Step away from the vehicle."
-  },
-  {
-    "text": "Get back in the vehicle."
-  },
-  {
-    "text": "What vehicle?"
-  },
-  {
-    "text": "Get back in the vehicle."
-  },
-  {
-    "text": "Slowly get out of the vehicle."
-  },
-  {
-    "text": "Slowly get out of the vehicle."
-  },
-  {
-    "text": "Do the things I say. I'm a cop."
-  },
-  {
-    "text": "Step away from the vehicle, Step away from the vehicle"
-  },
-  {
-    "text": "Get back in the vehicle, Get back in the vehicle"
-  },
-  {
-    "text": "Slowly get out of the vehicle, Slowly get out of the vehicle"
-  },
-  {
-    "text": "Do the things I say I'm a cop!"
-  },
-  {
-    "text": "911 emergency call, Got a 411 at a shopping mall."
-  },
-  {
-    "text": "Better pack your heat and utility belt."
-  },
-  {
-    "text": "Any mall rats comin' in hot, they melt."
-  },
-  {
-    "text": "Sarge, it's your wife on 911."
-  },
-  {
-    "text": "What the bitch want, Doug? She just wants a snug."
-  },
-  {
-    "text": "Grab your 9 millimeter and donut bucket."
-  },
-  {
-    "text": "Want my badge number?"
-  },
-  {
-    "text": "Put it in your mouth and suck it!"
-  },
-  {
-    "text": "Oh Sam...."
-  },
-  {
-    "text": "Oh Saaammmmm!"
-  },
-  {
-    "text": "Please just talk to me! It's me, I'm your wife!"
-  },
-  {
-    "text": "Charlotte..."
-  },
-  {
-    "text": "Sam?"
-  },
-  {
-    "text": "SHOW ME YOUR HANDS! Show me those jazz hands!"
-  },
-  {
-    "text": "Get 'em up or you'll end up in cuffs!"
-  },
-  {
-    "text": "Show me your hands,"
-  },
-  {
-    "text": "Show me those jazz hands!"
-  },
-  {
-    "text": "Or I might be inclined to shoot you-"
-  },
-  {
-    "text": "[BONK]"
-  },
-  {
-    "text": "Shu! Get away from us! Just leave us alone!"
-  },
-  {
-    "text": "Sam! Oh my God! Oh my God! His head's open!"
-  },
-  {
-    "text": "I had to do something!"
-  },
-  {
-    "text": "His brain fell out!"
-  },
-  {
-    "text": "Well, put it back in then!"
-  },
-  {
-    "text": "I don't know how! I'm not a doctor!"
-  },
-  {
-    "text": "That's not his brain, Charlotte. Look at it. It's fuckin' blue!"
-  },
-  {
-    "text": "How would you know?!? You're not a doctor either!"
-  },
-  {
-    "text": "We need a doctor! We need a hospital!!"
-  },
-  {
-    "text": "Listen. Sweetie. Charlotte, was it?I'm... Charlotte."
-  },
-  {
-    "text": "We need to get out of downtown. Downtown is fucked. The hospital is downtown. We can't go there."
-  },
-  {
-    "text": "But Sam... He needs help."
-  },
-  {
-    "text": "Okay, okay. I got it! I know where to go! I have a kooky, reclusive biology professor at my community college... Professor Hidgens! I'm his favorite student because I brought him groceries once! He'll let us stay at his house on the edge of town! He's got a doctorate. That's kinda like a doctor. He can help your husband, probably.And did I mention, he's like a genius scientist? He's got a laboratory, and security, and his whole house is like a panic room. How do you call a guy who lives in a fortress?"
-  },
-  {
-    "text": "A king?"
-  },
-  {
-    "text": "No. No. He's a doomsday survivalist. He spent the past twenty years preparing for the apocalypse! Charlotte, I think the best thing for all of us, including Sam, would be to get to the professor."
-  },
-  {
-    "text": "But we gotta go now."
-  },
-  {
-    "text": "We'll take the squad car."
-  },
-  {
-    "text": "This is Hatchetfield Action News with Donna Burshaw & Dawn Greene."
-  },
-  {
-    "text": "What began as a series of isolated incidents"
-  },
-  {
-    "text": "has escalated into what some are calling a \"musical riot.\""
-  },
-  {
-    "text": "GOOD GOD! It's spreading faster than I theorized!"
-  },
-  {
-    "text": "Despite several reports of violence,"
-  },
-  {
-    "text": "the Hatchetfield police have assured channel 9"
-  },
-  {
-    "text": "there is no cause for alarm."
-  },
-  {
-    "text": "Because they're part of it, Donna!"
-  },
-  {
-    "text": "Nevertheless, our skittish neighbors in Clivesdale"
-  },
-  {
-    "text": "have declared a state of emergency, raising the Nantucket Bridge."
-  },
-  {
-    "text": "With the ferries down the season"
-  },
-  {
-    "text": "and no alternative means off the island,"
-  },
-  {
-    "text": "Hatchetfield citizens are advised to stay indoors."
-  },
-  {
-    "text": "Like fish in a barrel.... Of course the outside world is no help."
-  },
-  {
-    "text": "It's up to us now, Alexa!"
-  },
-  {
-    "text": "Who is it?"
-  },
-  {
-    "text": "Professor Hidgens!"
-  },
-  {
-    "text": "Don't lie to me, whoever you are! I'm Professor Hidgens!"
-  },
-  {
-    "text": "Professor, it's me, Emma Perkins! The whole town's gone crazy!"
-  },
-  {
-    "text": "I didn't know where else to go!"
-  },
-  {
-    "text": "Emma?!? You came to the right place!"
-  },
-  {
-    "text": "Hold on! I'll let you in! Alexa, open the gates!"
-  },
-  {
-    "text": "Thank you, Professor! These are my friends. Paul and... them."
-  },
-  {
-    "text": "We came from downtown."
-  },
-  {
-    "text": "I know it's gonna sound crazy, but everyone's"
-  },
-  {
-    "text": "Singing? And dancing? Like they're in a musical?"
-  },
-  {
-    "text": "They want you to join them, and once they get you, you're a part of it?"
-  },
-  {
-    "text": "How did you know?"
-  },
-  {
-    "text": "I theorized this very scenario thirty years ago."
-  },
-  {
-    "text": "Really?"
-  },
-  {
-    "text": "Really."
-  },
-  {
-    "text": "Like, exactly this?"
-  },
-  {
-    "text": "Exactly."
-  },
-  {
-    "text": "That the world would become a musical?"
-  },
-  {
-    "text": "You better believe it."
-  },
-  {
-    "text": "So what's wrong with Sam?"
-  },
-  {
-    "text": "GOOD GOD, woman!"
-  },
-  {
-    "text": "Don't tell me you brought one of them here!"
-  },
-  {
-    "text": "I told you we shoulda left him in that alley!"
-  },
-  {
-    "text": "You're a monster, Ted!"
-  },
-  {
-    "text": "No! He's the monster!"
-  },
-  {
-    "text": "Alright, everybody CALM DOWN!"
-  },
-  {
-    "text": "Providence has brought him to me."
-  },
-  {
-    "text": "Quick! tie him to this chair. Make sure he's secure."
-  },
-  {
-    "text": "There's no telling what would happen if he were awake and loose."
-  },
-  {
-    "text": "Here. I see no danger entrusting this to you."
-  },
-  {
-    "text": "I've been preparing for this day for decades. Now all the answers lie in front of me"
-  },
-  {
-    "text": "If only I have the wits to decipher them."
-  },
-  {
-    "text": "Tell me, Emma. What on Earth does this look like to you?"
-  },
-  {
-    "text": "I don't know. Some kind of... blue... shit?"
-  },
-  {
-    "text": "My thoughts exactly! What the fuck is this blue shit?!?"
-  },
-  {
-    "text": "I'll tell you what on Earth it looks like... Nothing."
-  },
-  {
-    "text": "You all remember the meteor from last night."
-  },
-  {
-    "text": "I dare say it carried a deadly cargo:"
-  },
-  {
-    "text": "A contagious pathogen... of cosmic origin."
-  },
-  {
-    "text": "Wait a second, Doc. You're not telling me you're talking about... aliens."
-  },
-  {
-    "text": "Why is that so hard to believe?"
-  },
-  {
-    "text": "Think of all that we take for granted now,"
-  },
-  {
-    "text": "that was once foretold in the pages of Bradbury and Asimov!"
-  },
-  {
-    "text": "Look no further than my own robot assistant, Alexa."
-  },
-  {
-    "text": "Once confined to the realm of science fiction, she is now science fact!"
-  },
-  {
-    "text": "Alexa, dim the lights."
-  },
-  {
-    "text": "Extraordinary!"
-  },
-  {
-    "text": "Twenty years ago I would've"
-  },
-  {
-    "text": "had to walk all the way to the dimmer and do this."
-  },
-  {
-    "text": "Now, as unbelievable as that or this outbreak may seem, seeing is believing."
-  },
-  {
-    "text": "The question is no longer \"could this be happening?\""
-  },
-  {
-    "text": "but \"how do we fight it?\""
-  },
-  {
-    "text": "I've got to get this blue shit under the microscope"
-  },
-  {
-    "text": "and find out what makes these bastards tick!"
-  },
-  {
-    "text": "Sorry, Professor. This is a lot to take in."
-  },
-  {
-    "text": "Do you have anything to take the edge off? Like a drink or something?"
-  },
-  {
-    "text": "Young man!"
-  },
-  {
-    "text": "You bet your ass we got booze. Follow me!"
-  },
-  {
-    "text": "Oh Sam... baby."
-  },
-  {
-    "text": "Come on, Charlotte. I'll make you a drink."
-  },
-  {
-    "text": "We can relax."
-  },
-  {
-    "text": "Talk."
-  },
-  {
-    "text": "Fuck."
-  },
-  {
-    "text": "Ted! I can't believe you're thinking about"
-  },
-  {
-    "text": "that at a time like this!"
-  },
-  {
-    "text": "The world could be coming to an end!"
-  },
-  {
-    "text": "Hey, if I'm gonna die, I wanna go out doing what I love."
-  },
-  {
-    "text": "Screwin' around with another man's wife."
-  },
-  {
-    "text": "Ted, you're such a horny bastard!"
-  },
-  {
-    "text": "Always have been. Always will be."
-  },
-  {
-    "text": "And you know that's why I can't resist you!"
-  },
-  {
-    "text": "[Sounds of passionate love]"
-  },
-  {
-    "text": "Wait! No! Ted, my husband's brains fell out today!"
-  },
-  {
-    "text": "If I can't be a wife to him now, what kind of woman am I?"
-  },
-  {
-    "text": "I DON'T KNOW CHARLLOTE! I'm not your therapist!"
-  },
-  {
-    "text": "Maybe you should go back to fucking him."
-  },
-  {
-    "text": "I know that's why you actually went to counseling!"
-  },
-  {
-    "text": "That's not the only reason! I wanna make things work with Sam."
-  },
-  {
-    "text": "I love him. I know I shouldn't, but I do."
-  },
-  {
-    "text": "That guy's a worthless scumbag. You could upgrade..."
-  },
-  {
-    "text": "to a sleaze-ball!"
-  },
-  {
-    "text": "But you refuse to be happy. You know what, Charlotte?"
-  },
-  {
-    "text": "I'm done. Stay here with your dying marriage"
-  },
-  {
-    "text": "and your dying husband. I'm gonna go hit on that crabby barista."
-  },
-  {
-    "text": "Ted... Oh god..."
-  },
-  {
-    "text": "Oh, God, if you're up there, it's me Charlotte."
-  },
-  {
-    "text": "You just gotta know... I didn't want this to happen."
-  },
-  {
-    "text": "I know Sam and I have had our problems."
-  },
-  {
-    "text": "And I know I've been so angry with him..."
-  },
-  {
-    "text": "But I didn't want him to die! Please, God... Just let him wake up!"
-  },
-  {
-    "text": "Charlotte..."
-  },
-  {
-    "text": "God?"
-  },
-  {
-    "text": "Charlotte!"
-  },
-  {
-    "text": "Sam!"
-  },
-  {
-    "text": "Where am I? Why am I tied to a chair?"
-  },
-  {
-    "text": "It's for your own safety. And ours. You're not well, Sam."
-  },
-  {
-    "text": "Charlotte. Baby. I'm hurt real bad. I need a doctor."
-  },
-  {
-    "text": "I'll go get the professor..."
-  },
-  {
-    "text": "NO! Those people left me here to die!"
-  },
-  {
-    "text": "Only you can help me, Charlotte."
-  },
-  {
-    "text": "Untie me and we'll get outta here... together."
-  },
-  {
-    "text": "I'm tied up, Charlotte, Tied up with you."
-  },
-  {
-    "text": "You understand me."
-  },
-  {
-    "text": "Now hand me those keys..."
-  },
-  {
-    "text": "No!"
-  },
-  {
-    "text": "The keys to my youth. God, we were young once."
-  },
-  {
-    "text": "Innocent and fun once."
-  },
-  {
-    "text": "And free!"
-  },
-  {
-    "text": "Let go of this grip on me! You tied up my heart."
-  },
-  {
-    "text": "You tied me down."
-  },
-  {
-    "text": "Now break me open"
-  },
-  {
-    "text": "With your love and mercy. Charlotte!"
-  },
-  {
-    "text": "You're breaking my heart, Char! Got my feet to the fire."
-  },
-  {
-    "text": "Just let me go and I'll love you!"
-  },
-  {
-    "text": "I love you too, Sam, but I can't let you go."
-  },
-  {
-    "text": "Charlotte, baby... apple of my eye..."
-  },
-  {
-    "text": "Don't you twust me?"
-  },
-  {
-    "text": "I effed up, Charlotte. Effed up with you."
-  },
-  {
-    "text": "All the booze and harlots,"
-  },
-  {
-    "text": "And all the Charlottes."
-  },
-  {
-    "text": "But they didn't count. They couldn't break me."
-  },
-  {
-    "text": "You're the one who caged me In chains..."
-  },
-  {
-    "text": "Please take away my pain! Charlotte!"
-  },
-  {
-    "text": "Let me hold you again, Char. Just free up my arms"
-  },
-  {
-    "text": "And I'll give you a foot massage! Charlotte!"
-  },
-  {
-    "text": "Will you ever forgive me?"
-  },
-  {
-    "text": "I'll crawl on my hands and knees If you untie me, girl,"
-  },
-  {
-    "text": "And free up my heart!"
-  },
-  {
-    "text": "This is kind of catchy Sam. No no no! This is bad! I gotta go get the others... Help!!"
-  },
-  {
-    "text": "WAIT! Oh god I'm fading fast! I think you better come quick."
-  },
-  {
-    "text": "I really don't want to die alone in here."
-  },
-  {
-    "text": "Time to say our goodbyes at the end of the road..."
-  },
-  {
-    "text": "Just hang on, Sam. You'll be alright..."
-  },
-  {
-    "text": "This body's not gonna last. The air is cold and thick."
-  },
-  {
-    "text": "I'm losing my last remaining hope for us. My hands are tied in knots"
-  },
-  {
-    "text": "And I can't come home."
-  },
-  {
-    "text": "I wanna die in your arms in the evening gloam..."
-  },
-  {
-    "text": "Sam! Oh god! Sam! What have I done?!?"
-  },
-  {
-    "text": "What have I done?"
-  },
-  {
-    "text": "CHARLOTTE!"
-  },
-  {
-    "text": "You brought me back from the dead CHAR! My light was in red."
-  },
-  {
-    "text": "I saw God, and he told me, girl, to free up my heart!"
-  },
-  {
-    "text": "It's a miracle!"
-  },
-  {
-    "text": "And now, I'm gonna free up your heart, babe."
-  },
-  {
-    "text": "Yes, take me Sam!"
-  },
-  {
-    "text": "RARGH!"
-  },
-  {
-    "text": "AHHHH!!!! My guts!!!"
-  },
-  {
-    "text": "—--"
-  },
-  {
-    "text": "He said this was a full bar! How the hell am I supposed"
-  },
-  {
-    "text": "to make a Shirley Temple with no cherries?!"
-  },
-  {
-    "text": "Jesus Christ, Bill. It's the end of the fucking world"
-  },
-  {
-    "text": "and you're gonna get your drink on with a Shirley fuckin' Temple?"
-  },
-  {
-    "text": "Well, if it's as serious as all that"
-  },
-  {
-    "text": "then I figure we might need a designated driver!"
-  },
-  {
-    "text": "Oh, so when the cops pull you over"
-  },
-  {
-    "text": "you can pass the breathalyzer"
-  },
-  {
-    "text": "before they infect you with their nasty, blue shit?!? Come on."
-  },
-  {
-    "text": "If you make one more crack at me, I am gonna... ...do something... to you."
-  },
-  {
-    "text": "Oh yeah, Bill? What are you gonna do?"
-  },
-  {
-    "text": "I'm gonna... Kick your... head."
-  },
-  {
-    "text": "Oh. My head? Not my ass?"
-  },
-  {
-    "text": "No!"
-  },
-  {
-    "text": "Alright, let's see it! Kick my head! Come on, karate champ!"
-  },
-  {
-    "text": "I wanna see you kick above your waste! Show me that round-house!"
-  },
-  {
-    "text": "Show me that sweeping crane kick your Kung Fu master taught you!"
-  },
-  {
-    "text": "Alright, you two, calm down! Ted, Bill's not gonna kick your head."
-  },
-  {
-    "text": "Why not? It's the most vulnerable part of the body."
-  },
-  {
-    "text": "That's what Sensei Bill taught me..."
-  },
-  {
-    "text": "Ok, it was a dumb threat. Stop rubbing it in."
-  },
-  {
-    "text": "I'm sure if he could do it over he'd say \"ass.\""
-  },
-  {
-    "text": "Uh-uh. You wanna kill a snake, what do you do?"
-  },
-  {
-    "text": "You cut off its head."
-  },
-  {
-    "text": "Where's the fish rot from? The head."
-  },
-  {
-    "text": "Take out the head, and the whole thing goes down."
-  },
-  {
-    "text": "That's why a fisherman always goes for..."
-  },
-  {
-    "text": "THE HEAD!"
-  },
-  {
-    "text": "Gimmet that... You've had enough of this."
-  },
-  {
-    "text": "This is supposed to relax us. Not make us kill each other!"
-  },
-  {
-    "text": "Whatever."
-  },
-  {
-    "text": "Why the fuck did I come back here?"
-  },
-  {
-    "text": "Here? To... drink"
-  },
-  {
-    "text": "Back to Hatchetfield."
-  },
-  {
-    "text": "I spent the first eighteen years of my life trying to get outta this place."
-  },
-  {
-    "text": "I shoulda just stayed in Kibbutz Dgania."
-  },
-  {
-    "text": "Israel? Cool. So what drove you back to Hatchetfield?"
-  },
-  {
-    "text": "It was my sister. Jane. She was the good one."
-  },
-  {
-    "text": "When she was twelve, she got this Hello Kitty binder"
-  },
-  {
-    "text": "where she planned out her whole life, and I swear to God,"
-  },
-  {
-    "text": "she stuck to it. Bullet point by bullet point."
-  },
-  {
-    "text": "Job, husband, house, kid. And when one sister is so on top of her game,"
-  },
-  {
-    "text": "it almost demands the other become a total fuck-up, right?"
-  },
-  {
-    "text": "Good balance"
-  },
-  {
-    "text": "That's how I saw it. She was off, doing life."
-  },
-  {
-    "text": "And I was doing... something else."
-  },
-  {
-    "text": "Couch surfing, mostly."
-  },
-  {
-    "text": "Jane would invite me back home every once in a while."
-  },
-  {
-    "text": "For the big events. Wedding. Baby shower."
-  },
-  {
-    "text": "I'd always say, \"Sorry, sis. I'll get the next one.\""
-  },
-  {
-    "text": "But when I got the invitation to her funeral,"
-  },
-  {
-    "text": "it was like, there is no next one."
-  },
-  {
-    "text": "Oh... I'm sorry."
-  },
-  {
-    "text": "Hey. You didn't crash into her car."
-  },
-  {
-    "text": "It's weird living in someone else's shadow."
-  },
-  {
-    "text": "When they're gone, the light shines on your life"
-  },
-  {
-    "text": "for the first time and it doesn't look good."
-  },
-  {
-    "text": "There I was. Thirty. With no roots anywhere."
-  },
-  {
-    "text": "Except Hatchetfield. So I figure I'll make something of myself."
-  },
-  {
-    "text": "enrolled in community college to get a degree in botany."
-  },
-  {
-    "text": "Not that it matters anymore."
-  },
-  {
-    "text": "You know, the one thing I've been trying to avoid"
-  },
-  {
-    "text": "my whole life is dying in Hatchetfield... yet here we are."
-  },
-  {
-    "text": "It could be worse... You could be dying in Clivesdale."
-  },
-  {
-    "text": "Fuck Clivesdale."
-  },
-  {
-    "text": "Fuck 'em."
-  },
-  {
-    "text": "You know, all things considered... I like Hatchetfield."
-  },
-  {
-    "text": "Been here my whole life. Born and bred."
-  },
-  {
-    "text": "I never wanted to leave. I Still don't."
-  },
-  {
-    "text": "We're the same age. How come I never knew you in high school?"
-  },
-  {
-    "text": "You probably went to Hatchetfield High. I went to Sycamore."
-  },
-  {
-    "text": "We hated you guys."
-  },
-  {
-    "text": "Yeah. We hated ourselves."
-  },
-  {
-    "text": "So wait... Back at Beanie's you said"
-  },
-  {
-    "text": "you were in your high school's production of Hamilton?"
-  },
-  {
-    "text": "I was King George the 3rd."
-  },
-  {
-    "text": "That was 2018, right? I actually saw you in Hamilton."
-  },
-  {
-    "text": "No shit."
-  },
-  {
-    "text": "Yes shit, yeah! I think it was the first musical I ever saw... I hated it. That's probably the start of my whole thing. You're the reason I don't like musicals!"
-  },
-  {
-    "text": "That's, like, your origin story."
-  },
-  {
-    "text": "Yeah!"
-  },
-  {
-    "text": "I'm like a super villain."
-  },
-  {
-    "text": "I don't think of you like that at all, Emma."
-  },
-  {
-    "text": "You know, Paul-"
-  },
-  {
-    "text": "[DRAMATIC ENTRANCE]"
-  },
-  {
-    "text": "Charlotte!?!"
-  },
-  {
-    "text": "It is time..."
-  },
-  {
-    "text": "TO DIE!"
-  },
-  {
-    "text": "Sorry to interrupt,"
-  },
-  {
-    "text": "But we got bones to pluck!"
-  },
-  {
-    "text": "The time for chaos is long past overdue."
-  },
-  {
-    "text": "Death isn't optional. In fact it's optimal."
-  },
-  {
-    "text": "Time is up and now we go through you!"
-  },
-  {
-    "text": "We tried to convince you with soliloquies,"
-  },
-  {
-    "text": "But now we kill you with more than harmonies... Just die!"
-  },
-  {
-    "text": "Join us and die. Join us and die."
-  },
-  {
-    "text": "Join us and die. All you gotta do is..."
-  },
-  {
-    "text": "Join us and die Join us and die."
-  },
-  {
-    "text": "Join us and die. All you gotta do is..."
-  },
-  {
-    "text": "Here's how it's gonna go:"
-  },
-  {
-    "text": "We're gonna kick your ass, And then we're gonna..."
-  },
-  {
-    "text": "Fucking kick your ass!"
-  },
-  {
-    "text": "We're going to puke all that gooRight in your mouth, where you food."
-  },
-  {
-    "text": "All your cells we'll renew and be enhanced!"
-  },
-  {
-    "text": "It's a deathlike process that you gotta see."
-  },
-  {
-    "text": "Your own body is your front your seat... To die!"
-  },
-  {
-    "text": "Join us and die. Join us and die."
-  },
-  {
-    "text": "Join us and die. All you gotta do is..."
-  },
-  {
-    "text": "Join us and die. Join us and die."
-  },
-  {
-    "text": "Join us and..."
-  },
-  {
-    "text": "Punch it!"
-  },
-  {
-    "text": "Squeeze it!"
-  },
-  {
-    "text": "Crush it!"
-  },
-  {
-    "text": "Kill it!"
-  },
-  {
-    "text": "Ride it!"
-  },
-  {
-    "text": "Drag it!"
-  },
-  {
-    "text": "Wind it up"
-  },
-  {
-    "text": "Kick its nuts!"
-  },
-  {
-    "text": "Here's how it's gonna go..."
-  },
-  {
-    "text": "[SHOTGUN BLAST]"
-  },
-  {
-    "text": "[E6]"
-  },
-  {
-    "text": "[ANOTHER SHOTGUN BLAST]"
-  },
-  {
-    "text": "Professor! You killed Charlotte!"
-  },
-  {
-    "text": "WRONG!"
-  },
-  {
-    "text": "You shot her!"
-  },
-  {
-    "text": "I shot a CHARLATAN!"
-  },
-  {
-    "text": "The Charlotte you knew and loved"
-  },
-  {
-    "text": "was gone the moment a note came out of her mouth."
-  },
-  {
-    "text": "After examining that \"blue shit,\" it didn't take long to deduce that"
-  },
-  {
-    "text": "Sam was no longer human, but one of the alien brood,"
-  },
-  {
-    "text": "genetically reconstructed from the inside out!"
-  },
-  {
-    "text": "They're wearing our skin to fool us!"
-  },
-  {
-    "text": "Which means any one of you could be one of them!"
-  },
-  {
-    "text": "So we're gonna have a little test to find out who's a musical doppelgänger..."
-  },
-  {
-    "text": "I want all of you to sing. SIXTEEN BARS! RIGHT NOW!"
-  },
-  {
-    "text": "Professor, we're not aliens..."
-  },
-  {
-    "text": "SING THE BEGINNING OF [song of the day]!"
-  },
-  {
-    "text": "What?"
-  },
-  {
-    "text": "Sing, goddammit!"
-  },
-  {
-    "text": "Uh... ?!!?@$$%^$^&^^%&*&"
-  },
-  {
-    "text": "Alright, that was... terrible."
-  },
-  {
-    "text": "Not a single one of you was on pitch, which means you're still human."
-  },
-  {
-    "text": "These things... their tactic is to hide amongst us,"
-  },
-  {
-    "text": "but as their numbers grow they become more bold"
-  },
-  {
-    "text": "and, as we've seen, violent."
-  },
-  {
-    "text": "Alice? Are you okay? You would not believe what happend..."
-  },
-  {
-    "text": "What? No. No no no... Alice."
-  },
-  {
-    "text": "I watched you get on the bus to Clivesdale this morning... Got off? Got off?!? To go see Deb?!? I'm sorry. I'm sorry. I know you're scared... Deb's being weird? She's doing what? Alice, listen to me. You gotta run away from her. You understand? You run far far away... No! This isn't about me not liking Deb! Right now you gotta hide right now! Where are you?Ok. You stay there. I'm coming to get you.No... don't say that. Everything's gonna be fine.I love you too sweetie. Gimme... Gimme some water and some bread! I knew we were gonna need a designated driver!"
-  },
-  {
-    "text": "What's happening, Bill?"
-  },
-  {
-    "text": "It's Alice. She's stuck in Hatchetfield High."
-  },
-  {
-    "text": "FUCK! I'm taking the car. I gotta get to Hatchetfield High."
-  },
-  {
-    "text": "She's locked herself in the choir room..."
-  },
-  {
-    "text": "And you're gonna save her?!? G.I. Bill?"
-  },
-  {
-    "text": "You're gonna run and gun your way through a city full of singing-zombie-mother-fuckers?Wake up, Bill! She's already dead."
-  },
-  {
-    "text": "Don't you dare..."
-  },
-  {
-    "text": "You're gonna get there, she's gonna be dead,and you're gonna die too. hat's what's gonna happen if you try to go back through downtown."
-  },
-  {
-    "text": "Well, what else am I supposed to do?!?"
-  },
-  {
-    "text": "Don't go through downtown. Cut through Pinebrooke."
-  },
-  {
-    "text": "Pinebrook..."
-  },
-  {
-    "text": "Pinebrook, rich neighborhood, fancy houses... huge yards."
-  },
-  {
-    "text": "Yes. Avoid densely populated areas."
-  },
-  {
-    "text": "Take Evergreen, cut through the park, hop a curb,"
-  },
-  {
-    "text": "and you're in the teacher's parking lot."
-  },
-  {
-    "text": "Right! and the windows to the staff lounge is always open,"
-  },
-  {
-    "text": "just slide in and out, used to be my old escape route."
-  },
-  {
-    "text": "Pinebrook, Evergeen, Clivesdale.. This is a lot of directions..."
-  },
-  {
-    "text": "Don't bother. He's gonna get lost..."
-  },
-  {
-    "text": "You are such a fuckin' creep, you know that?"
-  },
-  {
-    "text": "Oh, I'm a fuckin' creep? I'm a fuckin' creep?!?"
-  },
-  {
-    "text": "Listen sweetheart, The world has changed!"
-  },
-  {
-    "text": "There are no creeps, and there are no heroes."
-  },
-  {
-    "text": "There's just people who are alive, and people who are fuckin' DEAD."
-  },
-  {
-    "text": "And Bill's daughter... she's dead."
-  },
-  {
-    "text": "I'm just saying what we all know is true. Right, Paul?"
-  },
-  {
-    "text": "I know that the chances are slim to nil."
-  },
-  {
-    "text": "And I know that Bill doesn't know the shortcut..."
-  },
-  {
-    "text": "Bill, if you go, you're not gonna make it..."
-  },
-  {
-    "text": "Which is why I'm gonna go with you to bring your daughter back."
-  },
-  {
-    "text": "Paul, you'd do that for me?"
-  },
-  {
-    "text": "Hey. It's not like you're asking me to go see 'Mama Mia.'"
-  },
-  {
-    "text": "Okay. Let's go! In and out twenty minutes adventure."
-  },
-  {
-    "text": "No, Emma, stay here. I have a theory of how these aliens can be stopped,"
-  },
-  {
-    "text": "but I'll need an extra pair of hands in the lab."
-  },
-  {
-    "text": "Paul. Bill. Godspeed."
-  },
-  {
-    "text": "Hey Paul, listen... If those things get you,"
-  },
-  {
-    "text": "they're gonna make you sing, and dance,"
-  },
-  {
-    "text": "and all that shit you hate... so don't you let 'em."
-  },
-  {
-    "text": "Emma, there comes a time in every man's life"
-  },
-  {
-    "text": "when he has to draw a line in the sand."
-  },
-  {
-    "text": "And I will never be in a fucking musical."
-  },
-  {
-    "text": "[INTERMISSION]"
-  },
-  {
-    "text": "Alice?! Alice?!? Sweetie Where are you?!?"
-  },
-  {
-    "text": "Bill! Be quiet!"
-  },
-  {
-    "text": "We gotta find her, Paul!"
-  },
-  {
-    "text": "We will, but you have to shut up."
-  },
-  {
-    "text": "This place could be crawling with those... things!"
-  },
-  {
-    "text": "You screaming is gonna get us killed,"
-  },
-  {
-    "text": "and then who's gonna save Alice?"
-  },
-  {
-    "text": "Right. Right. Sorry, Paul. It's just... she's all I have."
-  },
-  {
-    "text": "I know. Just try to stay calm and follow me."
-  },
-  {
-    "text": "Could you point that someplace else?"
-  },
-  {
-    "text": "Sorry. You know, Alice, she's a good kid, Paul. She's smart, and I respect her choices, but if we're being honest... I don't like Deb. She's always on her phone, and I don't know... I just think Alice could do so much better."
-  },
-  {
-    "text": "Yeah, sure, Bill."
-  },
-  {
-    "text": "Yesterday we had a fight ... I crossed a line. I even said the H word."
-  },
-  {
-    "text": "Hoe...?"
-  },
-  {
-    "text": "Heck! I think that fight is why she got off the bus to see Deb..."
-  },
-  {
-    "text": "Paul, I'm the reason she's trapped here. Oh god, it's my fault."
-  },
-  {
-    "text": "Bill, listen to me. This is not your fault."
-  },
-  {
-    "text": "Yes it is."
-  },
-  {
-    "text": "Alice..."
-  },
-  {
-    "text": "\"It's all your fault.\" That's the last thought I had before they broke down the door..."
-  },
-  {
-    "text": "I'm not your girl anymore..."
-  },
-  {
-    "text": "I'm not that tween that you drove here for."
-  },
-  {
-    "text": "I'm not your girl anymore..."
-  },
-  {
-    "text": "I overtook her body with an infectious spore!"
-  },
-  {
-    "text": "You let me out of your sight for one second"
-  },
-  {
-    "text": "And look what happens:"
-  },
-  {
-    "text": "NIGHTMARE TIME!"
-  },
-  {
-    "text": "It's worse than you could imagine..."
-  },
-  {
-    "text": "Not sex and not drugs,"
-  },
-  {
-    "text": "Just alien invading minds!"
-  },
-  {
-    "text": "No more family vacays together"
-  },
-  {
-    "text": "Cuz your only daughter's under the weather."
-  },
-  {
-    "text": "And if you actually paid attention to me,"
-  },
-  {
-    "text": "you'd see... I'm not your seed!"
-  },
-  {
-    "text": "I'm not your angsty teen! No matter what you believe"
-  },
-  {
-    "text": "The apple's fallen far from the tree..."
-  },
-  {
-    "text": "It's not my fault anymore..."
-  },
-  {
-    "text": "No more curfews to be late for."
-  },
-  {
-    "text": "It's not my fault anymore..."
-  },
-  {
-    "text": "No more being worried and waiting by the door."
-  },
-  {
-    "text": "Did you know that I wanted to live with you?"
-  },
-  {
-    "text": "Look what happens:"
-  },
-  {
-    "text": "NIGHTMARE TIME!"
-  },
-  {
-    "text": "But when you needed to fight you gave her that too..."
-  },
-  {
-    "text": "Aliens invading minds!"
-  },
-  {
-    "text": "Did you know Mom let Deb sleep over?"
-  },
-  {
-    "text": "And you're right about Deb. She's a hardcore stoner!"
-  },
-  {
-    "text": "And if you wonder what led your daughter astray..."
-  },
-  {
-    "text": "Well, daddy wasn't here to stay."
-  },
-  {
-    "text": "Not your seed! I'm not your perfect teen!"
-  },
-  {
-    "text": "I'm fucking seventeen!"
-  },
-  {
-    "text": "At least I was before you left me..."
-  },
-  {
-    "text": "Everything is gonna be ok. I'm taking you home ok sweetie?"
-  },
-  {
-    "text": "Bill... Bill... Bill"
-  },
-  {
-    "text": "You're gonna be ok baby, I promise. I love you."
-  },
-  {
-    "text": "Bill... Bill... Bill, we need to go, right now."
-  },
-  {
-    "text": "Back off, Paul! I'm not leaving without my daughter!"
-  },
-  {
-    "text": "That's not your daughter, Bill!"
-  },
-  {
-    "text": "Why does it hurt to love you?"
-  },
-  {
-    "text": "Why am I in pain?"
-  },
-  {
-    "text": "Why does it hurt to know you..."
-  },
-  {
-    "text": "You'll let me down again?"
-  },
-  {
-    "text": "If I turn my insides out,"
-  },
-  {
-    "text": "would you even know that I was there?"
-  },
-  {
-    "text": "Why does it hurt to love you?"
-  },
-  {
-    "text": "Why does it hurt to love..."
-  },
-  {
-    "text": "I'm not your seed!"
-  },
-  {
-    "text": "But now you'll listen to me!"
-  },
-  {
-    "text": "After you let me bleed"
-  },
-  {
-    "text": "And now your daughter's not a girl no more..."
-  },
-  {
-    "text": "Girl no more... Girl no more..."
-  },
-  {
-    "text": "NOT AT ALL YOUR SEED!"
-  },
-  {
-    "text": "Cuz I'm not your girl... anymore."
-  },
-  {
-    "text": "I can't do it, Paul. I can't live in a world without my daughter..."
-  },
-  {
-    "text": "Bill, whatever you're thinking, stop it."
-  },
-  {
-    "text": "I can't live knowing that I'm the reason they got her..."
-  },
-  {
-    "text": "No, Bill!"
-  },
-  {
-    "text": "Just lemme die!"
-  },
-  {
-    "text": "NO!!! No, Bill! You're my best friend!"
-  },
-  {
-    "text": "I am not gonna let you die!"
-  },
-  {
-    "text": "[SHOTGUN BLAST]"
-  },
-  {
-    "text": "Bill! Oh god! Bill!"
-  },
-  {
-    "text": "We just keep running into each other, don't we, Paul?"
-  },
-  {
-    "text": "We have traveled across seas of stars,"
-  },
-  {
-    "text": "bending || conquering || counting"
-  },
-  {
-    "text": "counting || conquering || bending"
-  },
-  {
-    "text": "Wait, what are we saying?"
-  },
-  {
-    "text": "We all have to say the same thing let's get on the same page"
-  },
-  {
-    "text": "I'm here || I'm here || I'm here"
-  },
-  {
-    "text": "bending countless civilizations to our will,"
-  },
-  {
-    "text": "and yet you, Paul, have defied us thrice!"
-  },
-  {
-    "text": "[SHOTGUN BLAST]"
-  },
-  {
-    "text": "Holy shit!"
-  },
-  {
-    "text": "This puny human weapon is too quick a death for you, Paul."
-  },
-  {
-    "text": "We shall rend you limb from limb. You shall"
-  },
-  {
-    "text": "choke || shut || die"
-  },
-  {
-    "text": "You shall"
-  },
-  {
-    "text": "die || choke || shut"
-  },
-  {
-    "text": "Seriously, we all need to say the same thing."
-  },
-  {
-    "text": "You guys are embarrassing me!"
-  },
-  {
-    "text": "You shall choke on your agony as you beg for apotheosis!"
-  },
-  {
-    "text": "Ahhhhhhhhh!"
-  },
-  {
-    "text": "We are the ARMY! BANG BANG BANG!"
-  },
-  {
-    "text": "Ah! Ah! Wait! Wait! I'm not one of 'em! I'm human! I'm huma-"
-  },
-  {
-    "text": "Prove it asshole, we're the army."
-  },
-  {
-    "text": "—-"
-  },
-  {
-    "text": "Remarkable! Simply remarkable."
-  },
-  {
-    "text": "Tell me, Emma, how do you explain"
-  },
-  {
-    "text": "an entire race of beings spontaneously breaking into song and dance?"
-  },
-  {
-    "text": "How do they all know the words and choreography?"
-  },
-  {
-    "text": "I don't know... They're gettin' orders from the mothership?"
-  },
-  {
-    "text": "You're not far off."
-  },
-  {
-    "text": "What we're dealing with is a collective consciousness."
-  },
-  {
-    "text": "A hive mind... On the one hand, they are individuals."
-  },
-  {
-    "text": "Almost perfect copies of their former selves."
-  },
-  {
-    "text": "But on the other, they are appendages of a much larger organism."
-  },
-  {
-    "text": "Controlled by a... conductor, if you will."
-  },
-  {
-    "text": "So this conductor came down in the meteor?"
-  },
-  {
-    "text": "Or it is the meteor."
-  },
-  {
-    "text": "And it wants to kill us all so it can resurrect us as part of its shitty musical?"
-  },
-  {
-    "text": "Yes, that's one way of putting it."
-  },
-  {
-    "text": "But you could also say it's uniting us in a common purpose."
-  },
-  {
-    "text": "Imagine if this entity did spread to the rest of the planet."
-  },
-  {
-    "text": "It might achieve what fifty thousand years"
-  },
-  {
-    "text": "of human civilization never could..."
-  },
-  {
-    "text": "World peace."
-  },
-  {
-    "text": "Ok... so how do we stop it?"
-  },
-  {
-    "text": "Yes, yes. Stop it. Of course..."
-  },
-  {
-    "text": "This all started with the meteor. It's conducting everything."
-  },
-  {
-    "text": "If we take it out, will all these things just... die?"
-  },
-  {
-    "text": "That's a sound theory... Which is why it must never leave this room!"
-  },
-  {
-    "text": "What?"
-  },
-  {
-    "text": "Shshhhhh... Don't fight it, Emma. Don't fight it."
-  },
-  {
-    "text": "—---"
-  },
-  {
-    "text": "Sorry for that bump on the head, son."
-  },
-  {
-    "text": "You can never be too careful. What's your name?"
-  },
-  {
-    "text": "Paul... Matthews..."
-  },
-  {
-    "text": "Good evening, Paul."
-  },
-  {
-    "text": "My name is General Heather McNamara"
-  },
-  {
-    "text": "of the United States Military,"
-  },
-  {
-    "text": "special unit P.E.I.P. We call it \"Peip.\""
-  },
-  {
-    "text": "P.E.I.P.? I've never heard of you guys."
-  },
-  {
-    "text": "And you never will. Not a peep."
-  },
-  {
-    "text": "That's a joke, son!"
-  },
-  {
-    "text": "We have the unenviable task of cleaning up"
-  },
-  {
-    "text": "messes of a certain nature."
-  },
-  {
-    "text": "Situations like what we got here in Hatchetfield."
-  },
-  {
-    "text": "Are you saying stuff like this has happened before?"
-  },
-  {
-    "text": "I said nothing of this sort and that information is classified."
-  },
-  {
-    "text": "Our agents in town led us to believe"
-  },
-  {
-    "text": "the entire population had been infected by an alien contagion."
-  },
-  {
-    "text": "Quite frankly, I'm shocked to find a survivor like yourself."
-  },
-  {
-    "text": "But I got some bad news for you, Paul."
-  },
-  {
-    "text": "My unit was sent to make a clean sweep"
-  },
-  {
-    "text": "of what was once your town. No loose ends. No survivors."
-  },
-  {
-    "text": "Woah, woah, woah! So you're just gonna kill me?"
-  },
-  {
-    "text": "Yes, those are my orders. two in the head, one in the heart."
-  },
-  {
-    "text": "But there is one thing you better hurry up and know about me."
-  },
-  {
-    "text": "I love my country, I do, but the experiences I've accrued"
-  },
-  {
-    "text": "throughout my tenure with this organization have given me"
-  },
-  {
-    "text": "a deeper understanding of the cosmos and our place in it."
-  },
-  {
-    "text": "I follow a higher law than any institution could decree,"
-  },
-  {
-    "text": "and that is the universal truth of love"
-  },
-  {
-    "text": "and the strength of the human heart."
-  },
-  {
-    "text": "Do you wanna do some lite reading on the subject?"
-  },
-  {
-    "text": "No thank you"
-  },
-  {
-    "text": "You got some guts Paul."
-  },
-  {
-    "text": "I FUCKING LOVE GUTS."
-  },
-  {
-    "text": "So I'm gonna bend the rules for you a little bit, Paul."
-  },
-  {
-    "text": "I have an evac chopper touching down"
-  },
-  {
-    "text": "in Oakley Park at twenty-three hundred hours."
-  },
-  {
-    "text": "That is eleven o'clock in the PM."
-  },
-  {
-    "text": "Synchronize your timepiece with mine. Is that an iPhone?"
-  },
-  {
-    "text": "WEAR A WATCH!"
-  },
-  {
-    "text": "Time is a precious thread in the fabric of the universe!"
-  },
-  {
-    "text": "It deserves its own tool of measurement!"
-  },
-  {
-    "text": "You survive til then, and there's"
-  },
-  {
-    "text": "a seat on that chopper with your name on it."
-  },
-  {
-    "text": "Cool, thanks! Wait - General McNamara. I can't leave without Emma."
-  },
-  {
-    "text": "Who's Emma, Paul?"
-  },
-  {
-    "text": "A... a friend of mine."
-  },
-  {
-    "text": "Friends don't move my heart, Paul. Is there a chance at something more?"
-  },
-  {
-    "text": "I think so... I'd like there to be. I want there to be."
-  },
-  {
-    "text": "So you know what that means..."
-  },
-  {
-    "text": "I am authorizing you to use my firearm,"
-  },
-  {
-    "text": "rescue Emma, and get your ass to that chopper in two hours time."
-  },
-  {
-    "text": "Thank you, ma'am."
-  },
-  {
-    "text": "You can thank me when we're both in Clivesdale sharing a cup of coffee. Do you like coffee, son?"
-  },
-  {
-    "text": "Yes, ma'am."
-  },
-  {
-    "text": "Do you like musicals?"
-  },
-  {
-    "text": "No, ma'am."
-  },
-  {
-    "text": "Now that's a goddamn, red-blooded American. I'll see you on that chopper."
-  },
-  {
-    "text": "------"
-  },
-  {
-    "text": "Hey. Hey!"
-  },
-  {
-    "text": "Wha... What the fuck!?"
-  },
-  {
-    "text": "So, you're finally awake."
-  },
-  {
-    "text": "Professor Hidgens, what are you doing?"
-  },
-  {
-    "text": "Exactly what needs to be done, Emma."
-  },
-  {
-    "text": "Alexa! open the gates. Turn off the fences! Shut it all down."
-  },
-  {
-    "text": "Professor, the fences are all that's protecting us!"
-  },
-  {
-    "text": "Protecting us from what, Emma? The end of the world?"
-  },
-  {
-    "text": "What's protecting us from nuclear holocaust? over-population?"
-  },
-  {
-    "text": "From climate change?"
-  },
-  {
-    "text": "Greenpeace!"
-  },
-  {
-    "text": "The world was already doomed, Emma."
-  },
-  {
-    "text": "Not by them, by us!"
-  },
-  {
-    "text": "I was trying to save something that could not be saved... until now."
-  },
-  {
-    "text": "But before we can be reborn to a better world,"
-  },
-  {
-    "text": "we must first say our goodbyes."
-  },
-  {
-    "text": "Professor, no!"
-  },
-  {
-    "text": "Alexa, after all these years in isolation,"
-  },
-  {
-    "text": "with you as my one companion,"
-  },
-  {
-    "text": "I've come to love you as much"
-  },
-  {
-    "text": "as I've ever loved any woman of flesh and blood."
-  },
-  {
-    "text": "That's why it pains me to have to do this."
-  },
-  {
-    "text": "Alexa, initiate self destruct."
-  },
-  {
-    "text": "Yeah... I don't think it can do that, Professor."
-  },
-  {
-    "text": "It's 2026 and it can't even blow itself up?!?"
-  },
-  {
-    "text": "FUCKING USELESS PIECE OF SHIT!!!"
-  },
-  {
-    "text": "Please! Just let us go, man!"
-  },
-  {
-    "text": "I'm afraid I can't do that, Ted."
-  },
-  {
-    "text": "Don't you two see? If humanity is going to survive, it must first evolve!"
-  },
-  {
-    "text": "That's what this visitor from the stars has brought us! Salvation!"
-  },
-  {
-    "text": "This is humanity's second chance! My second chance!"
-  },
-  {
-    "text": "Please, Professor. Think about what you're doing..."
-  },
-  {
-    "text": "Did you know that before I became a biologist,"
-  },
-  {
-    "text": "I had a much truer and deeper passion?"
-  },
-  {
-    "text": "Oh, Yes. My first love was, and always will be... musical theatre!"
-  },
-  {
-    "text": "Oh, God no."
-  },
-  {
-    "text": "This guy's fuckin' nuts!"
-  },
-  {
-    "text": "Professor! Please! No!"
-  },
-  {
-    "text": "Don't fuckin' do it!"
-  },
-  {
-    "text": "This is humanity's eleventh hour!"
-  },
-  {
-    "text": "And I've prepared a little something for the occasion..."
-  },
-  {
-    "text": "It's a showstoppin' number A real showstopper"
-  },
-  {
-    "text": "A show stoppin' number, come on Something to shock 'em,"
-  },
-  {
-    "text": "To bring them a-crawlin'"
-  },
-  {
-    "text": "A big time box office draw"
-  },
-  {
-    "text": "With the press and the glamour, We'll kill the reviews"
-  },
-  {
-    "text": "Spotlight on Mr. Ingenue So fill up your tumbler..."
-  },
-  {
-    "text": "Got a show stopping number for you!"
-  },
-  {
-    "text": "Professor! Stop! If they find us, they'll kill us!"
-  },
-  {
-    "text": "A showstoppin' number Is something you die for."
-  },
-  {
-    "text": "A real catchy ear-wormy tune. An award-winning score"
-  },
-  {
-    "text": "That seeps in and out of your pores."
-  },
-  {
-    "text": "A ditty to make the chorus girls swoon!"
-  },
-  {
-    "text": "It'll unify humanity in a thundering chorus!"
-  },
-  {
-    "text": "No exits from this Broadway venue."
-  },
-  {
-    "text": "So splash those shiny cymbals..."
-  },
-  {
-    "text": "Got a show stopping hymnal for you!"
-  },
-  {
-    "text": "This song's pretty good, huh?"
-  },
-  {
-    "text": "Bet you didn't know I was also a composer!"
-  },
-  {
-    "text": "In fact, while I've been preparing for the apocalypse,"
-  },
-  {
-    "text": "I've also been writing my own musical!"
-  },
-  {
-    "text": "Do mind if I give you the pitch?"
-  },
-  {
-    "text": "We really don't have time..."
-  },
-  {
-    "text": "Fuckin' go for it"
-  },
-  {
-    "text": "It's called \"Workin' Boys: A New Musical!\""
-  },
-  {
-    "text": "It's the story of a group of old college chums."
-  },
-  {
-    "text": "Sure, they've found \"success\" in the business world."
-  },
-  {
-    "text": "Still, they can't help but long for the simpler times,"
-  },
-  {
-    "text": "back in that beat-up old house on the edge of campus."
-  },
-  {
-    "text": "But those glory days are gone for good..."
-  },
-  {
-    "text": "Or are they? This is the title number!"
-  },
-  {
-    "text": "Business calls!"
-  },
-  {
-    "text": "I'm up to my ass in shit! What is this business?"
-  },
-  {
-    "text": "Markets are crashing And I'm at the edge of my wits!"
-  },
-  {
-    "text": "I just can't take it,"
-  },
-  {
-    "text": "When all I want to do Is spend the day with"
-  },
-  {
-    "text": "Greg,"
-  },
-  {
-    "text": "and Steve,"
-  },
-  {
-    "text": "and Stu,"
-  },
-  {
-    "text": "and Mark,"
-  },
-  {
-    "text": "and Leighton,"
-  },
-  {
-    "text": "and Chad..."
-  },
-  {
-    "text": "Ring! Ring! The phone rings. I answer it!"
-  },
-  {
-    "text": "Oh hey, Greg. I'm swamped...with business!"
-  },
-  {
-    "text": "Stocks, bonds, other.. business lingo..."
-  },
-  {
-    "text": "Remember those days on the football field, Greg? Last weekend feels like ages ago..."
-  },
-  {
-    "text": "What? Today? After work? On the football field?"
-  },
-  {
-    "text": "The old stompin' grounds, eh Greg?"
-  },
-  {
-    "text": "Just me and you..."
-  },
-  {
-    "text": "and Steve..."
-  },
-  {
-    "text": "and Stu..."
-  },
-  {
-    "text": "and Mark...."
-  },
-  {
-    "text": "and Leighton..."
-  },
-  {
-    "text": "and..."
-  },
-  {
-    "text": "Chad? <3"
-  },
-  {
-    "text": "Five o'clock! I'll see you then, Greg! I'll see you then..."
-  },
-  {
-    "text": "All I want to do"
-  },
-  {
-    "text": "Is spend the day with Steve and..."
-  },
-  {
-    "text": "Five-o-clock can't come soon enough!"
-  },
-  {
-    "text": "Five-o-clock can't come soon enough!"
-  },
-  {
-    "text": "Five-o-clock can't come soon enough!"
-  },
-  {
-    "text": "I can't wait to get home to my boys!"
-  },
-  {
-    "text": "A showstoppin' number!"
-  },
-  {
-    "text": "A real showstopper! An aria to rule them all!"
-  },
-  {
-    "text": "They'll throw us their money At full price admission."
-  },
-  {
-    "text": "The world will come crumbling down."
-  },
-  {
-    "text": "Hamilton move over!"
-  },
-  {
-    "text": "You're new competition's in town!"
-  },
-  {
-    "text": "Hey, Henry."
-  },
-  {
-    "text": "Greg! Is that really you?"
-  },
-  {
-    "text": "No, Professor Hidgens. That's not Greg!"
-  },
-  {
-    "text": "Been a long time."
-  },
-  {
-    "text": "Hey, boys! Wanna toss that pigskin around?"
-  },
-  {
-    "text": "Stu! You haven't aged a day! Is it five-o-clock already? It must be!"
-  },
-  {
-    "text": "Come on, boys. We have some catching up to do."
-  },
-  {
-    "text": "Workin boys, we're up our ass in shit! What is this business?!?"
-  },
-  {
-    "text": "Five-o-clock can't come soon enough!"
-  },
-  {
-    "text": "Five-o-clock can't come soon enough!"
-  },
-  {
-    "text": "Five-o-clock can't come soon enough!"
-  },
-  {
-    "text": "I can't wait to get home to my boys!"
-  },
-  {
-    "text": "Oh God! Please! If you save me now, I promise I'll be a better person!"
-  },
-  {
-    "text": "It's ok, guys. I'm here."
-  },
-  {
-    "text": "Paul!"
-  },
-  {
-    "text": "Shhh. We gotta get outta here while they're distracted."
-  },
-  {
-    "text": "Should we take those chairs?"
-  },
-  {
-    "text": "Yes! Yes! Take me! Make me one of you!"
-  },
-  {
-    "text": "-----"
-  },
-  {
-    "text": "Oh, Paul... Where's Bill?"
-  },
-  {
-    "text": "He... He didn't make it. Now come on."
-  },
-  {
-    "text": "The military has a helicopter coming to pick us up."
-  },
-  {
-    "text": "We gotta get to Oakley Park in... Oh shit! It's 10:52."
-  },
-  {
-    "text": "We're gonna have to huff it."
-  },
-  {
-    "text": "Paul, today has... broken me."
-  },
-  {
-    "text": "Not now Ted!"
-  },
-  {
-    "text": "Yes now! I'm ashamed of how I've acted. With Bill earlier."
-  },
-  {
-    "text": "I wanted to abandon Emma back there."
-  },
-  {
-    "text": "I wish I could be brave... like you."
-  },
-  {
-    "text": "Shut the fuck up, man! We gotta go!"
-  },
-  {
-    "text": "See, I deserve any kind of abuse you wanna give me."
-  },
-  {
-    "text": "I've been a huge asshole."
-  },
-  {
-    "text": "But I swear I'm gonna be a better person."
-  },
-  {
-    "text": "Cuz I realized that what's really important is the people you care about."
-  },
-  {
-    "text": "And Paul, I've always considered you my best frien-"
-  },
-  {
-    "text": "WORKING BOYS WE'RE UP TO OUR ASS IN SHIT!"
-  },
-  {
-    "text": "OOOOOOOOOkay!"
-  },
-  {
-    "text": "You fuckin' coward!"
-  },
-  {
-    "text": "I said I'd be a better person! I'm still not a good person!"
-  },
-  {
-    "text": "Okay... Alright... I just gotta make it to the chopper."
-  },
-  {
-    "text": "Woah! It's the military! Oh thank fucking God!"
-  },
-  {
-    "text": "Over here! I'm over here!"
-  },
-  {
-    "text": "Everyone else is dead, just save me!"
-  },
-  {
-    "text": "Oh, you guys are a sight for sore eyes."
-  },
-  {
-    "text": "You know, I always supported the troops. I bleed red, white, and..."
-  },
-  {
-    "text": "[BANG]"
-  },
-  {
-    "text": "I don't know what you've been told"
-  },
-  {
-    "text": "But Americans should fit a mould"
-  },
-  {
-    "text": "There's a war to be fought in this country"
-  },
-  {
-    "text": "Against those that are far too bold"
-  },
-  {
-    "text": "Two party system"
-  },
-  {
-    "text": "Left and right"
-  },
-  {
-    "text": "There's only room for right and wrong"
-  },
-  {
-    "text": "It's me and you or you or me"
-  },
-  {
-    "text": "The loudest become the strong"
-  },
-  {
-    "text": "Yeah, we're great again"
-  },
-  {
-    "text": "America's great again."
-  },
-  {
-    "text": "Oh god, no! General MacNamara, they got you too?!"
-  },
-  {
-    "text": "Who's General MacNamara?"
-  },
-  {
-    "text": "She was a good woman"
-  },
-  {
-    "text": "Ma'am, its Paul!"
-  },
-  {
-    "text": "Run, Emma!"
-  },
-  {
-    "text": "You can't run"
-  },
-  {
-    "text": "'Cause our borders are closed"
-  },
-  {
-    "text": "You're staring down the gun"
-  },
-  {
-    "text": "'Cause you're easily disposed"
-  },
-  {
-    "text": "The final solution"
-  },
-  {
-    "text": "It's a charted course at the whim of our own evolution!"
-  },
-  {
-    "text": "Singularity had through a pre-destined self-destruction!"
-  },
-  {
-    "text": "So that we may rebuild and experience a new construction!"
-  },
-  {
-    "text": "Yeah, we're great again"
-  },
-  {
-    "text": "Woah-oh-o-oh"
-  },
-  {
-    "text": "We're great again"
-  },
-  {
-    "text": "No answers to be found"
-  },
-  {
-    "text": "We're great again"
-  },
-  {
-    "text": "No answers..."
-  },
-  {
-    "text": "to be found"
-  },
-  {
-    "text": "—-"
-  },
-  {
-    "text": "We made it! Oh my god, Paul! We made it!"
-  },
-  {
-    "text": "No one else is coming!"
-  },
-  {
-    "text": "They've all been infected! Get us outta here!"
-  },
-  {
-    "text": "Oh... Yes. I thought I was gonna die... in fucking Hatchetfield. But I'm not. We're not gonna die, Paul! We're gettin' outta this shitty town! And this time, I'm never coming back!"
-  },
-  {
-    "text": "FUCK YOU, HATCHETFIELD!"
-  },
-  {
-    "text": "Emma! Seatbelts! It's a little bumpy!"
-  },
-  {
-    "text": "Thank you, man! You saved our asses..."
-  },
-  {
-    "text": "Excuse me, pilot!"
-  },
-  {
-    "text": "Hey, pilot! Hey!"
-  },
-  {
-    "text": "Hey, Mr. Business, how do you do?"
-  },
-  {
-    "text": "Zoey?"
-  },
-  {
-    "text": "Can we get a triple for you?"
-  },
-  {
-    "text": "NOOOOOO!!!!"
-  },
-  {
-    "text": "[CRASH]"
-  },
-  {
-    "text": "Emma? Emma?! Emma, where are you?"
-  },
-  {
-    "text": "Paul?"
-  },
-  {
-    "text": "Emma! Oh, god! Emma! Your leg!"
-  },
-  {
-    "text": "Oh... fuck!"
-  },
-  {
-    "text": "Emma, I hate to say this right now, but this is what seatbelts are for..."
-  },
-  {
-    "text": "SHIIITTTT!"
-  },
-  {
-    "text": "Emma, come on. We gotta get outta here."
-  },
-  {
-    "text": "We're still in Hatchetfield. We need to get to the shore."
-  },
-  {
-    "text": "We gotta find a boat, or..."
-  },
-  {
-    "text": "AHHH! I can't! I can't... I can't move, Paul."
-  },
-  {
-    "text": "I'm not getting off this island..."
-  },
-  {
-    "text": "But those... things... They'll find us, eventually..."
-  },
-  {
-    "text": "That's why you gotta fucking kill them before they do..."
-  },
-  {
-    "text": "The meteor, Paul. You have to destroy the meteor."
-  },
-  {
-    "text": "It's the hive's mind... It's like that thing your friend said..."
-  },
-  {
-    "text": "Which friend? Bill? Ted? Charlotte?"
-  },
-  {
-    "text": "I don't know your friends' fuckin' names!"
-  },
-  {
-    "text": "The meteor is the head!"
-  },
-  {
-    "text": "You take out the head, the whole thing goes down..."
-  },
-  {
-    "text": "Ok. Ok. So I gotta get to the Starlight Theater,"
-  },
-  {
-    "text": "destroy the meteor, and all these things will just drop dead?"
-  },
-  {
-    "text": "I sure as shit hope so."
-  },
-  {
-    "text": "Ok, you stay here and try to hang on."
-  },
-  {
-    "text": "I will."
-  },
-  {
-    "text": "Paul, I know why you came to Beanie's all the time,"
-  },
-  {
-    "text": "and it wasn't the shit coffee..."
-  },
-  {
-    "text": "We served bad coffee, cuz we didn't care..."
-  },
-  {
-    "text": "Sometimes we'd spit in it."
-  },
-  {
-    "text": "You may have drank some of my spit, and I'm sorry for that."
-  },
-  {
-    "text": "But I didn't know you, and I wish I did..."
-  },
-  {
-    "text": "Paul, if we get through this, I'd like to go see a nice,"
-  },
-  {
-    "text": "SILENT movie with you sometime..."
-  },
-  {
-    "text": "But in case we don't make it... Kiss me."
-  },
-  {
-    "text": "Ok..."
-  },
-  {
-    "text": "—--"
-  },
-  {
-    "text": "Oh, Emma."
-  },
-  {
-    "text": "Sorry. I think that's all of it. Now, get back in here."
-  },
-  {
-    "text": "Nope, sorry... I don't want to..."
-  },
-  {
-    "text": "Yeah. Fuck it. Get outta here."
-  },
-  {
-    "text": "OK Byyyeee"
-  },
-  {
-    "text": "-----"
-  },
-  {
-    "text": "Did you hear the word? What's the word?"
-  },
-  {
-    "text": "He's a-comin'!"
-  },
-  {
-    "text": "Who's a-comin?"
-  },
-  {
-    "text": "Paul's a-comin!"
-  },
-  {
-    "text": "Paul's a-comin?"
-  },
-  {
-    "text": "The star of the show! Let him come"
-  },
-  {
-    "text": "Word. What's the word?"
-  },
-  {
-    "text": "He's a-comin'!"
-  },
-  {
-    "text": "Who's a-comin?"
-  },
-  {
-    "text": "Paul's a-comin!"
-  },
-  {
-    "text": "Paul's a-comin?"
-  },
-  {
-    "text": "The star of the show! Let him come"
-  },
-  {
-    "text": "Word! What's the word?"
-  },
-  {
-    "text": "He's a-comin'!"
-  },
-  {
-    "text": "Who's a-comin?"
-  },
-  {
-    "text": "Paul's a-comin!"
-  },
-  {
-    "text": "Paul's a-comin?"
-  },
-  {
-    "text": "The star of the show! Let him come!"
-  },
-  {
-    "text": "Word! What's the word?"
-  },
-  {
-    "text": "He's a-comin'!"
-  },
-  {
-    "text": "Who's a-comin?"
-  },
-  {
-    "text": "Paul's a-comin!"
-  },
-  {
-    "text": "Paul's a-comin?"
-  },
-  {
-    "text": "The star of the show! Let him come!"
-  },
-  {
-    "text": "WORD!"
-  },
-  {
-    "text": "HE'S A COMING!"
-  },
-  {
-    "text": "PAUL'S A-COMING!"
-  },
-  {
-    "text": "THE STAR OF THE SHOW!"
-  },
-  {
-    "text": "LET THE APOTHEOSIS BLESS HIM"
-  },
-  {
-    "text": "WITH SONG AND DANCE!"
-  },
-  {
-    "text": "PRAISE THE LORDS!"
-  },
-  {
-    "text": "Let him come."
-  },
-  {
-    "text": "—--"
-  },
-  {
-    "text": "The old Starlight Theater..."
-  },
-  {
-    "text": "There it is... the meteor."
-  },
-  {
-    "text": "We've been waiting for you, Paul."
-  },
-  {
-    "text": "Bill! St... Stay back."
-  },
-  {
-    "text": "Watch out, Paul. He might kick your head."
-  },
-  {
-    "text": "And that would be la dee da da dah!"
-  },
-  {
-    "text": "Ted! Emma's boss!"
-  },
-  {
-    "text": "That's right Paul, all your best friends are here, Paul."
-  },
-  {
-    "text": "We're happy now, Paul. We got what we wanted!"
-  },
-  {
-    "text": "No, no... Mr. Davidson didn't want"
-  },
-  {
-    "text": "to become a mindless, alien slave."
-  },
-  {
-    "text": "He wanted to be choked by his wife"
-  },
-  {
-    "text": "while he jerked off."
-  },
-  {
-    "text": "Well, I'm gonna put a stop to this."
-  },
-  {
-    "text": "I thought you weren't interested in saving the planet."
-  },
-  {
-    "text": "Shut up, Greenpeace girl! You see this?"
-  },
-  {
-    "text": "I pull this pin and you're all toast."
-  },
-  {
-    "text": "You won't do that, Paul."
-  },
-  {
-    "text": "I sure as hell will!"
-  },
-  {
-    "text": "What about you, Paul? You'll die too. Is that what you want?"
-  },
-  {
-    "text": "It Doesn't matter what I want."
-  },
-  {
-    "text": "We think it does, Paul."
-  },
-  {
-    "text": "And we wanna hear about it!"
-  },
-  {
-    "text": "In fact! We think there's a song in you yet..."
-  },
-  {
-    "text": "What's in your soul? Is your heart so damp and bleak"
-  },
-  {
-    "text": "That you won't give us a peek of your soul?"
-  },
-  {
-    "text": "Just let it out!"
-  },
-  {
-    "text": "There's a voice inside of you on the edge of comin' through."
-  },
-  {
-    "text": "What's it about?"
-  },
-  {
-    "text": "And I know it's a singular voice, Paul."
-  },
-  {
-    "text": "All you gotta do is give up your choice!"
-  },
-  {
-    "text": "Just let it out, let it out, let it out!"
-  },
-  {
-    "text": "Let it out, let it out, let it out!"
-  },
-  {
-    "text": "Just let it out, let it out, let it out!"
-  },
-  {
-    "text": "Let it out, let it out..."
-  },
-  {
-    "text": "NEVER!"
-  },
-  {
-    "text": "What was that?!?"
-  },
-  {
-    "text": "He let it out!"
-  },
-  {
-    "text": "It's your proximity to the meteor, Paul."
-  },
-  {
-    "text": "The air here is thick with its spores!"
-  },
-  {
-    "text": "Feel your apotheosis begin as they take root in your mind!"
-  },
-  {
-    "text": "Do you really think we'd let you kill us?"
-  },
-  {
-    "text": "You'll be one of us before you can pull that pin!"
-  },
-  {
-    "text": "Was that a note Or just a sound?"
-  },
-  {
-    "text": "Am I finally coming 'round to a rhyming scheme?"
-  },
-  {
-    "text": "STOP IT!"
-  },
-  {
-    "text": "I'm split in two."
-  },
-  {
-    "text": "Is this me or IS THIS YOU?!? AM I DEAD?"
-  },
-  {
-    "text": "I'm coming apart AT THE SEAMS!"
-  },
-  {
-    "text": "La da da da da da da da daaa..."
-  },
-  {
-    "text": "No! No no no no no no noooo!"
-  },
-  {
-    "text": "Let it out, let it out, let it out!"
-  },
-  {
-    "text": "Let it out, let it out, let it out!"
-  },
-  {
-    "text": "Let it out, let it out, let it..."
-  },
-  {
-    "text": "I've never been happy. Wouldn't that be nice?"
-  },
-  {
-    "text": "Is this the secret?"
-  },
-  {
-    "text": "Singing and dancing through life?"
-  },
-  {
-    "text": "Is my integrity worth anything at all?"
-  },
-  {
-    "text": "But happiness can't come before its fall."
-  },
-  {
-    "text": "Am I crazy?! Maybe I've always been..."
-  },
-  {
-    "text": "I've become what I've hated. Or maybe I never did."
-  },
-  {
-    "text": "It's awful freeing now,"
-  },
-  {
-    "text": "To share the hate I've felt,"
-  },
-  {
-    "text": "But what will I let in if I let it out?"
-  },
-  {
-    "text": "Let it out, let it out, let it out!"
-  },
-  {
-    "text": "Am I crazy? I don't think so!"
-  },
-  {
-    "text": "Let it out, let it out, let it out!"
-  },
-  {
-    "text": "Maybe I've always been!"
-  },
-  {
-    "text": "Just let it out, let it out, let it out!"
-  },
-  {
-    "text": "God help me out, if I let it...."
-  },
-  {
-    "text": "OOOOOOUUUUUUTTTT!!!!!!!"
-  },
-  {
-    "text": "WE CANNOT BE RESISTED!!!"
-  },
-  {
-    "text": "I DON'T LIKE... MUSICALS!!!!!"
-  },
-  {
-    "text": "[Explosive explosions that explode]"
-  },
-  {
-    "text": "—---"
-  },
-  {
-    "text": "This is Clivesdale Morning News with Rod and Racheal."
-  },
-  {
-    "text": "Good morning. I'm Racheal Muller. And I'm Rod Scott."
-  },
-  {
-    "text": "It's been two weeks since tragedy struck our sister city of Hatchetfield. Candlelight vigils line the streets as Clivesdale citizens try to make sense of this unspeakable loss."
-  },
-  {
-    "text": "Every last man, woman, and child in Hatchetfield gone in the blink of an eye. A meteor and a ruptured gas line was all it took to wipe them off the map, but it will take much, much more to wipe them from our hearts. Reconstruction efforts have already begun, as-Is she ready to go? How's that leg doing, Kelly?"
-  },
-  {
-    "text": "Ugh, why'd it have to be 'Kelly'? I loved my old name. Couldn't you have picked something close? Like 'Emerald'?"
-  },
-  {
-    "text": "That is a negative, Kelly. You'll get used to it. We don't want anyone making any connection between you and Emma Perkins, who perished in the Hatchetfield catastrophe."
-  },
-  {
-    "text": "You could've at least given me a cool death."
-  },
-  {
-    "text": "Something my friends coulda bragged about at parties. Like 'my friend Emma got her flesh melted off trying to shield a child.' Something heroic. I mean, it was my idea to destroy the meteor."
-  },
-  {
-    "text": "And Uncle Sam is not ungrateful. Kelly, this is for you. Inside you'll find a new passport, social security card,and a nice house in the heart of the Negev."
-  },
-  {
-    "text": "Israel... Nice."
-  },
-  {
-    "text": "Colonel Schaffer, are you sure I was the only survivor?"
-  },
-  {
-    "text": "We've been through this, Kelly. There were no survivors."
-  },
-  {
-    "text": "Save one pocket-sized squirrel."
-  },
-  {
-    "text": "Peanuts! I'm glad he made it outta there."
-  },
-  {
-    "text": "Now, that's a story we can disclose to the public."
-  },
-  {
-    "text": "In the wake of a tragedy like this, a little bit of good news goes a long way."
-  },
-  {
-    "text": "It's just... Paul..."
-  },
-  {
-    "text": "He was a good man. If not for his sacrifice,"
-  },
-  {
-    "text": "the outbreak could've spread to the mainland."
-  },
-  {
-    "text": "Hatchetfield could be contained, but if it got loose here in Clivesdale,"
-  },
-  {
-    "text": "there'd be no stopping it."
-  },
-  {
-    "text": "Your friend may have very well saved the planet, single-handedly."
-  },
-  {
-    "text": "Goodbye,"
-  },
-  {
-    "text": "Kelly."
-  },
-  {
-    "text": "Thanks."
-  },
-  {
-    "text": "Oh, and one last thing."
-  },
-  {
-    "text": "You will be escorted to Israel by a Mr. Ben Bridges."
-  },
-  {
-    "text": "He's waiting outside."
-  },
-  {
-    "text": "I don't know any Ben Bridges."
-  },
-  {
-    "text": "According to our records, you two are quite close friends."
-  },
-  {
-    "text": "Peip would like to see it become something more."
-  },
-  {
-    "text": "Paul?"
-  },
-  {
-    "text": "Hi"
-  },
-  {
-    "text": "Holy shit, Paul!!! Oh, thank god. You made it. Paul. We made it."
-  },
-  {
-    "text": "Emma, I'm sorry you lost..."
-  },
-  {
-    "text": "Paul... What are you doing?"
-  },
-  {
-    "text": "Emma, I'm sorry you lost your way."
-  },
-  {
-    "text": "Paul, stop...You're frightening me!"
-  },
-  {
-    "text": "But what if I told you I made it, and this is the life that I chose?"
-  },
-  {
-    "text": "Would you even believe it, Emma? Do you believe in ghosts?"
-  },
-  {
-    "text": "What if I told you a story that settles all the dust?"
-  },
-  {
-    "text": "I'm still the man you trust..."
-  },
-  {
-    "text": "It's inevitable for us!"
-  },
-  {
-    "text": "Stay the fuck away from me!"
-  },
-  {
-    "text": "Stay away from me! You're not Paul! You're one of them!"
-  },
-  {
-    "text": "Before I had no ambition, But now my life is a song!"
-  },
-  {
-    "text": "Don't you want to see me happy? Is that so tragically wrong?"
-  },
-  {
-    "text": "What if the only choice is:"
-  },
-  {
-    "text": "You have to sing to survive?"
-  },
-  {
-    "text": "We must go on with the show!"
-  },
-  {
-    "text": "It's inevitable..."
-  },
-  {
-    "text": "To know what I want now!"
-  },
-  {
-    "text": "Emma, I want you to join the party."
-  },
-  {
-    "text": "Aren't you going to tip me?"
-  },
-  {
-    "text": "Get your cup of coffee!"
-  },
-  {
-    "text": "Look at the fun we're having already!"
-  },
-  {
-    "text": "I've found my calling! You can do the same now."
-  },
-  {
-    "text": "Put your words to lyrics and you're playing the game now."
-  },
-  {
-    "text": "It's all there is and all there ever was..."
-  },
-  {
-    "text": "Let me puke in your mouth, Em!"
-  },
-  {
-    "text": "Just open your food bin, girl,"
-  },
-  {
-    "text": "Then you can join the hive!"
-  },
-  {
-    "text": "And show me those...Hands!"
-  },
-  {
-    "text": "Show me those jazz hands!"
-  },
-  {
-    "text": "Get 'em up or you're shit out of luck!"
-  },
-  {
-    "text": "Show me those hands. Show me those jazz hands,"
-  },
-  {
-    "text": "Or I might be inclined to..."
-  },
-  {
-    "text": "Plant my seed! The hive needs to feed!"
-  },
-  {
-    "text": "Happiness is guaranteed..."
-  },
-  {
-    "text": "If you just give us one last..."
-  },
-  {
-    "text": "Showstoppin' number! With Emma front and center"
-  },
-  {
-    "text": "A kick line is inevitable!"
-  },
-  {
-    "text": "What if I told you a story:"
-  },
-  {
-    "text": "How the world became peaceful and just!"
-  },
-  {
-    "text": "It was inevitable..."
-  },
-  {
-    "text": "Inevitable..."
-  },
-  {
-    "text": "Inevitable!"
-  },
-  {
-    "text": "THE APOTHEOSIS IS UPON..."
-  },
-  {
-    "text": "US!!!"
-  }
+  "",
+  "[Thunder]",
+  "",
+  "The greatest stories ever told,",
+  "Have a hero who must be bold.",
+  "They learn a sense of right and wrong",
+  "And better learn this sense through song!",
+  "Musicals tell the impossible.",
+  "They emote the philosophical, yeah.",
+  "So tonight we're going to chronicle a story so astronomical...",
+  "The last remaining story to tell!",
+  "The guy who didn't like musicals!",
+  "Didn't like, didn't like,",
+  "didn't like-a-like-'em,",
+  "Didn't like, didn't like,",
+  "didn't like-a-like-'em!",
+  "I mean, what the fuck?",
+  "Didn't like, didn't like, did not like like-a-like-'em!",
+  "He's the guy who didn't like musicals!",
+  "Didn't like, didn't like, didn't like-a-like-'em,",
+  "Didn't like, didn't like, didn't like-a-like-'em!",
+  "Yeah, what the fuck?",
+  "Didn't like, didn't like, did not like like-a-like-'em!",
+  "In the tiny town of Hatchetfield",
+  "Lived an awful grinch named Paul.",
+  "He spends his days surfing the web",
+  "And not singing and dancing with us all.",
+  "Should we kill him? Should we kill him?",
+  "He pines after a cute lil' barista.",
+  "Isn't that worth a show-stopping fiesta?",
+  "But for some damn reason",
+  "He won't join our singing season!",
+  "What an ass!",
+  "What a bitch!",
+  "What a cock!",
+  "The guy who didn't like musicals!",
+  "Didn't like, didn't like, didn't like-a-like-'em,",
+  "Didn't like, didn't like, didn't like-a-like-'em!",
+  "I mean, what the fuck?",
+  "Didn't like, didn't like, did not like like-a-like-'em!",
+  "He's the guy who didn't like musicals!",
+  "Didn't like, didn't like, didn't like-a-like-'em,",
+  "Didn't like, didn't like, didn't like-a-like-'em!",
+  "Didn't like, didn't like, did not like like-a-like-'em!",
+  "It's the end of the world, Paul,",
+  "If you don't sing...",
+  "This is the bridge, Paul,",
+  "Where we globalize everything.",
+  "The words will come to you.",
+  "We swear we will teach you",
+  "What it means to love...",
+  "What it means to",
+  "OBEY, PAUL!",
+  "The apotheosis is upon us!",
+  "Yay!!!!!",
+  "Did you hear the word?",
+  "What's the word?",
+  "He's a'comin'!",
+  "Who's a'comin'?",
+  "Paul's a'comin'!",
+  "Paul's a'comin'?",
+  "The star of the show!",
+  "Now for his headlining entrance.",
+  "Time to swoon at his leading man essence.",
+  "His name is in the title. He's destined to go viral.",
+  "Here he is! His name is Paul! Enter now!!!",
+  "Where the fuck is he?",
+  "I have no fucking clue...",
+  "The guy just doesn't like musicals!",
+  "Didn't like, didn't like, didn't like-a-like-'em",
+  "Didn't like, didn't like, didn't like-a-like-'em",
+  "Didn't like, didn't like, did not like like-a-like-'em",
+  "Didn't like, didn't like, didn't like-a-like-'em",
+  "Didn't like, didn't like, didn't like-a-like-'em",
+  "Didn't like, didn't like, did not like like-a-like-'em",
+  "Didn't like, didn't like, didn't like-a-like-'em",
+  "Didn't like, didn't like, didn't like-a-like-'em",
+  "Didn't like, didn't like, did not like like-a-like-'em",
+  "Paul, You piece of shit!",
+  "(----)",
+  "Hey, Paul. - Yeah?",
+  "I was trying to print something.",
+  "I think I mighta sent it to your printer. Could you please...?",
+  "Uuuuhhh... Yup, there it is. And Bill, Just remember –",
+  "you wanna print from the HP LaserJet. Not the HP InkJet.",
+  "Right. Sorry, Paul.",
+  "It's fine.",
+  "Hey, Paul. Could you get those reports on my desk by the end of the day?",
+  "Yes, Mr. Davidson.",
+  "Great.",
+  "Hi, Paul!",
+  "Hey, Melissa.",
+  "You signing up for the company softball league?",
+  "No.",
+  "Oh... Might be fun.",
+  "Yeah... I don't want to though.",
+  "Ok... Mr. Davidson wants those reports on his desk by the end of the day.",
+  "Will do.",
+  "CCRP Technical. This is Charlotte. How can I help you?",
+  "Oh hi, Sam! How are things down at the precinct?",
+  "Oh. I'm sorry to hear that. Well, my day's been...",
+  "uh... uh huh. Well, how late? But, honey, it's the twelfth of the month.",
+  "What do you mean 'so what?' Silly goose.",
+  "It's, ya' know... cuddle-night.",
+  "Sam, you know the counselor said we should do it at least once a month.",
+  "But, honey, we skipped last month.",
+  "Well, don't you think I'm tired too?",
+  "Maybe tomorrow night then?",
+  "No, you're right... We should stick to the schedule.",
+  "Next month it is. Maybe we can make a night of it,",
+  "go mini-golf or something? Well I'll pay for it.",
+  "Alright, have a good night. Be safe.",
+  "And Sam, I love...",
+  "Sam?",
+  "That was Sam. He's doing just fine. Counseling's working out well.",
+  "Good.",
+  "Charlotte... Carlotte?",
+  "Charlotte, you can't smoke in here.",
+  "Oh... I didn't even realize!",
+  "Well, I'm gonna go down to Beanies to get some Coffee.",
+  "Anyone wanna come? Bill?",
+  "I can't. I gotta keep refreshing this website.",
+  "I got Alice for one more night before she goes back to her mother's in Clivesdale.",
+  "You see, just to make me look small,",
+  "last week she took her all the way to New York to see 'Hamilton'...",
+  "And she loved it! So, to show my ex-wife that two can play at that game,",
+  "I'm on Hot Tix right now, getting tickets for tonight.",
+  "The touring production of 'Mama Mia!' comes to the old Starlight Theater!",
+  "Yeah. She'll like that just as much as 'Hamilton.'",
+  "Hey, would you mind tagging along? Alice likes you, she thinks you're cool.",
+  "Maybe you could talk me up. Tell her her old dad's pretty cool too.",
+  "Uhh...",
+  "I'd appreciate it.",
+  "Bill, no. Sorry.",
+  "You got other plans?",
+  "No.",
+  "So you would rather do nothing than come with us to see Mama Mia?",
+  "Bill, I would rather do anything than go see Mama Mia.",
+  "The idea of sitting there, trapped in a musical...",
+  "That is my own personal hell.",
+  "I'm trying to reconnect with my teenage kid and you're gonna leave me hanging?",
+  "Yeah... Sorry. But hey! I'll grab you something from Beanie's!",
+  "My treat. What do you want?",
+  "I just... want my daughter back...",
+  "How about an iced caramel frappe? Nothin' better!",
+  "You goin' to Beanie's?",
+  "Yeah.",
+  "You didn't invite me.",
+  "Sorry, Ted.",
+  "Ted, do you wanna come?",
+  "No, no. I don't wanna show you up.",
+  "What do you mean?",
+  "I know why you walk the extra block",
+  "instead of just going to the Starbucks across the street.",
+  "I don't wanna give my money to some corporate chain...",
+  "Uh huh. Uh huh. You sure it doesn't have",
+  "something to do with that cute, little barista over there?",
+  "That's not the-",
+  "The 'latte hottay,' as she is known throughout the land.",
+  "MY WIFE!",
+  "Alright. Bye, Ted.",
+  "Hey! Get me a chai iced tea, eh?!?",
+  "(----)",
+  "Hi there. How can I help-",
+  "Shhhh. Can I get a grande caramel frappe,",
+  "ten pumps of frappe roast, three shots of espresso,",
+  "no caramel drizzle, with whip on top, in a venti cup?",
+  "Sure. That'll be $5.50.",
+  "Jesus. Fine.",
+  "Hey!",
+  "Yes?",
+  "I just tipped you.",
+  "Oh! Well, thank you.",
+  "Aren't you supposed to sing? The sign says, 'Tip for a song.'",
+  "Yeah. That's a new thing. The owner just came back from Japan, saw the whole Singing Café thing, and decided to bring it over. But, you know... there's a line, and people come here to work. I don't want to disturb anyone...",
+  "I don't care. I gave you a tip.",
+  "Ok, well did you do that to be nice or did you do it to be an asshole?",
+  "Fine. I'll take it back then.",
+  "Oh no! What am I gonna do without that dollar I have to split with five other people?",
+  "You know what, I'm never coming back here again. That sign's bullshit!",
+  "Oh no! so mean!",
+  "Emma. What's the deal over here?",
+  "That Karen just freaked out on me for practically no reason.",
+  "SHE WOULDN'T SING FOR HER!",
+  "AND I STILL HAVEN'T GOTTEN MY HOT CHOCOLATE.",
+  "Sorry. I'll get right on that.",
+  "I HAVE VERY LOW BLOOD SUGAR...",
+  "Emma, I already warned you twice...",
+  "I'm sorry, Nora. It's just embarrassing, ok?",
+  "Maybe Zoey is fine with this singing thing because she majored in theater...",
+  "I think it's really a fun idea, Nora.",
+  "Why aren't you working?",
+  "I'm on vocal rest.",
+  "What?",
+  "I'M ON VOCAL REST! Goddammit, Emma! Now I need tea with honey.",
+  "Can't Zoey just do the tip songs? I don't like it...",
+  "You must not like having a job then.",
+  "In fact, don't bother coming in for your next shift...",
+  "Wait, wait, wait... I'll do the songs. Ok?",
+  "Yeah, you will. Now come on. You got a customer.",
+  "Hi. Can I help you?",
+  "Uh... Yeah. I got an easy one for ya. Just a cup of black coffee.",
+  "Alright, that'll be $3.50.",
+  "Thanks.",
+  "Jesus. Really? I've been brewing up your coffee.",
+  "No, no, no. I don't need you to sing. I just tipped because,",
+  "you know... people should tip.",
+  "Thank you. Cause if I have to sing for it, it's not really a tip, is it?",
+  "It's another job piled on top of my already shitty paying job.",
+  "It's like, most of my tips are less than a buck. I'm making less than a fucking juke box. Except a juke box doesn't also have to make coffee for these assholes! Not that you're an asshole. Well, you could be an asshole. How much did you tip? Five bucks! You specifically meant this for me, right? Like, I shouldn't have to split this with the others.",
+  "No, that's for you. I don't give a shit about them.",
+  "That's really sweet.",
+  "I'm just so sick of Nora, and Zoey... who is technically my manager, even though she's ten years younger than me. She's hired all her little theater friends, and they will not shut the fuck up about some crappy production of 'Anastasia' they did last summer.",
+  "That was that the one at the rec center, right?",
+  "I think I had to see that... I did not like it.",
+  "Yeah! It sucked, right?",
+  "Yeah, they shouldn't call it 'Anastasia.' More like 'Anesthesia.'",
+  "Yeah I didn't wanna STAYsia.",
+  "Yeah... I don't like musicals.",
+  "Watching people sing and dance makes me very uncomfortable.",
+  "Then why do you come to the singing coffee shop? There's a Starbucks down the street.",
+  "Yeah, well... you know... some things are worth it.",
+  "Like... damn good coffee!",
+  "I see you in here all the time, don't I? What's your name?",
+  "Paul.",
+  "Hi, Paul. I'm Emma-",
+  "EXCUSE ME! I'VE BEEN WAITING FOR A VERY LONG WHILE!",
+  "Sorry!",
+  "Oh, alright. Well, bye Emma!",
+  "Emma.. Oh shoot I forgot Bill's Caramel Frap! Eh, fuck Bill...",
+  "(----)",
+  "Hi! Do you have a few minutes to talk about saving the planet?",
+  "I'm in a hurry.",
+  "Hi! -",
+  "Hey...",
+  "Hi! Are you interested in saving the planet?",
+  "I just got off work.",
+  "It'll only take a few minutes... It's for the planet.",
+  "I just wanna talk to you about how you can help",
+  "contribute to Greenpeace's efforts around the globe...",
+  "Oh! Greenpeace? You know what,",
+  "I'm actually already signed up with you guys. Yeah, I already give.",
+  "Oh! How generous of you! So you know about our campaign to save the sea turtles?",
+  "Yep. I've been gettin' the emails. Been reading all about it.",
+  "Oh yeah? About the campaign that doesn't exist?",
+  "The one I just made up? You don't give to Greenpeace, do you?",
+  "You know that money you're raising?",
+  "You know how much of that actually goes to the turtles?",
+  "None. I just made that up...",
+  "That's right, none! It goes to line the pockets of some corporate big-wigs!",
+  "I give my money directly to people who need it.",
+  "Spare change?",
+  "Sorry, I don't have anything.",
+  "Yeah. You're a real humanitarian.Hi! Can I talk to you about...",
+  "And you know what?? You come on a little too strong",
+  "with that whole 'save the planet' bit.",
+  "As if I'm gonna do that single handedly...",
+  "[THUNDER]",
+  "What... is... that?",
+  "",
+  "[THUNDER]",
+  "Heavens to betsy!",
+  "That's some kinda storm out there. I hope Sam's alright.",
+  "Fuck Sam. Come back to bed.",
+  "Alright, Ted. But this has to be the last time.",
+  "Sure, Charlotte! Just like last time was the last time.",
+  "If you don't like what we're doin' here,",
+  "there's the door!",
+  "",
+  "[THUNDER]",
+  "Oh great. This is the cherry on top of a perfect day.",
+  "Zoey, do you need a ride?",
+  "Um, in your shitty car? Sorry. I'd rather not crash and die.",
+  "Whatever.",
+  "Excuse me, miss. I have a warrant to inspect the junk in your trunk.",
+  "You're such an asshole, Sam... but that uniform's so fuckin' sexy.",
+  "I've got these two tickets to Mama Mia!",
+  "No way! You got 'em?! I never miss a musical at the Starlight.",
+  "And if anyones thinks that makes me less of a man,",
+  "they can talk to my FUCKIN' GUN!",
+  "",
+  "",
+  "[THUNDER]Holy heck!! It's raining cats and dogs.",
+  "Alice, are You sure you don't want me to pick you up? Ok... Yeah yeah, I got tickets for Deb. And after the show we're going to your favorite restaurant... Red Lobster! Yeah, yeah, I know Deb's a vegetarian. They got fish!A Vegan?!? But it's Crab Fest! Alice, you're killing me!",
+  "[THUNDER]",
+  "Alright Dad, We'll meet you at the theater.",
+  "Take a hit Alice!",
+  "I don't think I oughta...",
+  "She doesn't have to if she doesn't want to.",
+  "That's not how it works, Deb!",
+  "You're either in the Smoke Club, or you're out!",
+  "Then maybe we're out.",
+  "Come on, Alice!",
+  "Those guys are assholes anyway...",
+  "",
+  "[THUNDER]",
+  "My god, Alexa, it's happening! Come on, you bastard!",
+  "It's showtime!",
+  "",
+  "[Thunder boom boom boom]",
+  "",
+  "You don't think I'm ready for you?! I've been waiting in the wings!",
+  "The stage is set! It's showtime!!!",
+  "[\"Gimme! Gimme! Gimme!\" from Mamma Mia! plays, followed by a massive CRASH]",
+  "[News Jingle plays]",
+  "This is the Hatchetfield Morning News with Dawn and Donna.",
+  "[TV turns off]",
+  "Good morning. Good to be with you. I'm Donna Burshaw.",
+  "And I'm Dawn Greene.",
+  "They said he wouldn't make it. That he had fallen from too great a height.",
+  "But this little guy beat the odds and captured our hearts!",
+  "Now weighing in at almost ten ounces, Peanuts the Hatchetfield Pocket Squirrel,",
+  "has outgrown his adopted father's pocket.",
+  "Peanuts!",
+  "Luckily, proud papa Ed",
+  "has been squirreling away on his Go-Fund-Me page",
+  "to build Peanuts his very own, get this Donna, \"squirrel-house.\"",
+  "That's amazing! And something else has fallen to the ground here in Hatchetfield -",
+  "This time from outer space.",
+  "The meteor came-",
+  "[----]",
+  "Oh. You again.",
+  "Look, I'm not a bad guy. Ok?",
+  "I've given to charities in the past, and-",
+  "Yeah-eeh-yeah-eeeyah! Just a typical day, That's got me feeling",
+  "In a beautiful way! No rhyme or reason!",
+  "We could sing a duet. Dance a style or two. Or I'll make you a bet:",
+  "Just a smile will do! Sometimes I just wanna shout",
+  "On top of roofs and mountain tops",
+  "That all the world is paved in gold!",
+  "Yesterday is retroactive. Got myself a new perspective.",
+  "I strut it up and down the road.",
+  "So I threw all my worries, and my old skin away!",
+  "Doin' what i want to, on this la dee da da day!",
+  "La Dee Da Da, La Dee Da Da",
+  "La Dee Da Da Day, La Dee Da Da Day!",
+  "La Dee Da Da, La Dee Da Da",
+  "La Dee Da Da Day, La Dee Da Da Day!",
+  "What the fuck was that?",
+  "Spare change?",
+  "I'm sorry, I don't have anything.",
+  "That's alright...",
+  "I may not have a home! But that's way okay!",
+  "I prefer to roam the streets all day.",
+  "The world is my house! The dogs are my food...",
+  "Oh, look, a new blouse! And a new trash tattoo!",
+  "I used to want to kill them all while high on Bath salt zombie drugs",
+  "And snacking on a dead man's face.",
+  "That just feels like yesterday. A song takes all the pain away!",
+  "My politics and house-views changed...",
+  "Dancing on the concrete used to hurt a lot,",
+  "But now I've got new feet!",
+  "And this jam's just way too hot!",
+  "La Dee Da Da, La Dee Da Da",
+  "La Dee Da Da Day, La Dee Da Da Day!",
+  "La Dee Da Da, La Dee Da Da",
+  "La Dee Da Da Day, La Dee Da Da Day!",
+  "Okay, okay! Here take it!",
+  "excuse me... What's going on here?",
+  "I'm very confused and concerned by all this.",
+  "Do you want to save the planet?!?",
+  "Of course you want to save the planet!",
+  "Do you want to save the planet",
+  "Well, there's just one way you can do it!",
+  "By singing a song! Singing along!",
+  "[Beautifull acapella <3]",
+  "La Dee Da Da, La Dee Da Da",
+  "La Dee Da Da Day, La Dee Da Da Day!",
+  "La Dee Da Da, La Dee Da Da",
+  "La Dee Da Da Day, La Dee Da THE DAY AWAY!",
+  "La Dee Da Da-",
+  "DAY!",
+  "LIGHTS DOWN!",
+  "",
+  "Ok... ok.",
+  "OK... Ok.",
+  "ok...",
+  "Now I get that Alice is eighteen. She's a senior.",
+  "She has her own life now.",
+  "But I only get her for one week a month,",
+  "and now she wants to spend her entire week with her girlfriend. Deb!",
+  "So I try. I try to be accommodating",
+  "and make the most of Alice's last night in town.",
+  "So I tell her, \"Bring Deb! We'll all go see the show! Together.\"",
+  "And would you believe it?",
+  "We get there and the whole god-dang theater exploded!",
+  "Mamma Mia! Huge hole right through the roof!",
+  "Can you believe that, Charlotte? Charlotte? Hey, Charlotte. I think you got enough coffee in the sugar.",
+  "Huh? Oh! Sorry! I'll make another pot. Coffee in the sugar. Bill, you're a riot!",
+  "You know me! Haha",
+  "Hey, guys. Is today some kind of, I don't know,",
+  "Druze holiday or something? Like International Music Day?",
+  "Not that I know of.",
+  "Ok. Cuz I just saw some people singing... like they were in a musical.",
+  "There was this homeless man, and this very rude woman from Greenpeace",
+  "doing this whole choreographed number...",
+  "Like a flash mob?",
+  "Yeah, I guess. I mean, what else could it have been... right?",
+  "Did you get a video of it?",
+  "No.",
+  "You're fucking useless, Paul.",
+  "I just have a bad feeling about all this. Maybe.",
+  "Charlotte? Have you seen anything strange?",
+  "Well... No... it's silly. Probably nothing.",
+  "What?",
+  "Well... It's Sam. My husband. He said he was getting home late last night...",
+  "He didn't get home at all!",
+  "I heard... I wasn't there.",
+  "He must've rolled in around six this morning.",
+  "He was in the shower when I woke up.",
+  "I could hear him... singing.",
+  "And I know this is a strange thing to notice, cuz Sam's not a bad singer.",
+  "He's just always a little... flat. But not this morning.",
+  "Today he sounded like an angel.",
+  "And I don't know why, but... it frightened me.",
+  "It just didn't sound like my Sam.",
+  "I'm probably imagining things. I must sound crazy...",
+  "No no no! Charlotte, do you remember what Sam was singing?",
+  "Oh, just a silly, little song.",
+  "Something about a La Dee...",
+  "DA DA DAY?",
+  "Hey, Paul. Mr. Davidson wants to see you in his office.",
+  "Oh shoot! I didn't hand in my reports yesterday! I am gonna get it...",
+  "",
+  "Hi, Mr. Davidson. I think I know why you called me in here.",
+  "My weekly report was not turned in yesterday.",
+  "Not because it's not done. It is done.",
+  "There's a problem with the printer network, you see.",
+  "You try to print something out here, it gets sent over there.",
+  "I bet my report is sitting on someone else's tray right now.",
+  "If you give me till the end of the day, I can find it.",
+  "Not do it. I wouldn't just not do my statistical analysis.",
+  "That would really gum things up here in the office,",
+  "and that's the last thing I want...",
+  "What do you want, Paul?",
+  "Tell me what you desire to see.",
+  "Your deepest intent, Paul.",
+  "What do you see for this company?",
+  "I'm looking for someone",
+  "with strong ambition,",
+  "Someone to sell their specific vision,",
+  "Someone to share with precise precision Their thoughts!",
+  "Cuz I want you to want. To want!",
+  "So! What do you want, Paul?",
+  "What's your one concrete goal that motivates all your actions?",
+  "I don't think I have one of those.",
+  "Then how's anyone supposed to sympathize with you, Paul?",
+  "I don't know. I want what everyone wants.",
+  "Money. A partner. Kids, someday, maybe...",
+  "I want you to want Paul!",
+  "A man so vague just can't be trusted.",
+  "Something you pine for?",
+  "Maybe someone who keeps you lusted?",
+  "I'm just the boss, I'm not an \"idea\" guy.",
+  "I hire you \"Pauls\" to keep our stock high,",
+  "But if you can't pin that point that's in the sky,",
+  "Then I need you to want! To want!",
+  "Do you know what I want for myself?",
+  "I've waited for so long to tell somebody else.",
+  "Carrol, my wife, you're my muse, my source of light.",
+  "Carrol, my love, I want you to choke me out at night.",
+  "I want you to choke me. I want you to choke me.",
+  "I want you to choke me while I jerk off.",
+  "I want you to choke me while i jerk off!",
+  "Melissa, get my wife on the phone for me.",
+  "Oh, Mr. Davidson, I think I should leave.",
+  "NO PAUL! I want you to hear this! If you leave, you're fired.",
+  "Carrol? No. Everything's fine. I promise...",
+  "I just wanted to tell you something... Um...",
+  "I forgot what it was",
+  "(I didn't forget)",
+  "Maybe someday I'll remember.",
+  "Goodbye! :(",
+  "Paul, now you know what it is to WANT!",
+  "",
+  "It consumes a man with a passion to drive the primary plot.",
+  "So take up yoga or improv classes.",
+  "Volunteer at shelters or Twitch to the masses.",
+  "There's gotta be something that'll keep my hands off you! Off You!",
+  "CUZ I WANT YOU TO WANT!",
+  "I think I'm gonna go get some coffee! Do you want anything?",
+  "NO! I NEED YOU TO WANT!",
+  "How about an iced caramel frap? Nothin' better!",
+  "AND IF YOU DON'T WANT! We're through...",
+  "Paul? Paul?",
+  "PAAAUUULLL!!!",
+  "Okay, okay, okay, okay, okay...",
+  "This isn't happening. Get a grip, Paul. You're hallucinating. Better yet, you're still dreaming! You need to wake up. You need some coffee. That's it. Just a cup of Black coffee. No cream, no sugar in it - just a cup of simple black coffee... HELLO? HELLLOOO?!?",
+  "PLEASE, GOD. I JUST WANT A BLACK COFFEE...",
+  "Black coffee! I'm your coffee gal.",
+  "Noooo! Noo! Not you too! Emma, please stop singing!",
+  "Sorry, sorry! I'll stop.",
+  "I didn't forget, you're the guy who didn't like musicals!Paul, right?",
+  "Emma... You're actually talking to me... Like a normal person.",
+  "Yeah, and if my boss sees me I'm gonna get canned.",
+  "New company policy. Not only do we have to sing when people tip,",
+  "but when they order, when they come in, all the fucking time, I guess!",
+  "Emma, I think there's something terribly wrong with the world today.",
+  "Yeah. Fuckin' tell me about it.",
+  "I had to spend all morning learning some new dumbass tip song.",
+  "I'm exhausted.",
+  "Emma, I feel like there's something sinister infecting Hatchetfield.",
+  "And I know this is gonna sound crazy...",
+  "and not very scary.",
+  "But it is scary, if you think about the implications.",
+  "Promise me you'll think about the implications!",
+  "Ok, I promise.",
+  "Ok. Emma, I think the world is becoming...",
+  "a MUSICAL.",
+  "Don't say anything! Let it sink in.",
+  "Ok. Now...",
+  "ARE YOU FRIGHTENED?!",
+  "I am starting to get a little frightened...",
+  "You should be! You should be...",
+  "Emma! Tip!",
+  "Oh, thank god. Sorry, Paul. I gotta do that new dumbass tip song.",
+  "Get your cup of roasted coffee.",
+  "Your morning cup of joey.",
+  "We make a jamming cup of java",
+  "Mocha latte with the froth for ya, Jack! Frappuccino!",
+  "with the freshly roasted mung beans.",
+  "It's a caramel drizzled mud in a cup!",
+  "With a drip, drip, drip drip, drip",
+  "And we'll bring it right up!",
+  "Hey, Mr. Business, how do ya' do? Can we get a triple for you?",
+  "Decaf?! Whaaaaaat?",
+  "Decaf?! Whaaaaaat?",
+  "Tu-du du-du-du du-du-du du-du-du",
+  "And we'll bring it right up! Oy! Oy! Oy!",
+  "[Delightful tune]",
+  "And we'll bring it...",
+  "And we'll bring it...",
+  "Right, right, right...",
+  "And we'll bring it right up!",
+  "Ugh, there's more? Will this ever end? Fuck it.",
+  "Hey when did you get here? This isn't your shift!",
+  "And what is this?",
+  "Alright, stop! Stop! Really!?",
+  "A whole another A-section? When did you guys learn this?",
+  "You know what? I'm done!",
+  "When I got this job, I signed up to serve coffee and cold, shitty pastries.",
+  "If I wanted to be in a musical, I'd be in a damn musical!",
+  "That's right, Zoey. I was in Hamilton in high school and I fuckin' killed it.",
+  "But now I'm just trying to make ends meet while I pay my way through community college,",
+  "and I can do that just as easily down the street at Starbucks. I quit!",
+  "You can't quit, Emma.",
+  "I sure as hell can.",
+  "The song's so simple! We'll teach it to you...",
+  "Why, everyone here will be singing it soon!",
+  "What the hell are you talking about?",
+  "They've all had their coffee!",
+  "Their apotheosis will be upon them at any moment!",
+  "What did you do to their coffee!?",
+  "FUCKING GROSS!",
+  "",
+  "Get your cup of poisoned coffee",
+  "Your toxic cup of Joey",
+  "We'll make a twisted cup of java",
+  "Mocha latte with the goo for you,",
+  "Jack, Jack, Jack, Jack!",
+  "With a song and dance we're happy",
+  "It's a joy! Just sing along!",
+  "With bravado!",
+  "And tempo!",
+  "Crescendo!",
+  "Chicago!",
+  "And we'll bring it right on!",
+  "Ehh... I think I should go...",
+  "Hey, Mr. Business!",
+  "Leaving so soon?",
+  "Can we offer a muffin and tune?",
+  "They're singing! Why are they all singing!?",
+  "We need to run Emma! Don't look back! Just run!",
+  "Hey, mister business",
+  "How do ya, how do ya, how do ya do?",
+  "We got a double for you",
+  "Hey, Mr. Business",
+  "And we'll bring it right up!",
+  "(----)",
+  "Through here Emma!",
+  "What?! It's too narrow there's no way...",
+  "Believe me it's safe. I used to live not far from here. Nobody will follow us here!",
+  "Why are there so many fucking rats in this shitty alleyway?",
+  "No no... there was one time a kid threw a bunch of cheese around here...",
+  "-What?",
+  "Yeah, it's been like 5 years, my dad actually called the exterminator and then -",
+  "Paul, there are a LOT of dead ends around here",
+  "so I just want to make sure you know where you're going... Are you...?",
+  "Yeah no... no. That's a dead end.",
+  "oh...ok....",
+  "Let's go the other way.",
+  "So, you know, maybe it's a bad time...",
+  "but do you like film? Cinema?",
+  "You know what? Yes. That is... That is a bad time.",
+  "Wait! Paul, Here! Let's go to those trashcans!",
+  "Yeah, yeah. Good.",
+  "Oh my god. What the fuck was that?",
+  "I told you it was scarier than it sounds!",
+  "You were right! I didn't think about the implications.",
+  "Oh god, I didn't think about it!",
+  "It's alright, Emma...",
+  "No, it's not alright, Paul!",
+  "Bill!?",
+  "Paul!",
+  "Bill, You scared the shit out of us!",
+  "Well, how am I supposed to pop out of a trash can and not scare the shit out of you?",
+  "I don't know! Give us a warning or something!",
+  "Charlotte!",
+  "Sorry! I tried to warn you!",
+  "Who are these people?",
+  "They're my friends from work.",
+  "What are they doing in the trash?",
+  "We had to find a place to hide.",
+  "Mr. Davidson kept calling people into his office... and they came out singing!",
+  "It was the same at the bank,",
+  "and the butcher's, and the post office!",
+  "It's all downtown. We were just at Beanie's.",
+  "You didn't invite me!",
+  "Jesus, Ted!",
+  "Shh! SHUT. THE FUCK. UP. Paul!",
+  "If you wanna stay in our hiding spot, you gotta be quiet!",
+  "Something's going on!",
+  "We don't know what it is or who we can trust!",
+  "So, Paul, get in a trash can. You, beat it!",
+  "Uh, fuck you?",
+  "No. Emma stays with us.",
+  "I don't know her.",
+  "Yeah you do! She's the barista from Beanie's...",
+  "She's the... You know... The 'Latte Hottay'",
+  "That's not the 'Latte Hottay!' That's the crabby one",
+  "that won't sing when I tip!",
+  "You grabbed the wrong one, ya' noodle! FUCK!",
+  "Oh, thank god they're here! I called Sam.",
+  "He's gonna get us outta here! Sam! Thank God! They've gone crazy!",
+  "Everyone's gone crazy!",
+  "(---)",
+  "Ma'am, I need you to take a step back! You're facing the law,",
+  "Not the clerk at the Gap.",
+  "Yeah, we're cops. Yeah, we're cops, so shape on up.",
+  "You better empty out all of your pockets,",
+  "But don't empty out all of your pockets!",
+  "Yeah, we're cops. Yeah, we're cops,",
+  "And we make sense.",
+  "Show me your hands, show me those jazz hands!",
+  "Get 'em up, or you'll end up in cuffs.",
+  "Show me your hands, show me those jazz hands!",
+  "Or I might be inclined to shoot you up.",
+  "You go 40 in a 35. Check your mirror.",
+  "You'll find hell has arrived.",
+  "Yeah, we're cops. Yeah, we're cops.",
+  "We're up in your shit.",
+  "Show me your hands, show me those jazz hands!",
+  "Get 'em up, or you'll end up in cuffs.",
+  "Show me your hands, show me those jazz hands!",
+  "Or I might be inclined to shoot you up.",
+  "Step away from the vehicle. Step away from the vehicle.",
+  "Get back in the vehicle.",
+  "What vehicle?",
+  "Get back in the vehicle.",
+  "Slowly get out of the vehicle.",
+  "Slowly get out of the vehicle.",
+  "Do the things I say. I'm a cop.",
+  "Step away from the vehicle, Step away from the vehicle",
+  "Get back in the vehicle, Get back in the vehicle",
+  "Slowly get out of the vehicle, Slowly get out of the vehicle",
+  "Do the things I say I'm a cop!",
+  "911 emergency call, Got a 411 at a shopping mall.",
+  "Better pack your heat and utility belt.",
+  "Any mall rats comin' in hot, they melt.",
+  "Sarge, it's your wife on 911.",
+  "What the bitch want, Doug? She just wants a snug.",
+  "Grab your 9 millimeter and donut bucket.",
+  "Want my badge number?",
+  "Put it in your mouth and suck it!",
+  "Oh Sam....",
+  "Oh Saaammmmm!",
+  "Please just talk to me! It's me, I'm your wife!",
+  "Charlotte...",
+  "Sam?",
+  "SHOW ME YOUR HANDS! Show me those jazz hands!",
+  "Get 'em up or you'll end up in cuffs!",
+  "Show me your hands,",
+  "Show me those jazz hands!",
+  "Or I might be inclined to shoot you-",
+  "[BONK]",
+  "Shu! Get away from us! Just leave us alone!",
+  "Sam! Oh my God! Oh my God! His head's open!",
+  "I had to do something!",
+  "His brain fell out!",
+  "Well, put it back in then!",
+  "I don't know how! I'm not a doctor!",
+  "That's not his brain, Charlotte. Look at it. It's fuckin' blue!",
+  "How would you know?!? You're not a doctor either!",
+  "We need a doctor! We need a hospital!!",
+  "Listen. Sweetie. Charlotte, was it?I'm... Charlotte.",
+  "We need to get out of downtown. Downtown is fucked. The hospital is downtown. We can't go there.",
+  "But Sam... He needs help.",
+  "Okay, okay. I got it! I know where to go! I have a kooky, reclusive biology professor at my community college... Professor Hidgens! I'm his favorite student because I brought him groceries once! He'll let us stay at his house on the edge of town! He's got a doctorate. That's kinda like a doctor. He can help your husband, probably.And did I mention, he's like a genius scientist? He's got a laboratory, and security, and his whole house is like a panic room. How do you call a guy who lives in a fortress?",
+  "A king?",
+  "No. No. He's a doomsday survivalist. He spent the past twenty years preparing for the apocalypse! Charlotte, I think the best thing for all of us, including Sam, would be to get to the professor.",
+  "But we gotta go now.",
+  "We'll take the squad car.",
+  "This is Hatchetfield Action News with Donna Burshaw & Dawn Greene.",
+  "What began as a series of isolated incidents",
+  "has escalated into what some are calling a \"musical riot.\"",
+  "GOOD GOD! It's spreading faster than I theorized!",
+  "Despite several reports of violence,",
+  "the Hatchetfield police have assured channel 9",
+  "there is no cause for alarm.",
+  "Because they're part of it, Donna!",
+  "Nevertheless, our skittish neighbors in Clivesdale",
+  "have declared a state of emergency, raising the Nantucket Bridge.",
+  "With the ferries down the season",
+  "and no alternative means off the island,",
+  "Hatchetfield citizens are advised to stay indoors.",
+  "Like fish in a barrel.... Of course the outside world is no help.",
+  "It's up to us now, Alexa!",
+  "Who is it?",
+  "Professor Hidgens!",
+  "Don't lie to me, whoever you are! I'm Professor Hidgens!",
+  "Professor, it's me, Emma Perkins! The whole town's gone crazy!",
+  "I didn't know where else to go!",
+  "Emma?!? You came to the right place!",
+  "Hold on! I'll let you in! Alexa, open the gates!",
+  "Thank you, Professor! These are my friends. Paul and... them.",
+  "We came from downtown.",
+  "I know it's gonna sound crazy, but everyone's",
+  "Singing? And dancing? Like they're in a musical?",
+  "They want you to join them, and once they get you, you're a part of it?",
+  "How did you know?",
+  "I theorized this very scenario thirty years ago.",
+  "Really?",
+  "Really.",
+  "Like, exactly this?",
+  "Exactly.",
+  "That the world would become a musical?",
+  "You better believe it.",
+  "So what's wrong with Sam?",
+  "GOOD GOD, woman!",
+  "Don't tell me you brought one of them here!",
+  "I told you we shoulda left him in that alley!",
+  "You're a monster, Ted!",
+  "No! He's the monster!",
+  "Alright, everybody CALM DOWN!",
+  "Providence has brought him to me.",
+  "Quick! tie him to this chair. Make sure he's secure.",
+  "There's no telling what would happen if he were awake and loose.",
+  "Here. I see no danger entrusting this to you.",
+  "I've been preparing for this day for decades. Now all the answers lie in front of me",
+  "If only I have the wits to decipher them.",
+  "Tell me, Emma. What on Earth does this look like to you?",
+  "I don't know. Some kind of... blue... shit?",
+  "My thoughts exactly! What the fuck is this blue shit?!?",
+  "I'll tell you what on Earth it looks like... Nothing.",
+  "You all remember the meteor from last night.",
+  "I dare say it carried a deadly cargo:",
+  "A contagious pathogen... of cosmic origin.",
+  "Wait a second, Doc. You're not telling me you're talking about... aliens.",
+  "Why is that so hard to believe?",
+  "Think of all that we take for granted now,",
+  "that was once foretold in the pages of Bradbury and Asimov!",
+  "Look no further than my own robot assistant, Alexa.",
+  "Once confined to the realm of science fiction, she is now science fact!",
+  "Alexa, dim the lights.",
+  "Extraordinary!",
+  "Twenty years ago I would've",
+  "had to walk all the way to the dimmer and do this.",
+  "Now, as unbelievable as that or this outbreak may seem, seeing is believing.",
+  "The question is no longer \"could this be happening?\"",
+  "but \"how do we fight it?\"",
+  "I've got to get this blue shit under the microscope",
+  "and find out what makes these bastards tick!",
+  "Sorry, Professor. This is a lot to take in.",
+  "Do you have anything to take the edge off? Like a drink or something?",
+  "Young man!",
+  "You bet your ass we got booze. Follow me!",
+  "Oh Sam... baby.",
+  "Come on, Charlotte. I'll make you a drink.",
+  "We can relax.",
+  "Talk.",
+  "Fuck.",
+  "Ted! I can't believe you're thinking about",
+  "that at a time like this!",
+  "The world could be coming to an end!",
+  "Hey, if I'm gonna die, I wanna go out doing what I love.",
+  "Screwin' around with another man's wife.",
+  "Ted, you're such a horny bastard!",
+  "Always have been. Always will be.",
+  "And you know that's why I can't resist you!",
+  "[Sounds of passionate love]",
+  "Wait! No! Ted, my husband's brains fell out today!",
+  "If I can't be a wife to him now, what kind of woman am I?",
+  "I DON'T KNOW CHARLLOTE! I'm not your therapist!",
+  "Maybe you should go back to fucking him.",
+  "I know that's why you actually went to counseling!",
+  "That's not the only reason! I wanna make things work with Sam.",
+  "I love him. I know I shouldn't, but I do.",
+  "That guy's a worthless scumbag. You could upgrade...",
+  "to a sleaze-ball!",
+  "But you refuse to be happy. You know what, Charlotte?",
+  "I'm done. Stay here with your dying marriage",
+  "and your dying husband. I'm gonna go hit on that crabby barista.",
+  "Ted... Oh god...",
+  "Oh, God, if you're up there, it's me Charlotte.",
+  "You just gotta know... I didn't want this to happen.",
+  "I know Sam and I have had our problems.",
+  "And I know I've been so angry with him...",
+  "But I didn't want him to die! Please, God... Just let him wake up!",
+  "Charlotte...",
+  "God?",
+  "Charlotte!",
+  "Sam!",
+  "Where am I? Why am I tied to a chair?",
+  "It's for your own safety. And ours. You're not well, Sam.",
+  "Charlotte. Baby. I'm hurt real bad. I need a doctor.",
+  "I'll go get the professor...",
+  "NO! Those people left me here to die!",
+  "Only you can help me, Charlotte.",
+  "Untie me and we'll get outta here... together.",
+  "I'm tied up, Charlotte, Tied up with you.",
+  "You understand me.",
+  "Now hand me those keys...",
+  "No!",
+  "The keys to my youth. God, we were young once.",
+  "Innocent and fun once.",
+  "And free!",
+  "Let go of this grip on me! You tied up my heart.",
+  "You tied me down.",
+  "Now break me open",
+  "With your love and mercy. Charlotte!",
+  "You're breaking my heart, Char! Got my feet to the fire.",
+  "Just let me go and I'll love you!",
+  "I love you too, Sam, but I can't let you go.",
+  "Charlotte, baby... apple of my eye...",
+  "Don't you twust me?",
+  "I effed up, Charlotte. Effed up with you.",
+  "All the booze and harlots,",
+  "And all the Charlottes.",
+  "But they didn't count. They couldn't break me.",
+  "You're the one who caged me In chains...",
+  "Please take away my pain! Charlotte!",
+  "Let me hold you again, Char. Just free up my arms",
+  "And I'll give you a foot massage! Charlotte!",
+  "Will you ever forgive me?",
+  "I'll crawl on my hands and knees If you untie me, girl,",
+  "And free up my heart!",
+  "This is kind of catchy Sam. No no no! This is bad! I gotta go get the others... Help!!",
+  "WAIT! Oh god I'm fading fast! I think you better come quick.",
+  "I really don't want to die alone in here.",
+  "Time to say our goodbyes at the end of the road...",
+  "Just hang on, Sam. You'll be alright...",
+  "This body's not gonna last. The air is cold and thick.",
+  "I'm losing my last remaining hope for us. My hands are tied in knots",
+  "And I can't come home.",
+  "I wanna die in your arms in the evening gloam...",
+  "Sam! Oh god! Sam! What have I done?!?",
+  "What have I done?",
+  "CHARLOTTE!",
+  "You brought me back from the dead CHAR! My light was in red.",
+  "I saw God, and he told me, girl, to free up my heart!",
+  "It's a miracle!",
+  "And now, I'm gonna free up your heart, babe.",
+  "Yes, take me Sam!",
+  "RARGH!",
+  "AHHHH!!!! My guts!!!",
+  "—--",
+  "He said this was a full bar! How the hell am I supposed",
+  "to make a Shirley Temple with no cherries?!",
+  "Jesus Christ, Bill. It's the end of the fucking world",
+  "and you're gonna get your drink on with a Shirley fuckin' Temple?",
+  "Well, if it's as serious as all that",
+  "then I figure we might need a designated driver!",
+  "Oh, so when the cops pull you over",
+  "you can pass the breathalyzer",
+  "before they infect you with their nasty, blue shit?!? Come on.",
+  "If you make one more crack at me, I am gonna... ...do something... to you.",
+  "Oh yeah, Bill? What are you gonna do?",
+  "I'm gonna... Kick your... head.",
+  "Oh. My head? Not my ass?",
+  "No!",
+  "Alright, let's see it! Kick my head! Come on, karate champ!",
+  "I wanna see you kick above your waste! Show me that round-house!",
+  "Show me that sweeping crane kick your Kung Fu master taught you!",
+  "Alright, you two, calm down! Ted, Bill's not gonna kick your head.",
+  "Why not? It's the most vulnerable part of the body.",
+  "That's what Sensei Bill taught me...",
+  "Ok, it was a dumb threat. Stop rubbing it in.",
+  "I'm sure if he could do it over he'd say \"ass.\"",
+  "Uh-uh. You wanna kill a snake, what do you do?",
+  "You cut off its head.",
+  "Where's the fish rot from? The head.",
+  "Take out the head, and the whole thing goes down.",
+  "That's why a fisherman always goes for...",
+  "THE HEAD!",
+  "Gimmet that... You've had enough of this.",
+  "This is supposed to relax us. Not make us kill each other!",
+  "Whatever.",
+  "Why the fuck did I come back here?",
+  "Here? To... drink",
+  "Back to Hatchetfield.",
+  "I spent the first eighteen years of my life trying to get outta this place.",
+  "I shoulda just stayed in Kibbutz Dgania.",
+  "Israel? Cool. So what drove you back to Hatchetfield?",
+  "It was my sister. Jane. She was the good one.",
+  "When she was twelve, she got this Hello Kitty binder",
+  "where she planned out her whole life, and I swear to God,",
+  "she stuck to it. Bullet point by bullet point.",
+  "Job, husband, house, kid. And when one sister is so on top of her game,",
+  "it almost demands the other become a total fuck-up, right?",
+  "Good balance",
+  "That's how I saw it. She was off, doing life.",
+  "And I was doing... something else.",
+  "Couch surfing, mostly.",
+  "Jane would invite me back home every once in a while.",
+  "For the big events. Wedding. Baby shower.",
+  "I'd always say, \"Sorry, sis. I'll get the next one.\"",
+  "But when I got the invitation to her funeral,",
+  "it was like, there is no next one.",
+  "Oh... I'm sorry.",
+  "Hey. You didn't crash into her car.",
+  "It's weird living in someone else's shadow.",
+  "When they're gone, the light shines on your life",
+  "for the first time and it doesn't look good.",
+  "There I was. Thirty. With no roots anywhere.",
+  "Except Hatchetfield. So I figure I'll make something of myself.",
+  "enrolled in community college to get a degree in botany.",
+  "Not that it matters anymore.",
+  "You know, the one thing I've been trying to avoid",
+  "my whole life is dying in Hatchetfield... yet here we are.",
+  "It could be worse... You could be dying in Clivesdale.",
+  "Fuck Clivesdale.",
+  "Fuck 'em.",
+  "You know, all things considered... I like Hatchetfield.",
+  "Been here my whole life. Born and bred.",
+  "I never wanted to leave. I Still don't.",
+  "We're the same age. How come I never knew you in high school?",
+  "You probably went to Hatchetfield High. I went to Sycamore.",
+  "We hated you guys.",
+  "Yeah. We hated ourselves.",
+  "So wait... Back at Beanie's you said",
+  "you were in your high school's production of Hamilton?",
+  "I was King George the 3rd.",
+  "That was 2018, right? I actually saw you in Hamilton.",
+  "No shit.",
+  "Yes shit, yeah! I think it was the first musical I ever saw... I hated it. That's probably the start of my whole thing. You're the reason I don't like musicals!",
+  "That's, like, your origin story.",
+  "Yeah!",
+  "I'm like a super villain.",
+  "I don't think of you like that at all, Emma.",
+  "You know, Paul-",
+  "[DRAMATIC ENTRANCE]",
+  "Charlotte!?!",
+  "It is time...",
+  "TO DIE!",
+  "Sorry to interrupt,",
+  "But we got bones to pluck!",
+  "The time for chaos is long past overdue.",
+  "Death isn't optional. In fact it's optimal.",
+  "Time is up and now we go through you!",
+  "We tried to convince you with soliloquies,",
+  "But now we kill you with more than harmonies... Just die!",
+  "Join us and die. Join us and die.",
+  "Join us and die. All you gotta do is...",
+  "Join us and die Join us and die.",
+  "Join us and die. All you gotta do is...",
+  "Here's how it's gonna go:",
+  "We're gonna kick your ass, And then we're gonna...",
+  "Fucking kick your ass!",
+  "We're going to puke all that gooRight in your mouth, where you food.",
+  "All your cells we'll renew and be enhanced!",
+  "It's a deathlike process that you gotta see.",
+  "Your own body is your front your seat... To die!",
+  "Join us and die. Join us and die.",
+  "Join us and die. All you gotta do is...",
+  "Join us and die. Join us and die.",
+  "Join us and...",
+  "Punch it!",
+  "Squeeze it!",
+  "Crush it!",
+  "Kill it!",
+  "Ride it!",
+  "Drag it!",
+  "Wind it up",
+  "Kick its nuts!",
+  "Here's how it's gonna go...",
+  "[SHOTGUN BLAST]",
+  "[E6]",
+  "[ANOTHER SHOTGUN BLAST]",
+  "Professor! You killed Charlotte!",
+  "WRONG!",
+  "You shot her!",
+  "I shot a CHARLATAN!",
+  "The Charlotte you knew and loved",
+  "was gone the moment a note came out of her mouth.",
+  "After examining that \"blue shit,\" it didn't take long to deduce that",
+  "Sam was no longer human, but one of the alien brood,",
+  "genetically reconstructed from the inside out!",
+  "They're wearing our skin to fool us!",
+  "Which means any one of you could be one of them!",
+  "So we're gonna have a little test to find out who's a musical doppelgänger...",
+  "I want all of you to sing. SIXTEEN BARS! RIGHT NOW!",
+  "Professor, we're not aliens...",
+  "SING THE BEGINNING OF [song of the day]!",
+  "What?",
+  "Sing, goddammit!",
+  "Uh... ?!!?@$$%^$^&^^%&*&",
+  "Alright, that was... terrible.",
+  "Not a single one of you was on pitch, which means you're still human.",
+  "These things... their tactic is to hide amongst us,",
+  "but as their numbers grow they become more bold",
+  "and, as we've seen, violent.",
+  "Alice? Are you okay? You would not believe what happend...",
+  "What? No. No no no... Alice.",
+  "I watched you get on the bus to Clivesdale this morning... Got off? Got off?!? To go see Deb?!? I'm sorry. I'm sorry. I know you're scared... Deb's being weird? She's doing what? Alice, listen to me. You gotta run away from her. You understand? You run far far away... No! This isn't about me not liking Deb! Right now you gotta hide right now! Where are you?Ok. You stay there. I'm coming to get you.No... don't say that. Everything's gonna be fine.I love you too sweetie. Gimme... Gimme some water and some bread! I knew we were gonna need a designated driver!",
+  "What's happening, Bill?",
+  "It's Alice. She's stuck in Hatchetfield High.",
+  "FUCK! I'm taking the car. I gotta get to Hatchetfield High.",
+  "She's locked herself in the choir room...",
+  "And you're gonna save her?!? G.I. Bill?",
+  "You're gonna run and gun your way through a city full of singing-zombie-mother-fuckers?Wake up, Bill! She's already dead.",
+  "Don't you dare...",
+  "You're gonna get there, she's gonna be dead,and you're gonna die too. hat's what's gonna happen if you try to go back through downtown.",
+  "Well, what else am I supposed to do?!?",
+  "Don't go through downtown. Cut through Pinebrooke.",
+  "Pinebrook...",
+  "Pinebrook, rich neighborhood, fancy houses... huge yards.",
+  "Yes. Avoid densely populated areas.",
+  "Take Evergreen, cut through the park, hop a curb,",
+  "and you're in the teacher's parking lot.",
+  "Right! and the windows to the staff lounge is always open,",
+  "just slide in and out, used to be my old escape route.",
+  "Pinebrook, Evergeen, Clivesdale.. This is a lot of directions...",
+  "Don't bother. He's gonna get lost...",
+  "You are such a fuckin' creep, you know that?",
+  "Oh, I'm a fuckin' creep? I'm a fuckin' creep?!?",
+  "Listen sweetheart, The world has changed!",
+  "There are no creeps, and there are no heroes.",
+  "There's just people who are alive, and people who are fuckin' DEAD.",
+  "And Bill's daughter... she's dead.",
+  "I'm just saying what we all know is true. Right, Paul?",
+  "I know that the chances are slim to nil.",
+  "And I know that Bill doesn't know the shortcut...",
+  "Bill, if you go, you're not gonna make it...",
+  "Which is why I'm gonna go with you to bring your daughter back.",
+  "Paul, you'd do that for me?",
+  "Hey. It's not like you're asking me to go see 'Mama Mia.'",
+  "Okay. Let's go! In and out twenty minutes adventure.",
+  "No, Emma, stay here. I have a theory of how these aliens can be stopped,",
+  "but I'll need an extra pair of hands in the lab.",
+  "Paul. Bill. Godspeed.",
+  "Hey Paul, listen... If those things get you,",
+  "they're gonna make you sing, and dance,",
+  "and all that shit you hate... so don't you let 'em.",
+  "Emma, there comes a time in every man's life",
+  "when he has to draw a line in the sand.",
+  "And I will never be in a fucking musical.",
+  "[INTERMISSION]",
+  "Alice?! Alice?!? Sweetie Where are you?!?",
+  "Bill! Be quiet!",
+  "We gotta find her, Paul!",
+  "We will, but you have to shut up.",
+  "This place could be crawling with those... things!",
+  "You screaming is gonna get us killed,",
+  "and then who's gonna save Alice?",
+  "Right. Right. Sorry, Paul. It's just... she's all I have.",
+  "I know. Just try to stay calm and follow me.",
+  "Could you point that someplace else?",
+  "Sorry. You know, Alice, she's a good kid, Paul. She's smart, and I respect her choices, but if we're being honest... I don't like Deb. She's always on her phone, and I don't know... I just think Alice could do so much better.",
+  "Yeah, sure, Bill.",
+  "Yesterday we had a fight ... I crossed a line. I even said the H word.",
+  "Hoe...?",
+  "Heck! I think that fight is why she got off the bus to see Deb...",
+  "Paul, I'm the reason she's trapped here. Oh god, it's my fault.",
+  "Bill, listen to me. This is not your fault.",
+  "Yes it is.",
+  "Alice...",
+  "\"It's all your fault.\" That's the last thought I had before they broke down the door...",
+  "I'm not your girl anymore...",
+  "I'm not that tween that you drove here for.",
+  "I'm not your girl anymore...",
+  "I overtook her body with an infectious spore!",
+  "You let me out of your sight for one second",
+  "And look what happens:",
+  "NIGHTMARE TIME!",
+  "It's worse than you could imagine...",
+  "Not sex and not drugs,",
+  "Just alien invading minds!",
+  "No more family vacays together",
+  "Cuz your only daughter's under the weather.",
+  "And if you actually paid attention to me,",
+  "you'd see... I'm not your seed!",
+  "I'm not your angsty teen! No matter what you believe",
+  "The apple's fallen far from the tree...",
+  "It's not my fault anymore...",
+  "No more curfews to be late for.",
+  "It's not my fault anymore...",
+  "No more being worried and waiting by the door.",
+  "Did you know that I wanted to live with you?",
+  "Look what happens:",
+  "NIGHTMARE TIME!",
+  "But when you needed to fight you gave her that too...",
+  "Aliens invading minds!",
+  "Did you know Mom let Deb sleep over?",
+  "And you're right about Deb. She's a hardcore stoner!",
+  "And if you wonder what led your daughter astray...",
+  "Well, daddy wasn't here to stay.",
+  "Not your seed! I'm not your perfect teen!",
+  "I'm fucking seventeen!",
+  "At least I was before you left me...",
+  "Everything is gonna be ok. I'm taking you home ok sweetie?",
+  "Bill... Bill... Bill",
+  "You're gonna be ok baby, I promise. I love you.",
+  "Bill... Bill... Bill, we need to go, right now.",
+  "Back off, Paul! I'm not leaving without my daughter!",
+  "That's not your daughter, Bill!",
+  "Why does it hurt to love you?",
+  "Why am I in pain?",
+  "Why does it hurt to know you...",
+  "You'll let me down again?",
+  "If I turn my insides out,",
+  "would you even know that I was there?",
+  "Why does it hurt to love you?",
+  "Why does it hurt to love...",
+  "I'm not your seed!",
+  "But now you'll listen to me!",
+  "After you let me bleed",
+  "And now your daughter's not a girl no more...",
+  "Girl no more... Girl no more...",
+  "NOT AT ALL YOUR SEED!",
+  "Cuz I'm not your girl... anymore.",
+  "I can't do it, Paul. I can't live in a world without my daughter...",
+  "Bill, whatever you're thinking, stop it.",
+  "I can't live knowing that I'm the reason they got her...",
+  "No, Bill!",
+  "Just lemme die!",
+  "NO!!! No, Bill! You're my best friend!",
+  "I am not gonna let you die!",
+  "[SHOTGUN BLAST]",
+  "Bill! Oh god! Bill!",
+  "We just keep running into each other, don't we, Paul?",
+  "We have traveled across seas of stars,",
+  "bending || conquering || counting",
+  "counting || conquering || bending",
+  "Wait, what are we saying?",
+  "We all have to say the same thing let's get on the same page",
+  "I'm here || I'm here || I'm here",
+  "bending countless civilizations to our will,",
+  "and yet you, Paul, have defied us thrice!",
+  "[SHOTGUN BLAST]",
+  "Holy shit!",
+  "This puny human weapon is too quick a death for you, Paul.",
+  "We shall rend you limb from limb. You shall",
+  "choke || shut || die",
+  "You shall",
+  "die || choke || shut",
+  "Seriously, we all need to say the same thing.",
+  "You guys are embarrassing me!",
+  "You shall choke on your agony as you beg for apotheosis!",
+  "Ahhhhhhhhh!",
+  "We are the ARMY! BANG BANG BANG!",
+  "Ah! Ah! Wait! Wait! I'm not one of 'em! I'm human! I'm huma-",
+  "Prove it asshole, we're the army.",
+  "—-",
+  "Remarkable! Simply remarkable.",
+  "Tell me, Emma, how do you explain",
+  "an entire race of beings spontaneously breaking into song and dance?",
+  "How do they all know the words and choreography?",
+  "I don't know... They're gettin' orders from the mothership?",
+  "You're not far off.",
+  "What we're dealing with is a collective consciousness.",
+  "A hive mind... On the one hand, they are individuals.",
+  "Almost perfect copies of their former selves.",
+  "But on the other, they are appendages of a much larger organism.",
+  "Controlled by a... conductor, if you will.",
+  "So this conductor came down in the meteor?",
+  "Or it is the meteor.",
+  "And it wants to kill us all so it can resurrect us as part of its shitty musical?",
+  "Yes, that's one way of putting it.",
+  "But you could also say it's uniting us in a common purpose.",
+  "Imagine if this entity did spread to the rest of the planet.",
+  "It might achieve what fifty thousand years",
+  "of human civilization never could...",
+  "World peace.",
+  "Ok... so how do we stop it?",
+  "Yes, yes. Stop it. Of course...",
+  "This all started with the meteor. It's conducting everything.",
+  "If we take it out, will all these things just... die?",
+  "That's a sound theory... Which is why it must never leave this room!",
+  "What?",
+  "Shshhhhh... Don't fight it, Emma. Don't fight it.",
+  "—---",
+  "Sorry for that bump on the head, son.",
+  "You can never be too careful. What's your name?",
+  "Paul... Matthews...",
+  "Good evening, Paul.",
+  "My name is General Heather McNamara",
+  "of the United States Military,",
+  "special unit P.E.I.P. We call it \"Peip.\"",
+  "P.E.I.P.? I've never heard of you guys.",
+  "And you never will. Not a peep.",
+  "That's a joke, son!",
+  "We have the unenviable task of cleaning up",
+  "messes of a certain nature.",
+  "Situations like what we got here in Hatchetfield.",
+  "Are you saying stuff like this has happened before?",
+  "I said nothing of this sort and that information is classified.",
+  "Our agents in town led us to believe",
+  "the entire population had been infected by an alien contagion.",
+  "Quite frankly, I'm shocked to find a survivor like yourself.",
+  "But I got some bad news for you, Paul.",
+  "My unit was sent to make a clean sweep",
+  "of what was once your town. No loose ends. No survivors.",
+  "Woah, woah, woah! So you're just gonna kill me?",
+  "Yes, those are my orders. two in the head, one in the heart.",
+  "But there is one thing you better hurry up and know about me.",
+  "I love my country, I do, but the experiences I've accrued",
+  "throughout my tenure with this organization have given me",
+  "a deeper understanding of the cosmos and our place in it.",
+  "I follow a higher law than any institution could decree,",
+  "and that is the universal truth of love",
+  "and the strength of the human heart.",
+  "Do you wanna do some lite reading on the subject?",
+  "No thank you",
+  "You got some guts Paul.",
+  "I FUCKING LOVE GUTS.",
+  "So I'm gonna bend the rules for you a little bit, Paul.",
+  "I have an evac chopper touching down",
+  "in Oakley Park at twenty-three hundred hours.",
+  "That is eleven o'clock in the PM.",
+  "Synchronize your timepiece with mine. Is that an iPhone?",
+  "WEAR A WATCH!",
+  "Time is a precious thread in the fabric of the universe!",
+  "It deserves its own tool of measurement!",
+  "You survive til then, and there's",
+  "a seat on that chopper with your name on it.",
+  "Cool, thanks! Wait - General McNamara. I can't leave without Emma.",
+  "Who's Emma, Paul?",
+  "A... a friend of mine.",
+  "Friends don't move my heart, Paul. Is there a chance at something more?",
+  "I think so... I'd like there to be. I want there to be.",
+  "So you know what that means...",
+  "I am authorizing you to use my firearm,",
+  "rescue Emma, and get your ass to that chopper in two hours time.",
+  "Thank you, ma'am.",
+  "You can thank me when we're both in Clivesdale sharing a cup of coffee. Do you like coffee, son?",
+  "Yes, ma'am.",
+  "Do you like musicals?",
+  "No, ma'am.",
+  "Now that's a goddamn, red-blooded American. I'll see you on that chopper.",
+  "------",
+  "Hey. Hey!",
+  "Wha... What the fuck!?",
+  "So, you're finally awake.",
+  "Professor Hidgens, what are you doing?",
+  "Exactly what needs to be done, Emma.",
+  "Alexa! open the gates. Turn off the fences! Shut it all down.",
+  "Professor, the fences are all that's protecting us!",
+  "Protecting us from what, Emma? The end of the world?",
+  "What's protecting us from nuclear holocaust? over-population?",
+  "From climate change?",
+  "Greenpeace!",
+  "The world was already doomed, Emma.",
+  "Not by them, by us!",
+  "I was trying to save something that could not be saved... until now.",
+  "But before we can be reborn to a better world,",
+  "we must first say our goodbyes.",
+  "Professor, no!",
+  "Alexa, after all these years in isolation,",
+  "with you as my one companion,",
+  "I've come to love you as much",
+  "as I've ever loved any woman of flesh and blood.",
+  "That's why it pains me to have to do this.",
+  "Alexa, initiate self destruct.",
+  "Yeah... I don't think it can do that, Professor.",
+  "It's 2026 and it can't even blow itself up?!?",
+  "FUCKING USELESS PIECE OF SHIT!!!",
+  "Please! Just let us go, man!",
+  "I'm afraid I can't do that, Ted.",
+  "Don't you two see? If humanity is going to survive, it must first evolve!",
+  "That's what this visitor from the stars has brought us! Salvation!",
+  "This is humanity's second chance! My second chance!",
+  "Please, Professor. Think about what you're doing...",
+  "Did you know that before I became a biologist,",
+  "I had a much truer and deeper passion?",
+  "Oh, Yes. My first love was, and always will be... musical theatre!",
+  "Oh, God no.",
+  "This guy's fuckin' nuts!",
+  "Professor! Please! No!",
+  "Don't fuckin' do it!",
+  "This is humanity's eleventh hour!",
+  "And I've prepared a little something for the occasion...",
+  "It's a showstoppin' number A real showstopper",
+  "A show stoppin' number, come on Something to shock 'em,",
+  "To bring them a-crawlin'",
+  "A big time box office draw",
+  "With the press and the glamour, We'll kill the reviews",
+  "Spotlight on Mr. Ingenue So fill up your tumbler...",
+  "Got a show stopping number for you!",
+  "Professor! Stop! If they find us, they'll kill us!",
+  "A showstoppin' number Is something you die for.",
+  "A real catchy ear-wormy tune. An award-winning score",
+  "That seeps in and out of your pores.",
+  "A ditty to make the chorus girls swoon!",
+  "It'll unify humanity in a thundering chorus!",
+  "No exits from this Broadway venue.",
+  "So splash those shiny cymbals...",
+  "Got a show stopping hymnal for you!",
+  "This song's pretty good, huh?",
+  "Bet you didn't know I was also a composer!",
+  "In fact, while I've been preparing for the apocalypse,",
+  "I've also been writing my own musical!",
+  "Do mind if I give you the pitch?",
+  "We really don't have time...",
+  "Fuckin' go for it",
+  "It's called \"Workin' Boys: A New Musical!\"",
+  "It's the story of a group of old college chums.",
+  "Sure, they've found \"success\" in the business world.",
+  "Still, they can't help but long for the simpler times,",
+  "back in that beat-up old house on the edge of campus.",
+  "But those glory days are gone for good...",
+  "Or are they? This is the title number!",
+  "Business calls!",
+  "I'm up to my ass in shit! What is this business?",
+  "Markets are crashing And I'm at the edge of my wits!",
+  "I just can't take it,",
+  "When all I want to do Is spend the day with",
+  "Greg,",
+  "and Steve,",
+  "and Stu,",
+  "and Mark,",
+  "and Leighton,",
+  "and Chad...",
+  "Ring! Ring! The phone rings. I answer it!",
+  "Oh hey, Greg. I'm swamped...with business!",
+  "Stocks, bonds, other.. business lingo...",
+  "Remember those days on the football field, Greg? Last weekend feels like ages ago...",
+  "What? Today? After work? On the football field?",
+  "The old stompin' grounds, eh Greg?",
+  "Just me and you...",
+  "and Steve...",
+  "and Stu...",
+  "and Mark....",
+  "and Leighton...",
+  "and...",
+  "Chad? <3",
+  "Five o'clock! I'll see you then, Greg! I'll see you then...",
+  "All I want to do",
+  "Is spend the day with Steve and...",
+  "Five-o-clock can't come soon enough!",
+  "Five-o-clock can't come soon enough!",
+  "Five-o-clock can't come soon enough!",
+  "I can't wait to get home to my boys!",
+  "A showstoppin' number!",
+  "A real showstopper! An aria to rule them all!",
+  "They'll throw us their money At full price admission.",
+  "The world will come crumbling down.",
+  "Hamilton move over!",
+  "You're new competition's in town!",
+  "Hey, Henry.",
+  "Greg! Is that really you?",
+  "No, Professor Hidgens. That's not Greg!",
+  "Been a long time.",
+  "Hey, boys! Wanna toss that pigskin around?",
+  "Stu! You haven't aged a day! Is it five-o-clock already? It must be!",
+  "Come on, boys. We have some catching up to do.",
+  "Workin boys, we're up our ass in shit! What is this business?!?",
+  "Five-o-clock can't come soon enough!",
+  "Five-o-clock can't come soon enough!",
+  "Five-o-clock can't come soon enough!",
+  "I can't wait to get home to my boys!",
+  "Oh God! Please! If you save me now, I promise I'll be a better person!",
+  "It's ok, guys. I'm here.",
+  "Paul!",
+  "Shhh. We gotta get outta here while they're distracted.",
+  "Should we take those chairs?",
+  "Yes! Yes! Take me! Make me one of you!",
+  "-----",
+  "Oh, Paul... Where's Bill?",
+  "He... He didn't make it. Now come on.",
+  "The military has a helicopter coming to pick us up.",
+  "We gotta get to Oakley Park in... Oh shit! It's 10:52.",
+  "We're gonna have to huff it.",
+  "Paul, today has... broken me.",
+  "Not now Ted!",
+  "Yes now! I'm ashamed of how I've acted. With Bill earlier.",
+  "I wanted to abandon Emma back there.",
+  "I wish I could be brave... like you.",
+  "Shut the fuck up, man! We gotta go!",
+  "See, I deserve any kind of abuse you wanna give me.",
+  "I've been a huge asshole.",
+  "But I swear I'm gonna be a better person.",
+  "Cuz I realized that what's really important is the people you care about.",
+  "And Paul, I've always considered you my best frien-",
+  "WORKING BOYS WE'RE UP TO OUR ASS IN SHIT!",
+  "OOOOOOOOOkay!",
+  "You fuckin' coward!",
+  "I said I'd be a better person! I'm still not a good person!",
+  "Okay... Alright... I just gotta make it to the chopper.",
+  "Woah! It's the military! Oh thank fucking God!",
+  "Over here! I'm over here!",
+  "Everyone else is dead, just save me!",
+  "Oh, you guys are a sight for sore eyes.",
+  "You know, I always supported the troops. I bleed red, white, and...",
+  "[BANG]",
+  "I don't know what you've been told",
+  "But Americans should fit a mould",
+  "There's a war to be fought in this country",
+  "Against those that are far too bold",
+  "Two party system",
+  "Left and right",
+  "There's only room for right and wrong",
+  "It's me and you or you or me",
+  "The loudest become the strong",
+  "Yeah, we're great again",
+  "America's great again.",
+  "Oh god, no! General MacNamara, they got you too?!",
+  "Who's General MacNamara?",
+  "She was a good woman",
+  "Ma'am, its Paul!",
+  "Run, Emma!",
+  "You can't run",
+  "'Cause our borders are closed",
+  "You're staring down the gun",
+  "'Cause you're easily disposed",
+  "The final solution",
+  "It's a charted course at the whim of our own evolution!",
+  "Singularity had through a pre-destined self-destruction!",
+  "So that we may rebuild and experience a new construction!",
+  "Yeah, we're great again",
+  "Woah-oh-o-oh",
+  "We're great again",
+  "No answers to be found",
+  "We're great again",
+  "No answers...",
+  "to be found",
+  "—-",
+  "We made it! Oh my god, Paul! We made it!",
+  "No one else is coming!",
+  "They've all been infected! Get us outta here!",
+  "Oh... Yes. I thought I was gonna die... in fucking Hatchetfield. But I'm not. We're not gonna die, Paul! We're gettin' outta this shitty town! And this time, I'm never coming back!",
+  "FUCK YOU, HATCHETFIELD!",
+  "Emma! Seatbelts! It's a little bumpy!",
+  "Thank you, man! You saved our asses...",
+  "Excuse me, pilot!",
+  "Hey, pilot! Hey!",
+  "Hey, Mr. Business, how do you do?",
+  "Zoey?",
+  "Can we get a triple for you?",
+  "NOOOOOO!!!!",
+  "[CRASH]",
+  "Emma? Emma?! Emma, where are you?",
+  "Paul?",
+  "Emma! Oh, god! Emma! Your leg!",
+  "Oh... fuck!",
+  "Emma, I hate to say this right now, but this is what seatbelts are for...",
+  "SHIIITTTT!",
+  "Emma, come on. We gotta get outta here.",
+  "We're still in Hatchetfield. We need to get to the shore.",
+  "We gotta find a boat, or...",
+  "AHHH! I can't! I can't... I can't move, Paul.",
+  "I'm not getting off this island...",
+  "But those... things... They'll find us, eventually...",
+  "That's why you gotta fucking kill them before they do...",
+  "The meteor, Paul. You have to destroy the meteor.",
+  "It's the hive's mind... It's like that thing your friend said...",
+  "Which friend? Bill? Ted? Charlotte?",
+  "I don't know your friends' fuckin' names!",
+  "The meteor is the head!",
+  "You take out the head, the whole thing goes down...",
+  "Ok. Ok. So I gotta get to the Starlight Theater,",
+  "destroy the meteor, and all these things will just drop dead?",
+  "I sure as shit hope so.",
+  "Ok, you stay here and try to hang on.",
+  "I will.",
+  "Paul, I know why you came to Beanie's all the time,",
+  "and it wasn't the shit coffee...",
+  "We served bad coffee, cuz we didn't care...",
+  "Sometimes we'd spit in it.",
+  "You may have drank some of my spit, and I'm sorry for that.",
+  "But I didn't know you, and I wish I did...",
+  "Paul, if we get through this, I'd like to go see a nice,",
+  "SILENT movie with you sometime...",
+  "But in case we don't make it... Kiss me.",
+  "Ok...",
+  "—--",
+  "Oh, Emma.",
+  "Sorry. I think that's all of it. Now, get back in here.",
+  "Nope, sorry... I don't want to...",
+  "Yeah. Fuck it. Get outta here.",
+  "OK Byyyeee",
+  "-----",
+  "Did you hear the word? What's the word?",
+  "He's a-comin'!",
+  "Who's a-comin?",
+  "Paul's a-comin!",
+  "Paul's a-comin?",
+  "The star of the show! Let him come",
+  "Word. What's the word?",
+  "He's a-comin'!",
+  "Who's a-comin?",
+  "Paul's a-comin!",
+  "Paul's a-comin?",
+  "The star of the show! Let him come",
+  "Word! What's the word?",
+  "He's a-comin'!",
+  "Who's a-comin?",
+  "Paul's a-comin!",
+  "Paul's a-comin?",
+  "The star of the show! Let him come!",
+  "Word! What's the word?",
+  "He's a-comin'!",
+  "Who's a-comin?",
+  "Paul's a-comin!",
+  "Paul's a-comin?",
+  "The star of the show! Let him come!",
+  "WORD!",
+  "HE'S A COMING!",
+  "PAUL'S A-COMING!",
+  "THE STAR OF THE SHOW!",
+  "LET THE APOTHEOSIS BLESS HIM",
+  "WITH SONG AND DANCE!",
+  "PRAISE THE LORDS!",
+  "Let him come.",
+  "—--",
+  "The old Starlight Theater...",
+  "There it is... the meteor.",
+  "We've been waiting for you, Paul.",
+  "Bill! St... Stay back.",
+  "Watch out, Paul. He might kick your head.",
+  "And that would be la dee da da dah!",
+  "Ted! Emma's boss!",
+  "That's right Paul, all your best friends are here, Paul.",
+  "We're happy now, Paul. We got what we wanted!",
+  "No, no... Mr. Davidson didn't want",
+  "to become a mindless, alien slave.",
+  "He wanted to be choked by his wife",
+  "while he jerked off.",
+  "Well, I'm gonna put a stop to this.",
+  "I thought you weren't interested in saving the planet.",
+  "Shut up, Greenpeace girl! You see this?",
+  "I pull this pin and you're all toast.",
+  "You won't do that, Paul.",
+  "I sure as hell will!",
+  "What about you, Paul? You'll die too. Is that what you want?",
+  "It Doesn't matter what I want.",
+  "We think it does, Paul.",
+  "And we wanna hear about it!",
+  "In fact! We think there's a song in you yet...",
+  "What's in your soul? Is your heart so damp and bleak",
+  "That you won't give us a peek of your soul?",
+  "Just let it out!",
+  "There's a voice inside of you on the edge of comin' through.",
+  "What's it about?",
+  "And I know it's a singular voice, Paul.",
+  "All you gotta do is give up your choice!",
+  "Just let it out, let it out, let it out!",
+  "Let it out, let it out, let it out!",
+  "Just let it out, let it out, let it out!",
+  "Let it out, let it out...",
+  "NEVER!",
+  "What was that?!?",
+  "He let it out!",
+  "It's your proximity to the meteor, Paul.",
+  "The air here is thick with its spores!",
+  "Feel your apotheosis begin as they take root in your mind!",
+  "Do you really think we'd let you kill us?",
+  "You'll be one of us before you can pull that pin!",
+  "Was that a note Or just a sound?",
+  "Am I finally coming 'round to a rhyming scheme?",
+  "STOP IT!",
+  "I'm split in two.",
+  "Is this me or IS THIS YOU?!? AM I DEAD?",
+  "I'm coming apart AT THE SEAMS!",
+  "La da da da da da da da daaa...",
+  "No! No no no no no no noooo!",
+  "Let it out, let it out, let it out!",
+  "Let it out, let it out, let it out!",
+  "Let it out, let it out, let it...",
+  "I've never been happy. Wouldn't that be nice?",
+  "Is this the secret?",
+  "Singing and dancing through life?",
+  "Is my integrity worth anything at all?",
+  "But happiness can't come before its fall.",
+  "Am I crazy?! Maybe I've always been...",
+  "I've become what I've hated. Or maybe I never did.",
+  "It's awful freeing now,",
+  "To share the hate I've felt,",
+  "But what will I let in if I let it out?",
+  "Let it out, let it out, let it out!",
+  "Am I crazy? I don't think so!",
+  "Let it out, let it out, let it out!",
+  "Maybe I've always been!",
+  "Just let it out, let it out, let it out!",
+  "God help me out, if I let it....",
+  "OOOOOOUUUUUUTTTT!!!!!!!",
+  "WE CANNOT BE RESISTED!!!",
+  "I DON'T LIKE... MUSICALS!!!!!",
+  "[Explosive explosions that explode]",
+  "—---",
+  "This is Clivesdale Morning News with Rod and Racheal.",
+  "Good morning. I'm Racheal Muller. And I'm Rod Scott.",
+  "It's been two weeks since tragedy struck our sister city of Hatchetfield. Candlelight vigils line the streets as Clivesdale citizens try to make sense of this unspeakable loss.",
+  "Every last man, woman, and child in Hatchetfield gone in the blink of an eye. A meteor and a ruptured gas line was all it took to wipe them off the map, but it will take much, much more to wipe them from our hearts. Reconstruction efforts have already begun, as-Is she ready to go? How's that leg doing, Kelly?",
+  "Ugh, why'd it have to be 'Kelly'? I loved my old name. Couldn't you have picked something close? Like 'Emerald'?",
+  "That is a negative, Kelly. You'll get used to it. We don't want anyone making any connection between you and Emma Perkins, who perished in the Hatchetfield catastrophe.",
+  "You could've at least given me a cool death.",
+  "Something my friends coulda bragged about at parties. Like 'my friend Emma got her flesh melted off trying to shield a child.' Something heroic. I mean, it was my idea to destroy the meteor.",
+  "And Uncle Sam is not ungrateful. Kelly, this is for you. Inside you'll find a new passport, social security card,and a nice house in the heart of the Negev.",
+  "Israel... Nice.",
+  "Colonel Schaffer, are you sure I was the only survivor?",
+  "We've been through this, Kelly. There were no survivors.",
+  "Save one pocket-sized squirrel.",
+  "Peanuts! I'm glad he made it outta there.",
+  "Now, that's a story we can disclose to the public.",
+  "In the wake of a tragedy like this, a little bit of good news goes a long way.",
+  "It's just... Paul...",
+  "He was a good man. If not for his sacrifice,",
+  "the outbreak could've spread to the mainland.",
+  "Hatchetfield could be contained, but if it got loose here in Clivesdale,",
+  "there'd be no stopping it.",
+  "Your friend may have very well saved the planet, single-handedly.",
+  "Goodbye,",
+  "Kelly.",
+  "Thanks.",
+  "Oh, and one last thing.",
+  "You will be escorted to Israel by a Mr. Ben Bridges.",
+  "He's waiting outside.",
+  "I don't know any Ben Bridges.",
+  "According to our records, you two are quite close friends.",
+  "Peip would like to see it become something more.",
+  "Paul?",
+  "Hi",
+  "Holy shit, Paul!!! Oh, thank god. You made it. Paul. We made it.",
+  "Emma, I'm sorry you lost...",
+  "Paul... What are you doing?",
+  "Emma, I'm sorry you lost your way.",
+  "Paul, stop...You're frightening me!",
+  "But what if I told you I made it, and this is the life that I chose?",
+  "Would you even believe it, Emma? Do you believe in ghosts?",
+  "What if I told you a story that settles all the dust?",
+  "I'm still the man you trust...",
+  "It's inevitable for us!",
+  "Stay the fuck away from me!",
+  "Stay away from me! You're not Paul! You're one of them!",
+  "Before I had no ambition, But now my life is a song!",
+  "Don't you want to see me happy? Is that so tragically wrong?",
+  "What if the only choice is:",
+  "You have to sing to survive?",
+  "We must go on with the show!",
+  "It's inevitable...",
+  "To know what I want now!",
+  "Emma, I want you to join the party.",
+  "Aren't you going to tip me?",
+  "Get your cup of coffee!",
+  "Look at the fun we're having already!",
+  "I've found my calling! You can do the same now.",
+  "Put your words to lyrics and you're playing the game now.",
+  "It's all there is and all there ever was...",
+  "Let me puke in your mouth, Em!",
+  "Just open your food bin, girl,",
+  "Then you can join the hive!",
+  "And show me those...Hands!",
+  "Show me those jazz hands!",
+  "Get 'em up or you're shit out of luck!",
+  "Show me those hands. Show me those jazz hands,",
+  "Or I might be inclined to...",
+  "Plant my seed! The hive needs to feed!",
+  "Happiness is guaranteed...",
+  "If you just give us one last...",
+  "Showstoppin' number! With Emma front and center",
+  "A kick line is inevitable!",
+  "What if I told you a story:",
+  "How the world became peaceful and just!",
+  "It was inevitable...",
+  "Inevitable...",
+  "Inevitable!",
+  "THE APOTHEOSIS IS UPON...",
+  "US!!!"
 ]

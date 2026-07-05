@@ -1,4 +1,4 @@
-#include <WiFi.h>
+#include <ESP8266WiFi.h>
 #include <WebSocketsClient.h>
 #include <ArduinoJson.h>
 #include "config.h"
@@ -10,7 +10,6 @@ enum TieEffect { TIE_OFF, TIE_ON, TIE_BLINK };
 
 TieEffect effect = TIE_OFF;
 bool blinkPhaseOn = false;
-bool isOn = false;
 unsigned long lastToggle = 0;
 unsigned long blinkInterval = DEFAULT_BLINK_MS;  // set by server per cue
 
@@ -18,21 +17,13 @@ const uint8_t ON_LEVEL = ACTIVE_LOW ? LOW : HIGH;
 const uint8_t OFF_LEVEL = ACTIVE_LOW ? HIGH : LOW;
 
 void setLight(bool on) {
-
-  // if (!(on == true && isOn == true)) {
-  //   pressLightButton();
-  // }
-  
-  digitalWrite(PIN_LIGHT, on ? ON_LEVEL : OFF_LEVEL);
+  if (on == true) {
+    Serial.printf("Send digital Turn on \n");
+  } else {
+    Serial.printf("Send digital Turn off \n");
+  }
+  digitalWrite(PIN_LIGHT, on ? 0x0 : OFF_LEVEL);
 }
-
-void pressLightButton() {
-  pinMode(PIN_LIGHT, OUTPUT);
-  digitalWrite(PIN_LIGHT, LOW); // press
-  delay(120);
-  pinMode(PIN_LIGHT, INPUT);    // release
-}
-
 
 void setEffect(const char* fx, unsigned long interval) {
   if (strcmp(fx, "on") == 0) {
@@ -125,7 +116,7 @@ void setup() {
   delay(3000);
   Serial.println();
   Serial.println("========================================");
-  Serial.println("  Tie Switch Controller [ESP32]");
+  Serial.println("  Tie Switch Controller [ESP8266]");
   Serial.println("  Mode: WebSocket (on/off/blink)");
   Serial.printf("  Server: %s:%d\n", WS_HOST, WS_PORT);
   Serial.printf("  Active %s\n", ACTIVE_LOW ? "LOW" : "HIGH");
@@ -136,22 +127,14 @@ void setup() {
   Serial.println("[INIT] Light off");
 
   // WiFi
-  WiFi.persistent(false);          // don't wear/corrupt flash storing creds every boot
   WiFi.mode(WIFI_STA);
-  WiFi.setSleep(WIFI_PS_NONE);     // kill modem power-save (main cause of random drops)
   WiFi.setAutoReconnect(true);
-  WiFi.setHostname("tie-switch");
+  WiFi.setSleepMode(WIFI_NONE_SLEEP);
   WiFi.begin(WIFI_SSID, WIFI_PASS);
   Serial.printf("[WIFI] Connecting to '%s'...\n", WIFI_SSID);
-
-  // Don't block forever — the loop() watchdog will keep retrying.
-  unsigned long start = millis();
-  while (WiFi.status() != WL_CONNECTED && millis() - start < 15000) {
-    delay(500);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
     Serial.printf("[WIFI] status: %d\n", WiFi.status());
-  }
-  if (WiFi.status() != WL_CONNECTED) {
-    Serial.println("[WIFI] Boot connect failed — continuing, will retry in loop.");
   }
   Serial.printf("[WIFI] Connected! IP: %s\n", WiFi.localIP().toString().c_str());
   Serial.printf("[WIFI] MAC: %s\n", WiFi.macAddress().c_str());
@@ -167,23 +150,14 @@ void setup() {
 }
 
 void loop() {
-  if (Serial.available()) {
-    char c = Serial.read();
-
-    if (c == ' ') {
-      pressLightButton();
-      Serial.println("Mode switched");
-    }
-  }
-
-
   // WiFi reconnect watchdog
   static unsigned long lastWifiCheck = 0;
   if (millis() - lastWifiCheck > 5000) {
     lastWifiCheck = millis();
     if (WiFi.status() != WL_CONNECTED) {
       Serial.println("[WIFI] Connection lost — reconnecting...");
-      WiFi.reconnect();
+      WiFi.disconnect();
+      WiFi.begin(WIFI_SSID, WIFI_PASS);
     }
   }
 
@@ -206,30 +180,3 @@ void loop() {
                   wsDisconnectCount);
   }
 }
-
-
-
-// #define BTN_PIN 5  // D5 / GPIO5
-
-// void setup() {
-//   Serial.begin(115200);
-//   pinMode(BTN_PIN, INPUT); // released / disconnected
-// }
-
-// void pressLightButton() {
-//   pinMode(BTN_PIN, OUTPUT);
-//   digitalWrite(BTN_PIN, LOW); // press
-//   delay(120);
-//   pinMode(BTN_PIN, INPUT);    // release
-// }
-
-// void loop() {
-//   if (Serial.available()) {
-//     char c = Serial.read();
-
-//     if (c == ' ') {
-//       pressLightButton();
-//       Serial.println("Mode switched");
-//     }
-//   }
-// }

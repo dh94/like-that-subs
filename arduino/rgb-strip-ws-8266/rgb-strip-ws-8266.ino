@@ -1,4 +1,4 @@
-#include <WiFi.h>
+#include <ESP8266WiFi.h>
 #include <WebSocketsClient.h>
 #include <ArduinoJson.h>
 #include "config.h"
@@ -24,9 +24,9 @@ struct LightState {
 LightState state = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NONE, 0, 0, false, 0};
 
 void applyColor(uint8_t r, uint8_t g, uint8_t b) {
-  ledcWrite(PIN_R, r);
-  ledcWrite(PIN_G, g);
-  ledcWrite(PIN_B, b);
+  analogWrite(PIN_R, r);
+  analogWrite(PIN_G, g);
+  analogWrite(PIN_B, b);
   state.currentR = r;
   state.currentG = g;
   state.currentB = b;
@@ -194,27 +194,29 @@ void setup() {
   Serial.println();
   Serial.println("========================================");
   Serial.printf("  RGB Strip Controller - Device %d\n", DEVICE_ID);
-  Serial.println("  Mode: WebSocket (Bridge)");
+  Serial.println("  Mode: WebSocket (Bridge) [ESP8266]");
   Serial.printf("  Server: %s:%d\n", WS_HOST, WS_PORT);
   Serial.println("========================================");
 
   // PWM setup
-  ledcAttach(PIN_R, PWM_FREQ, PWM_RESOLUTION);
-  ledcAttach(PIN_G, PWM_FREQ, PWM_RESOLUTION);
-  ledcAttach(PIN_B, PWM_FREQ, PWM_RESOLUTION);
+  analogWriteFreq(PWM_FREQ);
+  analogWriteRange(PWM_RANGE);
+  pinMode(PIN_R, OUTPUT);
+  pinMode(PIN_G, OUTPUT);
+  pinMode(PIN_B, OUTPUT);
   applyColor(0, 0, 0);
   Serial.println("[INIT] PWM configured");
 
   // WiFi
   WiFi.mode(WIFI_STA);
   WiFi.setAutoReconnect(true);
+  WiFi.setSleepMode(WIFI_NONE_SLEEP);
   WiFi.begin(WIFI_SSID, WIFI_PASS);
   Serial.printf("[WIFI] Connecting to '%s'...\n", WIFI_SSID);
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
     Serial.printf("[WIFI] status: %d\n", WiFi.status());
   }
-  WiFi.setSleep(false);
   Serial.printf("[WIFI] Connected! IP: %s\n", WiFi.localIP().toString().c_str());
   Serial.printf("[WIFI] MAC: %s\n", WiFi.macAddress().c_str());
   Serial.printf("[WIFI] RSSI: %d dBm\n", WiFi.RSSI());

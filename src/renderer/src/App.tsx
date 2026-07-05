@@ -1,35 +1,26 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ChevronDownIcon, ChevronUpIcon, CheckIcon } from '@radix-ui/react-icons'
-import { motion, AnimatePresence } from 'framer-motion'
 import DotPattern from '@renderer/components/magicui/dot-pattern'
 import { Button } from '@renderer/components/ui/button'
 import { Input } from '@renderer/components/ui/input'
 import { cn } from './lib/utils'
 import textRaw from './HeathersScript.json'
 import rotatingListTextRaw from './RotatingList.json'
+import tieCuesRaw from './TieCues.json'
 import { Checkbox } from './components/ui/checkbox'
-import { transformTextList, TransformedEntry, ScriptEntry } from './textTransformer'
-import { colorMap } from './colorMap'
+import { transformTextList } from './textTransformer'
 
-const text = transformTextList(textRaw as ScriptEntry[])
-const rotatingListText = transformTextList(rotatingListTextRaw)
+const text = transformTextList(textRaw as string[])
+const rotatingListText = transformTextList(rotatingListTextRaw as string[])
 
-function LightingPreview({ lights }: { lights: string[] }) {
-  return (
-    <div className="flex gap-1 justify-center mt-2">
-      {lights.map((color, i) => {
-        const rgb = colorMap[color] ?? [80, 80, 80]
-        return (
-          <div
-            key={i}
-            className="w-5 h-5 rounded-sm border border-gray-400"
-            style={{ backgroundColor: `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})` }}
-            title={`${i + 1}: ${color}`}
-          />
-        )
-      })}
-    </div>
-  )
+type TieEffect = 'on' | 'off' | 'slow_blink' | 'fast_blink'
+const tieCues = tieCuesRaw as Record<string, TieEffect>
+
+const TIE_LABELS: Record<TieEffect, string> = {
+  on: 'ON',
+  off: 'OFF',
+  slow_blink: 'SLOW BLINK',
+  fast_blink: 'FAST BLINK'
 }
 
 function SubtitleStatus({ connectedIds }: { connectedIds: number[] }) {
@@ -58,53 +49,25 @@ function App() {
   const [showCheckIcon, setShowCheckIcon] = useState(false)
   const [rotatingList, setRotatingList] = useState<boolean | 'indeterminate'>(false)
   const [connectedSubtitleDevices, setConnectedSubtitleDevices] = useState<number[]>([])
-  const [currentLighting, setCurrentLighting] = useState<string[]>(
-    Array(15).fill('bla')
-  )
-  const [visibleTexts, setVisibleTexts] = useState<[TransformedEntry, number][]>([
-    [text[0], 1],
-    [text[1], 2],
-    [text[2], 3],
-    [text[3], 4]
-  ])
+  const [currentTie, setCurrentTie] = useState<TieEffect>('off')
   const [activeText, setActiveText] = useState(1)
-
-  const resolveLighting = (entry: TransformedEntry) => {
-    if (entry.lighting) {
-      setCurrentLighting(entry.lighting.lights)
-      const { stagger, staggerDelay = 300 } = entry.lighting
-      const cues = entry.lighting.lights.map((color, i) => {
-        const rgb = colorMap[color] ?? [0, 0, 0]
-        let delay = 0
-        if (stagger === 'L-first' && i >= 7) delay = staggerDelay
-        if (stagger === 'R-first' && i < 7) delay = staggerDelay
-        return { id: i + 1, r: rgb[0], g: rgb[1], b: rgb[2], fx: entry.lighting!.fx, dur: entry.lighting!.dur, delay }
-      })
-      return { cues }
-    }
-    return undefined
-  }
+  const activeLineRef = useRef<HTMLDivElement>(null)
 
   const onActiveTextChange = (newActiveTextIndex: number) => {
     const newEntry = text[newActiveTextIndex]
 
-    setVisibleTexts([
-      [text[newActiveTextIndex - 1], newActiveTextIndex - 1],
-      [text[newActiveTextIndex], newActiveTextIndex],
-      [text[newActiveTextIndex + 1], newActiveTextIndex + 1],
-      [text[newActiveTextIndex + 2], newActiveTextIndex + 2]
-    ])
     ;(document.getElementById('number-input') as HTMLInputElement).value =
       newActiveTextIndex.toString()
     setActiveText(newActiveTextIndex)
     localStorage.setItem('TEXT_INDEX', newActiveTextIndex.toString())
 
-    const lighting = resolveLighting(newEntry)
+    const tie = tieCues[String(newActiveTextIndex)]
+    if (tie) setCurrentTie(tie)
 
     try {
       window.electron.ipcRenderer.send('show_line', {
         line: newEntry.lines,
-        lighting
+        tie
       })
     } catch (err) {
       console.error('whoops', err)
@@ -147,6 +110,10 @@ function App() {
   }, [])
 
   useEffect(() => {
+    activeLineRef.current?.scrollIntoView({ block: 'center', behavior: 'smooth' })
+  }, [activeText])
+
+  useEffect(() => {
     window.electron.ipcRenderer.on('show_line_ack', () => {
       setShowCheckIcon(true)
       setTimeout(() => {
@@ -185,6 +152,10 @@ function App() {
             <p className="text-xl font-medium text-white">{activeText}</p>
           </div>
           <SubtitleStatus connectedIds={connectedSubtitleDevices} />
+          <div className="flex items-center space-x-1" title="Current tie effect">
+            <span className="text-xs font-medium">Tie:</span>
+            <span className="text-xs font-mono font-bold text-white">{TIE_LABELS[currentTie]}</span>
+          </div>
         </div>
         <form
           className="flex items-center space-x-2"
@@ -220,28 +191,45 @@ function App() {
         </form>
       </div>
       <div className="p-20 flex flex-col h-[100vh] w-[100vw] items-center justify-center overflow-hidden bg-background">
-        <div className="flex flex-col h-full items-center h-[80%] bg-red bg-opacity-100">
-          <AnimatePresence mode={'popLayout'}>
-            {visibleTexts.map(([entry, id], index) => (
-              <motion.div
-                layout
-                animate={{ scale: 1, opacity: index === 1 ? 1 : 0.7 }}
-                exit={{ scale: 0.8, opacity: 0 }}
-                transition={{ type: 'just' }}
-                key={id}
+        <div className="flex flex-col items-center h-[80%] w-full overflow-y-auto py-[40vh] no-scrollbar">
+          {text.map((entry, index) => {
+            const isActive = index === activeText
+            const isEmpty =
+              entry?.lines?.[0]?.trim() === '' && entry?.lines?.[1]?.trim() === ''
+            const tieCue = tieCues[String(index)]
+            return (
+              <div
+                key={index}
+                ref={isActive ? activeLineRef : undefined}
+                className={cn(
+                  'flex items-center gap-6 my-2 transition-opacity',
+                  isActive ? 'opacity-100' : 'opacity-30'
+                )}
               >
-                <p className={cn(index === 1 ? 'text-4xl' : 'text-2xl opacity-20', 'm-2 ')}>
-                  {entry?.lines?.[0]?.trim() === '' && entry?.lines?.[1]?.trim() === ''
-                    ? '<EMPTY>'
-                    : entry?.lines?.[0]}
-                </p>
-                <p className={cn(index === 1 ? 'text-4xl' : 'text-2xl opacity-20', 'm-2 ')}>
-                  {entry?.lines?.[1]}
-                </p>
-                {index === 1 && <LightingPreview lights={currentLighting} />}
-              </motion.div>
-            ))}
-          </AnimatePresence>
+                <div className="flex flex-col items-center">
+                  <p className={cn(isActive ? 'text-4xl' : 'text-2xl', 'm-1')}>
+                    {isEmpty ? '<EMPTY>' : entry?.lines?.[0]}
+                  </p>
+                  <p className={cn(isActive ? 'text-4xl' : 'text-2xl', 'm-1')}>
+                    {entry?.lines?.[1]}
+                  </p>
+                  {tieCue && (
+                    <span className="mt-1 px-2 py-0.5 rounded-full text-xs font-mono font-bold bg-teal-500 text-white">
+                      TIE: {TIE_LABELS[tieCue]}
+                    </span>
+                  )}
+                </div>
+                <span
+                  className={cn(
+                    'font-mono tabular-nums text-teal-500 shrink-0',
+                    isActive ? 'text-2xl' : 'text-lg'
+                  )}
+                >
+                  {index}
+                </span>
+              </div>
+            )
+          })}
         </div>
         <DotPattern
           width={16}

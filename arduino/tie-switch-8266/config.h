@@ -2,7 +2,7 @@
 #define CONFIG_H
 
 // ============================================
-// Tie light switch controller (ESP32) — on/off only
+// Tie light switch controller (ESP8266) — on/off only
 // ============================================
 
 // WiFi
@@ -14,9 +14,10 @@
 #define WS_PORT 8081
 
 // Light pin
-#define PIN_LIGHT 5
+// ESP8266 (NodeMCU / Wemos D1 mini) — D1 = GPIO5
+#define PIN_LIGHT D1
 
-// Set to 1 if the light turns ON when the pin is LOW (inverted wiring)
+// Set to 1 if the light turns ON when the pin is LOW (low-trigger board / inverted wiring)
 #define ACTIVE_LOW 0
 
 // Fallback blink interval (ms) — only used if the server doesn't send one.

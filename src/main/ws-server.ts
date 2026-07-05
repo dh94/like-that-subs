@@ -5,12 +5,32 @@ const port = 8081
 const wss = new WebSocketServer({ port })
 
 export const wsClients = new Set<WebSocket>()
-export const lightingState = new Map<number, { r: number; g: number; b: number; fx: string; dur: number; startedAt: number }>()
-export const connectedDevices = new Set<number>()
 export const connectedSubtitleDevices = new Set<number>()
 
-const deviceToWs = new Map<number, WebSocket>()
+export type TieEffect = 'on' | 'off' | 'slow_blink' | 'fast_blink'
+export const tieState = { connected: false, effect: 'off' as TieEffect }
+
+// Blink toggle intervals (ms) — change here, no firmware reflash needed
+export const BLINK_RATES: Record<'slow_blink' | 'fast_blink', number> = {
+  slow_blink: 600,
+  fast_blink: 150
+}
+
+let tieWs: WebSocket | null = null
 const subtitleDeviceToWs = new Map<number, WebSocket>()
+
+export function setTieEffect(effect: TieEffect) {
+  tieState.effect = effect
+}
+
+export function blinkIntervalFor(effect: TieEffect): number | undefined {
+  return effect === 'slow_blink' || effect === 'fast_blink' ? BLINK_RATES[effect] : undefined
+}
+
+export function tiePayload(effect: TieEffect): string {
+  const interval = blinkIntervalFor(effect)
+  return JSON.stringify({ type: 'tie', effect, ...(interval !== undefined ? { interval } : {}) })
+}
 
 wss.on('connection', function connection(ws, request) {
   console.info(`WebSocket Connection Established ${request.socket.remoteAddress}`)
@@ -22,13 +42,10 @@ wss.on('connection', function connection(ws, request) {
     console.info(`WebSocket Connection Closed ${request.socket.remoteAddress}`)
     wsClients.delete(ws)
 
-    for (const [id, socket] of deviceToWs.entries()) {
-      if (socket === ws) {
-        deviceToWs.delete(id)
-        connectedDevices.delete(id)
-        console.info(`Light ${id} disconnected`)
-        break
-      }
+    if (ws === tieWs) {
+      tieWs = null
+      tieState.connected = false
+      console.info('Tie disconnected')
     }
 
     for (const [id, socket] of subtitleDeviceToWs.entries()) {
@@ -45,17 +62,12 @@ wss.on('connection', function connection(ws, request) {
     const msg = data.toString()
     console.log(`Received from ${request.socket.remoteAddress}: %s`, msg)
 
-    if (msg.startsWith('Light ')) {
-      const id = parseInt(msg.split(' ')[1])
-      connectedDevices.add(id)
-      deviceToWs.set(id, ws)
-      console.info(`Light ${id} identified`)
-
-      const state = lightingState.get(id)
-      if (state) {
-        ws.send(JSON.stringify({ type: 'sync', id, r: state.r, g: state.g, b: state.b }))
-        // console.info(`Sent sync to Light ${id}: rgb(${state.r},${state.g},${state.b})`)
-      }
+    if (msg === 'Tie') {
+      tieWs = ws
+      tieState.connected = true
+      console.info('Tie identified')
+      // Resync current effect (with rate) so a reconnecting tie catches up
+      ws.send(tiePayload(tieState.effect))
     }
 
     if (msg.startsWith('Device ')) {
@@ -66,6 +78,5 @@ wss.on('connection', function connection(ws, request) {
     }
   })
 })
-
 
 console.info('Started WebSocket Server on port', port)
