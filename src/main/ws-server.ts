@@ -80,3 +80,6 @@ wss.on('connection', function connection(ws, request) {
 })
 
 console.info('Started WebSocket Server on port', port)
+
+
+export const getWsTie = () => tieWs

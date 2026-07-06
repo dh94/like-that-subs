@@ -9,7 +9,8 @@ import {
   setTieEffect,
   tiePayload,
   blinkIntervalFor,
-  TieEffect
+  TieEffect,
+  getWsTie
 } from './ws-server'
 
 let lightingWindow: BrowserWindow | null = null
@@ -89,7 +90,7 @@ function sendTieStateToMonitor() {
 function broadcastTieEffect(effect: TieEffect) {
   setTieEffect(effect)
   const payload = tiePayload(effect)
-  wsClients.forEach((ws) => ws.send(payload))
+  getWsTie()?.send(payload);
   sendTieStateToMonitor()
 }
 
